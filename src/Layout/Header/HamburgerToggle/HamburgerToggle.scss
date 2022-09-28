@@ -1,0 +1,60 @@
+.hamburger{
+  display: none;
+  row-gap: 5px;
+  flex-direction: column;
+  background: transparent;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  z-index: 100;
+  &__stripe{
+    transition: .2s ease-in;
+    width: 18px;
+    height: 2px;
+    border-radius: 2px;
+    background: #fff;
+  }
+  &_short{
+    width: 12px
+  }
+  &_active{
+    transition: 2s ease-in;
+    .hamburger{
+      &__stripe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        &:first-child{
+          transform: rotate(-45deg);
+        }
+        &:last-child{
+          transform: rotate(45deg);
+        }
+        &_short{
+          display: none
+        }
+      }
+
+    }
+  }
+}
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1201px) {
+}
+
+@media (max-width: 1025px) {
+}
+
+@media (max-width: 769px ) {
+ .hamburger{
+   display: flex;
+ }
+}
+
+@media (max-width: 481px ) {
+}

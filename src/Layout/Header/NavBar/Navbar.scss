@@ -1,0 +1,29 @@
+@import "src/scss/base/mixins";
+.nav{
+  display: flex;
+  column-gap: 50px;
+  align-items: center;
+  &__link{
+   @include text(300,15px,20px,#fff)
+  }
+}
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1201px) {
+}
+
+@media (max-width: 1025px) {
+}
+
+@media (max-width: 769px ) {
+  .nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 481px ) {
+}

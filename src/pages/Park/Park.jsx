@@ -1,9 +1,9 @@
 import React from 'react';
-import {useParams, Navigate} from "react-router-dom";
-
+import Place from "./Place/Place";
+import Price from "./Price/Price";
+import {Navigate, useParams} from "react-router-dom";
 
 const Park = () => {
-
     const params = useParams()
 
 
@@ -11,9 +11,10 @@ const Park = () => {
         return <Navigate to='/'/>
     }
     return (
-        <div>
-            {params.name}
-        </div>
+        <>
+            <Place/>
+            <Price/>
+        </>
     );
 };
 
