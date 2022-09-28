@@ -2,6 +2,8 @@ import React from 'react';
 import Place from "./Place/Place";
 import Price from "./Price/Price";
 import {Navigate, useParams} from "react-router-dom";
+import Portfolio from "./Portfolio/Portfolio";
+import Map from "./Map/Map";
 
 const Park = () => {
     const params = useParams()
@@ -14,6 +16,8 @@ const Park = () => {
         <>
             <Place/>
             <Price/>
+            <Portfolio/>
+            <Map/>
         </>
     );
 };

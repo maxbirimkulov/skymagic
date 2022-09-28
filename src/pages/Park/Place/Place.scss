@@ -12,7 +12,12 @@
 
     }
     &title{
-      @include text(500,48px,45px,#fff)
+      @include text(500,48px,45px,#fff);
+
+    }
+    &p{
+      @include text(500,12px,22px,#fff);
+
     }
   }
 }

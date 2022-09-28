@@ -20,7 +20,6 @@ export default function PlaceSwiper() {
     return (
         <>
             <div className="slider">
-                <div className="slider__flex">
                     <div className="slider__col">
                         <div className="slider__prev">^</div>
 
@@ -67,9 +66,6 @@ export default function PlaceSwiper() {
                     <div className="slider__images">
                         <Swiper
                             thumbs={{swiper: imagesNavSlider}}
-                            direction="horizontal"
-                            slidesPerView={1}
-                            spaceBetween={32}
                             mousewheel={true}
                             autoplay={{
                                 delay: 4000,
@@ -102,7 +98,6 @@ export default function PlaceSwiper() {
                         </Swiper>
                     </div>
                 </div>
-            </div>
         </>
     );
 }
