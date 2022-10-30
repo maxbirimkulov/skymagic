@@ -3,6 +3,7 @@ import Baner from "./Baner/Baner";
 import Parks from "./Parks/Parks";
 import Stock from "./Stock/Stock";
 
+
 const Home = () => {
     return (
         <>
