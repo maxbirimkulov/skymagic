@@ -5,19 +5,20 @@ import {Navigate, useParams} from "react-router-dom";
 import Portfolio from "./Portfolio/Portfolio";
 import Map from "./Map/Map";
 
+import {data2} from "../../data.js"
+let dataPark =  data2["Sky Park"]
+
 const Park = () => {
     const params = useParams()
-
-
     if (params.name !== 'park') {
         return <Navigate to='/'/>
     }
     return (
         <>
-            <Place/>
-            <Price/>
-            <Portfolio/>
-            <Map/>
+            <Place dataPark={dataPark}/>
+            <Price dataPark={dataPark}/>
+            <Portfolio dataPark={dataPark}/>
+            <Map dataPark={dataPark}/>
         </>
     );
 };

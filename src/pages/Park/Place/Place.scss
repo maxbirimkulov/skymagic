@@ -8,8 +8,14 @@
       position: absolute;
       top: 50%;
       left: 100px;
-      z-index: 99;
-
+      z-index: 1;
+      background: #11111170;
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      backdrop-filter: blur( 1px );
+      -webkit-backdrop-filter: blur( 8px );
+      border-radius: 10px;
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
+      padding: 40px;
     }
     &title{
       @include text(500,48px,45px,#fff);
@@ -19,5 +25,6 @@
       @include text(500,12px,22px,#fff);
 
     }
+
   }
 }

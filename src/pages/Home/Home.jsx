@@ -6,7 +6,7 @@ import Stock from "./Stock/Stock";
 const Home = () => {
     return (
         <>
-        <Baner/>
+            <Baner/>
             <Parks/>
             <Stock/>
 
