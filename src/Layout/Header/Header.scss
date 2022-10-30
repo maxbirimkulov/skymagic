@@ -7,6 +7,9 @@
   z-index: 100;
   width: 100%;
   background: #11111170;
+  &.scrolled{
+    background: #111;
+  }
 }
 
 .header__{
