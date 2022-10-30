@@ -4,12 +4,11 @@ import Home from "./pages/Home/Home";
 import NotFound from "./pages/NotFound/NotFound";
 import Basket from "./pages/Basket/Basket";
 import Park from "./pages/Park/Park";
-<<<<<<< HEAD
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
-=======
-import Vacancies from "./Components/Vacancies/Vacancies";
->>>>>>> 94a99f6c884e0280a066b61fefef516eb1799ce5
+
+import Vacancies from "./pages/Vacancies/Vacancies";
+
 
 function App() {
   return (
@@ -21,9 +20,10 @@ function App() {
             <Route path='basket' element={<Basket/>}/>
             <Route path='/vacancies' element={<Vacancies/>}/>
             <Route path='*' element={<NotFound/>}/>
+            <Route path='/login' element={<Login/>}/>
+            <Route path='/register' element={<Register/>}/>
           </Route>
-          <Route path='/login' element={<Login/>}/>
-          <Route path='/register' element={<Register/>}/>
+
         </Routes>
     </>
   );

@@ -1,10 +1,12 @@
 import React from 'react';
+import Form from "../../components/Form/Form";
+
 
 const Login = () => {
     return (
-        <div>
-            Login
-        </div>
+        <section className='register'>
+            <Form/>
+        </section>
     );
 };
 
