@@ -1,5 +1,5 @@
 import React from 'react';
-import Ticket from "../../Components/Ticket/Ticket";
+import Ticket from "../../components/Ticket/Ticket";
 
 const Home = () => {
     return (
