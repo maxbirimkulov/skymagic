@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 import "./Header.scss"
 import HamburgerToggle from "./HamburgerToggle/HamburgerToggle";
 import NavBar from "./NavBar/NavBar";
-
+import {animateScroll} from "react-scroll";
 const Header = () => {
     const [isActiveHamburger, setActiveHamburger] = useState(false);
     const [isActiveHamburgerMenu, setActiveHamburgerMenu] = useState(false);
@@ -11,6 +11,10 @@ const Header = () => {
     const toggleClass = () => {
         setActiveHamburger(!isActiveHamburger);
         setActiveHamburgerMenu(!isActiveHamburgerMenu);
+        animateScroll.scrollToTop({
+            delay: 0,
+            duration: 0
+        })
     };
 
     const [small, setSmall] = useState(false);
