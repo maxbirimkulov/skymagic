@@ -4,6 +4,7 @@ import Home from "./pages/Home/Home";
 import NotFound from "./pages/NotFound/NotFound";
 import Basket from "./pages/Basket/Basket";
 import Park from "./pages/Park/Park";
+import Vacancies from "./Components/Vacancies/Vacancies";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
             <Route path='' element={<Home/>}/>
             <Route path='parks/:name' element={<Park/>}/>
             <Route path='basket' element={<Basket/>}/>
+            <Route path='/vacancies' element={<Vacancies/>}/>
             <Route path='*' element={<NotFound/>}/>
           </Route>
         </Routes>
