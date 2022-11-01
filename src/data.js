@@ -4,6 +4,7 @@ export const data2 = {
         "description": "Крупнейший крытый парк в Кыргызстане",
         "imgFirstSection": [
             "../assets/skypark/first/img01.webp",
+            "../assets/skypark/first/img02.webp",
             "../assets/skypark/first/img03.webp",
             "../assets/skypark/first/img04.webp",
             "../assets/skypark/first/img05.webp",
@@ -38,18 +39,57 @@ export const data2 = {
     "Smagic Techno": {
         "title": "Smagic Технопарк",
         "description": "Общая площадь помещения парка: 5500 кв. м.",
-        "imgFirstSection": ["./assets/",],
-        "imgSwiper": "",
+        "imgFirstSection": [
+            "../assets/techno/first/img01.jpg",
+            "../assets/techno/first/img02.jpg",
+            "../assets/techno/first/img03.jpg",
+            "../assets/techno/first/img04.jpg",
+            "../assets/techno/first/img05.jpg",
+        ],
+        "imgPortfolio": [
+            "../assets/techno/second/img01.jpg",
+            "../assets/techno/second/img02.jpg",
+            "../assets/techno/second/img03.jpg",
+            "../assets/techno/second/img04.jpg",
+            "../assets/techno/second/img05.jpg",
+        ],
     },
     "Smagic Tsum": {
         "title": "Smagic Цум 2",
         "description": "Общая площадь помещения парка: 5500 кв. м.",
-        "img": "",
+        "imgFirstSection": [
+            "../assets/tsum/first/img01.jpg",
+            "../assets/tsum/first/img02.jpg",
+            "../assets/tsum/first/img03.jpg",
+            "../assets/tsum/first/img04.jpg",
+            "../assets/tsum/first/img05.jpg",
+        ],
+        "imgPortfolio": [
+            "../assets/tsum/second/img01.jpg",
+            "../assets/tsum/second/img02.jpg",
+            "../assets/tsum/second/img03.jpg",
+            "../assets/tsum/second/img04.jpg",
+            "../assets/tsum/second/img05.jpg",
+        ],
     },
     "Smagic Tommi": {
         "title": "Smagic Tommi mall",
         "description": "Общая площадь помещения парка: 5500 кв. м.",
-        "img": "",
+        "imgFirstSection": [
+            "../assets/tommi/first/img01.jpg",
+            "../assets/tommi/first/img02.jpg",
+            "../assets/tommi/first/img03.jpg",
+            "../assets/tommi/first/img04.jpg",
+            "../assets/tommi/first/img05.jpg",
+
+        ],
+        "imgPortfolio": [
+            "../assets/tommi/second/img01.jpg",
+            "../assets/tommi/second/img02.jpg",
+            "../assets/tommi/second/img03.jpg",
+            "../assets/tommi/second/img04.jpg",
+            "../assets/tommi/second/img05.jpg",
+        ],
     },
 }
 export default data2
