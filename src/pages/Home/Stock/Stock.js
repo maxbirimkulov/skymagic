@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './Stock.scss'
+import {AiOutlinePlus,AiOutlineMinus} from 'react-icons/ai'
 
 import {data} from "./data";
 
@@ -15,6 +16,7 @@ const Stock = () => {
     }
 
     return (
+
         <section className='stock'>
             <div className="stock__container container">
                 <h2 className='stock__title'>Акции</h2>
@@ -23,7 +25,7 @@ const Stock = () => {
                         <div className='accordion__content'>
                             <div className="accordion__subtitle" onClick={() => toggle(i)}>
                                 <h3 className='accordion__stock'>{el.stock}</h3>
-                                <span>{selected === i ? '-' : '+'}</span>
+                                <span>{selected === i ? <AiOutlineMinus className='minus'/> : <AiOutlinePlus className='plus'/>}</span>
                             </div>
                             <p className={selected === i ? 'accordion__dsc accordion__show' : 'accordion__dsc'}>{el.description}</p>
                         </div>

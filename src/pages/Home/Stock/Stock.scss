@@ -8,7 +8,8 @@
 }
 
 .accordion {
-  width: 60%;
+
+  width: 100%;
   margin: 0 auto 20px;
   border-radius: 8px;
   overflow: hidden;
@@ -30,6 +31,15 @@
     }
     & span {
       font-weight: 700;
+
+    }
+    .plus{
+      font-size: 34px;
+      color: white;
+    }
+    .minus{
+      font-size: 32px;
+      color: white;
     }
   }
 
@@ -41,15 +51,16 @@
     color: black;
     max-height: 0;
     overflow: hidden;
-    padding: 0 1em;
+
     background: white;
-    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+    transition: all 1s cubic-bezier(0, 2, 0, 2);
   }
 
   &__show {
     height: auto;
+padding: 40px 0;
     max-height: 9999px;
-    transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+    transition: all 1s cubic-bezier(2, 0, 2, 0);
 
   }
 }

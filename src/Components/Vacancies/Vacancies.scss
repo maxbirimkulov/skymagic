@@ -1,5 +1,6 @@
 .vacancies {
   margin: 150px 0 0 0;
+
   &__container {
     width: 100%;
     display: flex;
@@ -76,6 +77,14 @@
     background: #787A80;
     transform: rotate(90deg);
   }
+  &__title{
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__videotittle{
+    text-align: center;
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 1440px) {
@@ -110,4 +119,19 @@
     }
   }
 }
+.video{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
 
+  &__card{
+    width: 28%;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;;
+    img{
+      width: 100%;
+      border-radius: 20px;
+    }
+  }
+}
