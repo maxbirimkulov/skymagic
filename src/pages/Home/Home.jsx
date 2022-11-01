@@ -4,10 +4,11 @@ import Parks from "./Parks/Parks";
 import Stock from "./Stock/Stock";
 import Projects from "./Our projects/projects";
 
+
 const Home = () => {
     return (
         <>
-        <Baner/>
+            <Baner/>
             <Parks/>
             <Stock/>
             <Projects/>

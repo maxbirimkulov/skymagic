@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
+import React, { useEffect, useState } from "react";
 import {NavLink} from "react-router-dom";
 import "./Header.scss"
 import HamburgerToggle from "./HamburgerToggle/HamburgerToggle";
 import NavBar from "./NavBar/NavBar";
-
+import {animateScroll} from "react-scroll";
 const Header = () => {
     const [isActiveHamburger, setActiveHamburger] = useState(false);
     const [isActiveHamburgerMenu, setActiveHamburgerMenu] = useState(false);
@@ -11,11 +11,26 @@ const Header = () => {
     const toggleClass = () => {
         setActiveHamburger(!isActiveHamburger);
         setActiveHamburgerMenu(!isActiveHamburgerMenu);
+        animateScroll.scrollToTop({
+            delay: 0,
+            duration: 0
+        })
     };
 
+    const [small, setSmall] = useState(false);
+
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            window.addEventListener("scroll", () =>
+                setSmall(window.pageYOffset > 200)
+            );
+        }
+    }, []);
     return (
 
-        <header className='header'>
+        <header className={`header ${
+            small ? "scrolled" : ""
+        }`}>
             <div className="header__container container ">
                 <NavLink className="header__logo" to='/'>
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
