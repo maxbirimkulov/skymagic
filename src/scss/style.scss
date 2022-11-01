@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&display=swap');
 @import "base/mixins";
 
 *{
@@ -10,7 +10,7 @@
   resize: none;
   outline: none;
   border: none;
-  font-family: 'Chivo', sans-serif;
+  font-family: 'Kanit', sans-serif;
   font-weight: 300;
 }
 @mixin text($f-weight,$f-size,$f-height,$f-color){
