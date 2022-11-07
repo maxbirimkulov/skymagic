@@ -40,6 +40,7 @@ export const data2 = {
         "description": "Общая площадь помещения парка: 5500 кв. м.",
         "imgFirstSection": ["./assets/",],
         "imgSwiper": "",
+
     },
     "Smagic Tsum": {
         "title": "Smagic Цум 2",
