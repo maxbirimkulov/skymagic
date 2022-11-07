@@ -6,6 +6,7 @@ import Portfolio from "./Portfolio/Portfolio";
 import Map from "./Map/Map";
 
 import {data2} from "../../data.js"
+import AboutPark from "./AboutPark/AboutPark";
 let dataPark =  data2["Sky Park"]
 
 const Park = () => {
@@ -16,6 +17,7 @@ const Park = () => {
     return (
         <>
             <Place dataPark={dataPark}/>
+            <AboutPark dataPark={dataPark}/>
             <Price dataPark={dataPark}/>
             <Portfolio dataPark={dataPark}/>
             <Map dataPark={dataPark}/>
