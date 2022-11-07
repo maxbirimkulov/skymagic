@@ -2,8 +2,37 @@ export const data2 = {
     "Sky Park": {
         "title": "Sky Park",
         "description": "Крупнейший крытый парк в Кыргызстане",
+        "areatitle": "Общая площадь помещения парка:",
+        "areatext": [
+            "5500 кв. м. Высота самой высокой горки составляет - 13 м,протяженностью - 52 м.",
+            "Зиплайн располагается На высоте - 13 м.",],
+        "about": "Центр развлечений «Sky Park» успешно осуществляет свою работу С 2018 года.",
+        "zonestitle": "Дополнительные зоны:",
+        "zones": "Зона фуд-корта, магазин игрушек, анимэ-магазин, тир, Зоопарк и многое другое.",
+        "attractions": [
+            "- Зиплайн,",
+            "- Желтая горка и синяя горка (высота 12 метров, длина 47 метров)",
+            "- Большой бассейн с шариками",
+            "-Мини-соты",
+            "-Скалодром",
+            " - Сетчатый лабиринт",
+        ],
+        "gamecomplex": [
+            "- Батут для маленьких детей",
+            "- Вулкан",
+            "- Гимнастический батут",
+            "- Карусели - Песочница",
+            "- Игрушечный самолет",
+            "- Зона творчества",
+            "- Игровые панели",
+            "- Автодром",
+            "- Настольные игры",
+            "- Виар зона",
+            "- Тир",
+        ],
         "imgFirstSection": [
             "../assets/skypark/first/img01.webp",
+            "../assets/skypark/first/img02.webp",
             "../assets/skypark/first/img03.webp",
             "../assets/skypark/first/img04.webp",
             "../assets/skypark/first/img05.webp",
@@ -38,19 +67,57 @@ export const data2 = {
     "Smagic Techno": {
         "title": "Smagic Технопарк",
         "description": "Общая площадь помещения парка: 5500 кв. м.",
-        "imgFirstSection": ["./assets/",],
-        "imgSwiper": "",
-
+        "imgFirstSection": [
+            "../assets/techno/first/img01.jpg",
+            "../assets/techno/first/img02.jpg",
+            "../assets/techno/first/img03.jpg",
+            "../assets/techno/first/img04.jpg",
+            "../assets/techno/first/img05.jpg",
+        ],
+        "imgPortfolio": [
+            "../assets/techno/second/img01.jpg",
+            "../assets/techno/second/img02.jpg",
+            "../assets/techno/second/img03.jpg",
+            "../assets/techno/second/img04.jpg",
+            "../assets/techno/second/img05.jpg",
+        ],
     },
     "Smagic Tsum": {
         "title": "Smagic Цум 2",
         "description": "Общая площадь помещения парка: 5500 кв. м.",
-        "img": "",
+        "imgFirstSection": [
+            "../assets/tsum/first/img01.jpg",
+            "../assets/tsum/first/img02.jpg",
+            "../assets/tsum/first/img03.jpg",
+            "../assets/tsum/first/img04.jpg",
+            "../assets/tsum/first/img05.jpg",
+        ],
+        "imgPortfolio": [
+            "../assets/tsum/second/img01.jpg",
+            "../assets/tsum/second/img02.jpg",
+            "../assets/tsum/second/img03.jpg",
+            "../assets/tsum/second/img04.jpg",
+            "../assets/tsum/second/img05.jpg",
+        ],
     },
     "Smagic Tommi": {
         "title": "Smagic Tommi mall",
         "description": "Общая площадь помещения парка: 5500 кв. м.",
-        "img": "",
+        "imgFirstSection": [
+            "../assets/tommi/first/img01.jpg",
+            "../assets/tommi/first/img02.jpg",
+            "../assets/tommi/first/img03.jpg",
+            "../assets/tommi/first/img04.jpg",
+            "../assets/tommi/first/img05.jpg",
+
+        ],
+        "imgPortfolio": [
+            "../assets/tommi/second/img01.jpg",
+            "../assets/tommi/second/img02.jpg",
+            "../assets/tommi/second/img03.jpg",
+            "../assets/tommi/second/img04.jpg",
+            "../assets/tommi/second/img05.jpg",
+        ],
     },
 }
 export default data2
