@@ -11,10 +11,11 @@ const Map = () => {
                        referrerPolicy="no-referrer-when-downgrade" title="google map"></iframe>
                </div>
                <div className="map__txt">
-                   <h2>Мы находимся по адресу</h2>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, reiciendis.</p>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, reiciendis.</p>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, reiciendis.</p>
+                   <h2>Локация:</h2>
+                   <br/>
+                 <h3>Г. Бишкек, пр. Ч. Айтматова 299в,  <br/> <br/>
+                     ТРЦ "Ала-Арча"</h3>
+
                </div>
            </div>
         </section>

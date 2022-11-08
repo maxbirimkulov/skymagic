@@ -11,9 +11,8 @@ const NavBar = ({toggleClass}) => {
             <li className='nav__item'> <NavLink className="nav__link" to="/reg" onClick={toggleClass}>Мероприятия</NavLink></li>
             <li className='nav__item'> <NavLink className="nav__link" to="/reg" onClick={toggleClass}>Новости</NavLink></li>
             <li className='nav__item'> <NavLink className="nav__link" to="/reg" onClick={toggleClass}>База знаний</NavLink></li>
-            <li className='nav__item'> <NavLink className="nav__link" to="/reg" onClick={toggleClass}>Карьера</NavLink></li>
             <li className='nav__item'> <NavLink className="nav__link" to="/reg" onClick={toggleClass}>Контакты</NavLink></li>
-            <li className='nav__item'> <NavLink className="nav__link" to="/vacancies" onClick={toggleClass}>Вакансии</NavLink></li>
+            <li className='nav__item'> <NavLink className="nav__link" to="/career" onClick={toggleClass}>Карьера</NavLink></li>
         </ul>
     );
 };

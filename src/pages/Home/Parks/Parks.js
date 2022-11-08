@@ -4,6 +4,7 @@ import skypark from '../images/icon-sky-park.jpg'
 import tommi from '../images/tommi.jpg'
 import tehnopark from '../images/tehno-park.jpg'
 import stum from '../images/цум2.jpg'
+import {NavLink} from "react-router-dom";
 
 const Parks = () => {
     return (
@@ -21,7 +22,7 @@ const Parks = () => {
 
 
                         </div>
-                        <button>Узнать больше</button>
+                        <button><NavLink to='/parks/Sky%20Park'/>Узнать больше</button>
                     </div>
 
                     <div className="parks__card">

@@ -3,6 +3,7 @@ import Form from "../../Components/Form/Form";
 
 
 
+
 const Register = () => {
     return (
         <section className='register'>

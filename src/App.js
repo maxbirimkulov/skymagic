@@ -8,6 +8,7 @@ import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 
 import Vacancies from "./pages/Vacancies/Vacancies";
+import AboutCompany from "./pages/AboutCompany/aboutCompany";
 
 
 function App() {
@@ -18,10 +19,11 @@ function App() {
             <Route path='' element={<Home/>}/>
             <Route path='parks/:name' element={<Park/>}/>
             <Route path='basket' element={<Basket/>}/>
-            <Route path='/vacancies' element={<Vacancies/>}/>
+            <Route path='/career' element={<Vacancies/>}/>
             <Route path='*' element={<NotFound/>}/>
             <Route path='/login' element={<Login/>}/>
             <Route path='/register' element={<Register/>}/>
+            <Route path='/about' element={<AboutCompany/>}/>
           </Route>
 
         </Routes>
