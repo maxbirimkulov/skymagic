@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  padding: 23px 15px 22px;
+  padding: 5px 15px 0 ;
   transition: background .3s ease;
   z-index: 100;
   width: 100%;
@@ -10,13 +10,19 @@
   &.scrolled{
     background: #111;
   }
+
 }
 
 .header__{
+  &logo img{
+    width: 200px;
+    height: auto;
+  }
   &container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 
   }
   &logo{
@@ -46,6 +52,7 @@
 
 @media (max-width: 769px ) {
   .header__{
+
     &menu{
       display: none;
       &_active{
