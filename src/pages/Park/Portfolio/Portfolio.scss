@@ -11,10 +11,13 @@
     background-position: center;
     background-size: cover;
     width: 600px;
+    border-radius: 15px;
+    overflow: hidden;
   }
 
   .swiper-slide img {
     display: block;
     width: 100%;
+
   }
 }

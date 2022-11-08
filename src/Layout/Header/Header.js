@@ -4,6 +4,7 @@ import "./Header.scss"
 import HamburgerToggle from "./HamburgerToggle/HamburgerToggle";
 import NavBar from "./NavBar/NavBar";
 import {animateScroll} from "react-scroll";
+import logo from '../../Components/image/smagic-logo.jpg'
 const Header = () => {
     const [isActiveHamburger, setActiveHamburger] = useState(false);
     const [isActiveHamburgerMenu, setActiveHamburgerMenu] = useState(false);
@@ -69,6 +70,7 @@ const Header = () => {
 	</g>
 </g>
 </svg>
+
                 </NavLink>
                     <HamburgerToggle toggleClass={toggleClass} isActiveHamburger={isActiveHamburger}/>
 
