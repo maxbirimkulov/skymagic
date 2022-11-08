@@ -4,7 +4,10 @@
   column-gap: 50px;
   align-items: center;
   &__link{
-   @include text(300,15px,20px,#fff)
+   @include text(300,15px,20px,#fff);
+    &:hover{
+      color: #ffb825;
+    }
   }
 }
 @media (max-width: 1440px) {

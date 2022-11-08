@@ -1,0 +1,29 @@
+.footer{
+  background-color: #313031;
+
+  & .container{
+    padding: 48px 0 66px;
+  }
+  &__lists{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__list li:first-child {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 32px;
+  }
+
+  &__list li{
+    a{
+      color: #808285;
+    }
+    font-size: 14px;
+    font-weight: normal;
+    line-height: normal;
+    margin-bottom: 20px;
+    list-style-type: none;
+  }
+
+}
