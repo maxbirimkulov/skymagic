@@ -1,0 +1,25 @@
+.account__nav {
+  max-width: 265px;
+
+  border-right: 1px solid #787A80;
+  &-li {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    border-left: 1px solid #787A80;
+    a{
+      font-style: normal;
+      font-size: 14px;
+      line-height: 19px;
+      color: #111111;
+    }
+    &_active {
+      border-left: 3px solid #E64926;
+      color: #E64926;
+    }
+    &-svg {
+      width: 30px;
+    }
+    padding: 14px 42px 14px;
+  }
+}
