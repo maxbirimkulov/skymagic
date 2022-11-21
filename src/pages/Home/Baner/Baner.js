@@ -4,7 +4,7 @@ import './Baner.scss'
 const Baner = () => {
     return (
        <section className='banner'>
-           <div className="banner__container">
+           <div className="banner__container container">
                 <h1 className='banner__title'>
                     <span className='banner__smagic'>SMAGIC</span>
                     <br/>
