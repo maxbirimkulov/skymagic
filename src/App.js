@@ -10,6 +10,7 @@ import Register from "./pages/Register/Register";
 
 import Vacancies from "./pages/Vacancies/Vacancies";
 import AboutCompany from "./pages/AboutCompany/aboutCompany";
+import Account from "./pages/Account/Account";
 
 
 function App() {
@@ -24,10 +25,10 @@ function App() {
             <Route path='/career' element={<Vacancies/>}/>
             <Route path='*' element={<NotFound/>}/>
             <Route path='/login' element={<Login/>}/>
+            <Route path='/account/*' element={<Account/>}/>
             <Route path='/register' element={<Register/>}/>
             <Route path='/about' element={<AboutCompany/>}/>
           </Route>
-
         </Routes>
 
 
