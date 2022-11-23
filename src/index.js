@@ -1,3 +1,4 @@
+import {Suspense} from "react";
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
@@ -10,14 +11,18 @@ import './scss/style.scss'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+
     <BrowserRouter>
         <Provider store={store}>
             <PersistGate loading={null} persistor={persistor}>
+                <Suspense fallback={<h1>Loading...</h1>}>
                 <App />
+                </Suspense>
             </PersistGate>
         </Provider>
 
     </BrowserRouter>
+
 );
 
 // If you want to start measuring performance in your app, pass a function
