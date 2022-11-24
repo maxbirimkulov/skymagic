@@ -19,7 +19,7 @@ const Footer = () => {
                     <ul className="footer__list">
                         <li>Частным лицам</li>
                         <li>
-                            <NavLink className="nav__link" to="/reg" onClick={toTop}>Услуги</NavLink>
+                            <NavLink className="nav__link" to="">Услуги</NavLink>
                         </li>
                         <li>
                             <NavLink className="nav__link" to="/reg" onClick={toTop}>Цены</NavLink>
