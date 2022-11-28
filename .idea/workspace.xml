@@ -2,14 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95c91333-dd7f-45f2-9fbf-4b4e326bdd0d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/Park/test/Plan/Plan.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Park/test/Plan/Plan.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Park/test/Plan/heroN.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Park/test/Plan/ring.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Park/test/Plan/ringB1.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Park/test/Plan/ringF1.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Park/Price/Price.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Park/Price/Price.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Park/Plan/Plan.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Park/Plan/Plan.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Park/Plan/Plan.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Park/Plan/Plan.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,10 +42,18 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/skymagic/src/pages/Park/test&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\skymagic\src\pages\Park\test" />
+      <recent name="C:\Users\user\Desktop\skymagic\src\pages\Park" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -42,7 +64,8 @@
       <updated>1669034069982</updated>
       <workItem from="1669034074277" duration="3334000" />
       <workItem from="1669110221052" duration="603000" />
-      <workItem from="1669203423301" duration="2547000" />
+      <workItem from="1669203423301" duration="7584000" />
+      <workItem from="1669294241326" duration="300000" />
     </task>
     <servers />
   </component>
@@ -66,7 +89,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/data.js</url>
           <line>87</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
