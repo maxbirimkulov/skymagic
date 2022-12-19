@@ -5,6 +5,7 @@ import {animateScroll} from "react-scroll";
 import {BsWhatsapp,BsInstagram,BsFacebook} from "react-icons/bs"
 import {SiOdnoklassniki} from "react-icons/si"
 import {MdOutlineEmail} from 'react-icons/md'
+import './media.scss'
 const Footer = () => {
     const toTop = () => {
         animateScroll.scrollToTop({

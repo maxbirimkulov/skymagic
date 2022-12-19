@@ -36,10 +36,9 @@
   }
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1000px) {
   .container{
-    max-width: 1340px;
-
+    max-width: 900px;
   }
 
   .banner__title{
@@ -68,10 +67,22 @@
   .container{
     max-width: 669px;
   }
+  .footer__connection{
+    flex-wrap: wrap;
+
+  }
 }
 
 @media (max-width: 481px ) {
   .container{
     max-width: 421px;
+
+  }
+  .banner__title{
+    padding: 0 20px;
+  }
+  .footer__lists{
+    flex-direction: column;
+    text-align: center;
   }
 }
