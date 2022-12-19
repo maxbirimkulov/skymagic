@@ -5,10 +5,11 @@ import img1 from "./teens.jpeg"
 import img2 from "./childrens.png"
 const Price = ({dataPark}) => {
     return (
-        <sectio2 className="price">
+        <section className="price">
             <Card3d dataPark={dataPark} price={dataPark.price[0]} text="Детский" img={img1}/>
             <Card3d dataPark={dataPark} price={dataPark.price[1]} text="Взрослый" img={img2}/>
-        </sectio2>
+        </section>
+
     );
 };
 

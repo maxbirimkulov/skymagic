@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="95c91333-dd7f-45f2-9fbf-4b4e326bdd0d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Layout/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/Header/Header.js" afterDir="false" />
@@ -10,6 +11,20 @@
       <change beforePath="$PROJECT_DIR$/src/pages/Park/Price/Price.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Park/Price/Price.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Park/Price/Price.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Park/Price/Price.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Park/Price/bg.jpg" beforeDir="false" />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/src/Layout/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/Footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home/Stock/Stock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Stock/Stock.js" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Park/Price/Price.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Park/Price/Price.js" afterDir="false" />
+>>>>>>> 6cf596ecc30c938e2dbe1ac794c06d337fcee10f
+=======
+      <change beforePath="$PROJECT_DIR$/src/Layout/Header/NavBar/Dropdown/Dropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/Header/NavBar/Dropdown/Dropdown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Layout/Header/NavBar/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/Header/NavBar/NavBar.js" afterDir="false" />
+>>>>>>> c48b52274123cea61dbc08f18e7c71ac71a7c7e7
+>>>>>>> 3dc0b4295ffbf7f9ad9acd1df87482fdc5cf8b9f
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +52,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -48,6 +64,31 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+=======
+<<<<<<< HEAD
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+=======
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/skymagic/src/pages/Park/test&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+<<<<<<< HEAD
+>>>>>>> 6cf596ecc30c938e2dbe1ac794c06d337fcee10f
+=======
+>>>>>>> 3dc0b4295ffbf7f9ad9acd1df87482fdc5cf8b9f
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\user\Desktop\Projects\skymagic\src\pages\Park\Price\Card3d\Card3dContent" />
@@ -59,6 +100,7 @@
       <recent name="C:\Users\user\Desktop\Projects\skymagic\src\pages\Park\Price\Card3d" />
     </key>
   </component>
+>>>>>>> c48b52274123cea61dbc08f18e7c71ac71a7c7e7
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -67,8 +109,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669034069982</updated>
+<<<<<<< HEAD
+      <workItem from="1669034074277" duration="599000" />
+      <workItem from="1669120731744" duration="1811000" />
+      <workItem from="1669204356475" duration="1990000" />
+      <workItem from="1669277764593" duration="477000" />
+=======
       <workItem from="1669034074277" duration="3334000" />
       <workItem from="1669110221052" duration="603000" />
+<<<<<<< HEAD
+      <workItem from="1669203423301" duration="2547000" />
+>>>>>>> 6cf596ecc30c938e2dbe1ac794c06d337fcee10f
+=======
       <workItem from="1669203423301" duration="7584000" />
       <workItem from="1669294241326" duration="300000" />
       <workItem from="1669633818302" duration="6064000" />
@@ -77,7 +129,12 @@
       <workItem from="1670506792694" duration="861000" />
       <workItem from="1670533752519" duration="920000" />
       <workItem from="1671450026902" duration="142000" />
+<<<<<<< HEAD
       <workItem from="1671450305718" duration="7469000" />
+=======
+      <workItem from="1671450305718" duration="439000" />
+>>>>>>> c48b52274123cea61dbc08f18e7c71ac71a7c7e7
+>>>>>>> 3dc0b4295ffbf7f9ad9acd1df87482fdc5cf8b9f
     </task>
     <servers />
   </component>
@@ -94,6 +151,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

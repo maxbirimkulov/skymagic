@@ -1,9 +1,11 @@
 .projects{
  padding-top: 100px;
+  padding-bottom: 20px;
 
   &__container{
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   &__info{
     width: 35%;
@@ -20,10 +22,13 @@
     }
   }
   &__photo{
-    width: 63%;
+    width: 60%;
+
 
     img{
       width: 100%;
+      border-radius: 25px;
+      height: 550px;
     }
 
   }

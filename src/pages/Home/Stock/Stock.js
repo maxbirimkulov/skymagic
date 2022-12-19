@@ -17,7 +17,7 @@ const Stock = () => {
 
     return (
 
-        <section className='stock'>
+        <section className='stock' id="stock">
             <div className="stock__container container">
                 <h2 className='stock__title'>Акции</h2>
                 <div className="accordion">
