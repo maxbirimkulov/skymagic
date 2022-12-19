@@ -1,31 +1,14 @@
 import React from 'react';
 import "./Price.scss"
-
+import {Card3d} from "./Card3d/Card3d";
+import img1 from "./teens.jpeg"
+import img2 from "./childrens.png"
 const Price = ({dataPark}) => {
     return (
-        <section className="hero-section">
-            <div className="card-grid container">
-                <div className="card card2">
-                    <div className="card__background"></div>
-                    <div className="card__content">
-                        <p className="card__category">Category</p>
-                        <h3 className="card__heading">Example Card Heading</h3>
-                        <p className="card__category">для детей от 1-года до 3х лет: </p>
-                        <h3 className="card__heading">{dataPark.price[0]}</h3>
-                    </div>
-                </div>
-                <div className="card card3">
-                    <div className="card__background"></div>
-                    <div className="card__content">
-                        <p className="card__category">Category</p>
-                        <h3 className="card__heading">Example Card Heading</h3>
-                        <p className="card__category">для детей от 4х лет и старше: </p>
-                        <h3 className="card__heading">{dataPark.price[1]}</h3>
-                    </div>
-                </div>
-
-            </div>
-        </section>
+        <sectio2 className="price">
+            <Card3d dataPark={dataPark} price={dataPark.price[0]} text="Детский" img={img1}/>
+            <Card3d dataPark={dataPark} price={dataPark.price[1]} text="Взрослый" img={img2}/>
+        </sectio2>
     );
 };
 
