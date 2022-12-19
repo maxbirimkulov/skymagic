@@ -63,6 +63,7 @@ export const data2 = {
             "../assets/skypark/second/img21.webp",
             "../assets/skypark/second/img22.webp",
         ],
+        "price": ["490","690"]
     },
     "Smagic Techno": {
         "title": "Smagic Технопарк",
@@ -107,6 +108,7 @@ export const data2 = {
             "../assets/techno/second/img04.jpg",
             "../assets/techno/second/img05.jpg",
         ],
+        "price": ["350","690"],
     },
     "Smagic Tsum": {
         "title": "Smagic Цум 2",
@@ -150,6 +152,7 @@ export const data2 = {
             "../assets/tsum/second/img04.jpg",
             "../assets/tsum/second/img05.jpg",
         ],
+        "price": ["420","600"],
     },
     "Smagic Tommi": {
         "title": "Smagic Tommi mall",
@@ -194,6 +197,7 @@ export const data2 = {
             "../assets/tommi/second/img04.jpg",
             "../assets/tommi/second/img05.jpg",
         ],
+        "price": ["300","420"],
     },
 }
 export default data2

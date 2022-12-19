@@ -19,27 +19,14 @@ const Footer = () => {
                     <ul className="footer__list">
                         <li>Частным лицам</li>
                         <li>
-                            <NavLink className="nav__link" to="">Услуги</NavLink>
+                            <NavLink className="nav__link" onClick={toTop} to="/services">Услуги</NavLink>
                         </li>
-                        <li>
-                            <NavLink className="nav__link" to="/reg" onClick={toTop}>Цены</NavLink>
-                        </li>
+
                         <li>
                             <NavLink className="nav__link" to="/reg" onClick={toTop}>Галерея</NavLink>
                         </li>
                     </ul>
-                    <ul className="footer__list">
-                        <li>Поддержка</li>
-                        <li>
-                            <NavLink className="nav__link" to="/reg" onClick={toTop}>Обратная связь</NavLink>
-                        </li>
-                        <li>
-                            <NavLink className="nav__link" to="/reg" onClick={toTop}>Полезные документы</NavLink>
-                        </li>
-                        <li>
-                            <NavLink className="nav__link" to="/reg" onClick={toTop}>Услуги для гостей</NavLink>
-                        </li>
-                    </ul>
+
                     <ul className="footer__list">
                         <li>Компания</li>
                         <li>
@@ -48,26 +35,24 @@ const Footer = () => {
                         <li>
                             <NavLink className="nav__link" to="/career" onClick={toTop}>Работа в Smagic</NavLink>
                         </li>
-                        <li>
-                            <NavLink className="nav__link" to="/reg" onClick={toTop}>Правовая информация</NavLink>
-                        </li>
+
                     </ul>
                     <ul className="footer__list">
                         <li>Бизнес</li>
                         <li>
-                            <NavLink to='/reg' onClick={toTop} className='nav__link'>
-                                Стать партнером
+                            <NavLink to='/franchise' onClick={toTop} className='nav__link'>
+                                Франшиза
                             </NavLink>
 
                         </li>
                         <li>
-                            <NavLink to='/reg' onClick={toTop} className='nav__link'>
-                                Связаться с нами
+                            <NavLink to='/integration' onClick={toTop} className='nav__link'>
+                                Бренд-интеграции
                             </NavLink>
 
                         </li>
                         <li>
-                            <NavLink to='/reg' onClick={toTop} className='nav__link'>
+                            <NavLink to='/support' onClick={toTop} className='nav__link'>
                                 Поддержка
                             </NavLink>
 

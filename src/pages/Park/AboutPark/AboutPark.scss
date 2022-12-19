@@ -1,5 +1,5 @@
 .aboutPark{
-  background: url("./AboutPark.jpg");
+  background: url("./AboutPark.jpg")center/cover no-repeat;
   .container{
     padding: 80px 0;
     display: flex;
@@ -13,5 +13,6 @@
   &__right{
     background: #4d158199;
     padding: 40px;
+    color: white;
   }
 }

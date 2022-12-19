@@ -11,12 +11,16 @@ import Register from "./pages/Register/Register";
 import Vacancies from "./pages/Vacancies/Vacancies";
 import AboutCompany from "./pages/AboutCompany/aboutCompany";
 import Account from "./pages/Account/Account";
+import Feedback from "./pages/Feedback/Feedback";
+import Franchise from "./pages/franchise/franchise";
+import Integration from "./pages/Integration/Integration";
+import Support from "./pages/Support/Support";
+import Services from "./pages/Services/Services";
 
 
 function App() {
   return (
     <>
-
         <Routes>
           <Route path='/' element={<Layout/>}>
             <Route path='' element={<Home/>}/>
@@ -28,10 +32,15 @@ function App() {
             <Route path='/account/*' element={<Account/>}/>
             <Route path='/register' element={<Register/>}/>
             <Route path='/about' element={<AboutCompany/>}/>
+            <Route path='/feedback' element={<Feedback/>}/>
+            <Route path='/franchise' element={<Franchise/>}/>
+            <Route path='/franchise' element={<Franchise/>}/>
+            <Route path='/integration' element={<Integration/>}/>
+            <Route path='/support' element={<Support/>}/>
+            <Route path='/services' element={<Services/>}/>
+
           </Route>
         </Routes>
-
-
     </>
   );
 }

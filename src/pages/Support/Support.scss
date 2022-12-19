@@ -1,0 +1,21 @@
+.support{
+margin-top: 81px;
+  background: url("bg1.svg")center/cover no-repeat;
+  &__title{
+ padding-top: 50px;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 50px;
+  }
+  &__list{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 22px;
+    margin-bottom: 18px;
+    margin-left: 50px;
+    span{
+      font-size: 40px;
+    }
+  }
+}

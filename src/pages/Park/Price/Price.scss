@@ -1,7 +1,8 @@
 
 .hero-section{
   align-items: flex-start;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  //background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: #80808020;
   display: flex;
   justify-content: center;
   padding: 64px 0;
@@ -10,13 +11,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  column-gap: 90px;
 }
 
 
 
 .card{
   width: 300px;
-  height: 500px;
+  height: 400px;
   list-style: none;
   position: relative;
 
@@ -44,8 +46,15 @@
   transition:
           filter 200ms linear,
           transform 200ms linear;
-  background-image: url("DSC_5115_DxO.jpg")
+  background-image: url("DSC_5115_DxO.jpg");
 }
+//.card2 .card__background{
+//  background: burlywood;
+//}
+//.card3 .card__background{
+//  background: darkslateblue;
+//}
+
 
 .card:hover .card__background{
   transform: scale(1.05) translateZ(0);

@@ -3,8 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="95c91333-dd7f-45f2-9fbf-4b4e326bdd0d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/Layout/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/Footer/Footer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home/Stock/Stock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Stock/Stock.js" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Park/Price/Price.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Park/Price/Price.js" afterDir="false" />
+>>>>>>> 6cf596ecc30c938e2dbe1ac794c06d337fcee10f
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +28,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -30,6 +36,17 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+=======
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+>>>>>>> 6cf596ecc30c938e2dbe1ac794c06d337fcee10f
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -38,10 +55,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669034069982</updated>
+<<<<<<< HEAD
       <workItem from="1669034074277" duration="599000" />
       <workItem from="1669120731744" duration="1811000" />
       <workItem from="1669204356475" duration="1990000" />
       <workItem from="1669277764593" duration="477000" />
+=======
+      <workItem from="1669034074277" duration="3334000" />
+      <workItem from="1669110221052" duration="603000" />
+      <workItem from="1669203423301" duration="2547000" />
+>>>>>>> 6cf596ecc30c938e2dbe1ac794c06d337fcee10f
     </task>
     <servers />
   </component>
@@ -59,5 +82,17 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/data.js</url>
+          <line>87</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
