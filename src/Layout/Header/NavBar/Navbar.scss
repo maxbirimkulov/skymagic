@@ -14,9 +14,17 @@
 }
 
 @media (max-width: 1201px) {
+  .nav{
+    column-gap: 30px;
+  }
 }
 
 @media (max-width: 1025px) {
+  .nav{
+    column-gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 769px ) {
