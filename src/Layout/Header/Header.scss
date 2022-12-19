@@ -45,14 +45,30 @@
 }
 
 @media (max-width: 1201px) {
+  .header{
+    padding: 5px 10px 0;
+    &__container.container{
+      width: 100%;
+    }
+  }
+
 }
 
 @media (max-width: 1025px) {
+  .header{
+
+    &__container.container{
+      column-gap: 15px;
+    }
+  }
 }
 
 @media (max-width: 769px ) {
   .header__{
+    &container.container{
+      justify-content: space-between;
 
+    }
     &menu{
       display: none;
       &_active{
@@ -69,7 +85,9 @@
       }
     }
   }
+
 }
 
 @media (max-width: 481px ) {
 }
+
