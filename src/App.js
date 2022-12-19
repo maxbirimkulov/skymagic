@@ -11,11 +11,15 @@ import Register from "./pages/Register/Register";
 import Vacancies from "./pages/Vacancies/Vacancies";
 import AboutCompany from "./pages/AboutCompany/aboutCompany";
 import Account from "./pages/Account/Account";
+
 import Feedback from "./pages/Feedback/Feedback";
 import Franchise from "./pages/franchise/franchise";
 import Integration from "./pages/Integration/Integration";
 import Support from "./pages/Support/Support";
 import Services from "./pages/Services/Services";
+
+import Ticket from "./Components/Ticket/Ticket";
+
 
 
 function App() {
@@ -38,6 +42,9 @@ function App() {
             <Route path='/integration' element={<Integration/>}/>
             <Route path='/support' element={<Support/>}/>
             <Route path='/services' element={<Services/>}/>
+
+
+            <Route path='/ticket' element={<Ticket/>}/>
 
           </Route>
         </Routes>
