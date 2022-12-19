@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95c91333-dd7f-45f2-9fbf-4b4e326bdd0d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/Park/test/Plan/Plan.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Park/test/Plan/Plan.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Park/test/Plan/heroN.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Park/test/Plan/ring.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Park/test/Plan/ringB1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Park/test/Plan/ringF1.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Park/Pipe/Pipe.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Park/Pipe/Pipe.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Park/Plan/Plan.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Park/Plan/Plan.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Park/Plan/Plan.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Park/Plan/Plan.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Park/Plan/heroN.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Park/Plan/heroN.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +66,12 @@
       <workItem from="1669110221052" duration="603000" />
       <workItem from="1669203423301" duration="7584000" />
       <workItem from="1669294241326" duration="300000" />
+      <workItem from="1669633818302" duration="6064000" />
+      <workItem from="1669985200160" duration="2209000" />
+      <workItem from="1670324792272" duration="5252000" />
+      <workItem from="1670506792694" duration="861000" />
+      <workItem from="1670533752519" duration="920000" />
+      <workItem from="1671450026902" duration="142000" />
     </task>
     <servers />
   </component>

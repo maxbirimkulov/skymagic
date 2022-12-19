@@ -11,6 +11,7 @@ import Register from "./pages/Register/Register";
 import Vacancies from "./pages/Vacancies/Vacancies";
 import AboutCompany from "./pages/AboutCompany/aboutCompany";
 import Account from "./pages/Account/Account";
+import Ticket from "./Components/Ticket/Ticket";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
             <Route path='/account/*' element={<Account/>}/>
             <Route path='/register' element={<Register/>}/>
             <Route path='/about' element={<AboutCompany/>}/>
+            <Route path='/ticket' element={<Ticket/>}/>
           </Route>
         </Routes>
 
