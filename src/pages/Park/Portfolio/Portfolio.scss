@@ -21,3 +21,21 @@
 
   }
 }
+@media (max-width: 769px ) {
+  .portfolio .swiper-slide {
+    width: 100%;
+  }
+  .portfolio .swiper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 481px ) {
+  .portfolio .swiper-slide {
+    width: 100%;
+  }
+  .portfolio .swiper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}

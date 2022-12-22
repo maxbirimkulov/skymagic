@@ -146,7 +146,7 @@ export function Card3d({ height = 400, width = 300 ,price,text,dataPark,img}) {
     }, [hover, xy, centerPoint]);
 
     return (
-        <Container ref={ref} style={{ height: `${height}px`, width: `${width}px` }}>
+        <Container ref={ref} className="price__card" style={{ height: `${height}px`, width: `${width}px` }}>
             <Content
                 style={{
                     scale: 1,

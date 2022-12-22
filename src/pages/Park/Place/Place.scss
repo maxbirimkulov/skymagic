@@ -43,16 +43,13 @@
 
 
 @media (max-width: 1440px) {
-  .container{
-    max-width: 1240px;
-  }
 }
 
 @media (max-width: 1201px) {
+
 }
 
 @media (max-width: 1025px) {
-
 }
 
 @media (max-width: 769px ) {
@@ -60,5 +57,25 @@
 }
 
 @media (max-width: 481px ) {
+ .place{
+
+   &__txt{
+     padding: 10px;
+     left: 30px;
+     top: 60%;
+   }
+   &__title{
+     @include text(500,40px,35px,#fff);
+
+   }
+   &__p{
+     @include text(500,10px,8px,#fff);
+
+   }
+   .place__swiper .swiper-slide img {
+     height: 70vh;
+
+   }
+ }
 }
 
