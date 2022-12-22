@@ -1,5 +1,7 @@
 import React from 'react';
 import './Services.scss'
+import DownloadButton from "../../Components/DownloadButton/DownloadButton";
+import Request from "../../Components/ Request/Request";
 
 
 const Services = () => {
@@ -23,6 +25,7 @@ const Services = () => {
                     <li>максимум удовольствия и минимум хлопот</li>
                 </ul>
             </div>
+          <Request/>
         </section>
     );
 };

@@ -18,7 +18,7 @@ const NavBar = ({toggleClass}) => {
                 Tommi mall</NavLink></li>
             <li className='nav__item'><NavLink className="nav__link" to="/account/info" onClick={toggleClass}>Мой
                 аккаунт</NavLink></li>
-            <li className='nav__item'><NavLink className="nav__link" to="/reg" onClick={toggleClass}>Контакты</NavLink>
+            <li className='nav__item'><NavLink className="nav__link" to="/about" onClick={toggleClass}>Контакты</NavLink>
             </li>
             <li className='nav__item'><NavLink className="nav__link" to="/career"
                                                onClick={toggleClass}>Карьера</NavLink></li>
