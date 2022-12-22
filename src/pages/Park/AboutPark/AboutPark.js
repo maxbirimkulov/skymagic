@@ -7,7 +7,7 @@ const AboutPark = ({dataPark}) => {
             <div className="container">
                 <div className="aboutPark__left">
                     <div className="aboutPark__block">
-                        <h2>{dataPark.title}</h2>
+                        <h2 className="aboutPark__title">{dataPark.title}</h2>
                         <h3>{dataPark.areatitle}</h3>
                         <ul>{
                             dataPark.areatext.map((el,idx)=>{
@@ -21,9 +21,9 @@ const AboutPark = ({dataPark}) => {
                     </div>
                     <div className="aboutPark__block">
 
-                        <h2>{dataPark.zonestitle}</h2>
+                        <h2 className="aboutPark__title">{dataPark.zonestitle}</h2>
                         <p>{dataPark.zones}</p>
-                        <h2>Атракционы</h2>
+                        <h2 className="aboutPark__title">Атракционы</h2>
                         <ul>{
                             dataPark.attractions.map((el,idx)=>{
                                 return (
