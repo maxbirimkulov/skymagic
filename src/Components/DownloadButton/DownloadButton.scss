@@ -1,0 +1,105 @@
+.downloadButton  {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 58px;
+  cursor: pointer;
+  transition: all 0.7s;
+  display: inline-block;
+  text-align: center;
+
+  border: 1px solid #FFD335;
+  border-radius: 8px;
+  background: #FFD335;
+
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 24px;
+  padding-top: 15px;
+}
+
+.downloadButton:hover {
+  z-index: 0;
+
+  color: #FFD335;
+  border: 2px solid #FFD335;
+}
+
+.downloadButton  span {
+  z-index: -1;
+
+  transition: all 0.7s;
+}
+
+.downloadButton .first {
+  position: absolute;
+  top: 0;
+  right: 100%;
+
+  width: 25%;
+  height: 100%;
+
+  content: "";
+
+  background: #FFF;
+}
+
+.downloadButton:hover .first {
+  top: 0;
+  right: 0;
+}
+
+.downloadButton  .second {
+  position: absolute;
+  top: -100%;
+  left: 25%;
+
+  width: 25%;
+  height: 100%;
+
+  content: "";
+
+  background: #FFF;
+}
+
+.downloadButton:hover .second {
+  top: 0;
+  left: 50%;
+}
+
+.downloadButton .third {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+
+  width: 25%;
+  height: 100%;
+
+  content: "";
+
+  background: #FFF;
+}
+
+.downloadButton:hover .third {
+  top: 0;
+  left: 25%;
+}
+
+.downloadButton .fourth {
+  position: absolute;
+  top: 0;
+  left: 100%;
+
+  width: 25%;
+  height: 100%;
+
+  content: "";
+
+  background: #FFF;
+}
+
+.downloadButton:hover .fourth {
+  top: 0;
+  left: 0;
+}

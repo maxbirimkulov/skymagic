@@ -40,6 +40,14 @@
   .container{
     max-width: 900px;
   }
+  .services__variants li{
+    position: static;
+    text-align: center;
+  }
+  .services__text li{
+    position: static;
+    text-align: center;
+  }
   .franchise__about{
     flex-direction: column;
 
@@ -111,4 +119,5 @@
     flex-direction: column;
     text-align: center;
   }
+
 }

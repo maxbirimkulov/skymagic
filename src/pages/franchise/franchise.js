@@ -5,6 +5,7 @@ import first from './first.svg'
 import second from './second.svg'
 import third from './third.svg'
 import fourth from './fourth.svg'
+import Request from "../../Components/ Request/Request";
 
 const Franchise = () => {
     return (
@@ -49,7 +50,9 @@ const Franchise = () => {
                     </div>
                 </div>
 
+
             </div>
+            <Request/>
         </section>
     );
 };
