@@ -40,6 +40,20 @@
   .container{
     max-width: 900px;
   }
+  .franchise__about{
+    flex-direction: column;
+
+  }
+  .franchise__about h2{
+    font-size: 30px;
+  }
+
+  .franchise__img{
+    img{
+      width: 90%;
+      height: 40vh;
+    }
+  }
 
   .banner__title{
     top: 50%;
@@ -71,6 +85,17 @@
     flex-wrap: wrap;
 
   }
+  .franchise__top{
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .franchise__bottom{
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .franchise__card{
+    width: 100%;
+  }
 }
 
 @media (max-width: 481px ) {
@@ -78,6 +103,7 @@
     max-width: 421px;
 
   }
+
   .banner__title{
     padding: 0 20px;
   }
