@@ -41,6 +41,11 @@ color: white;
 .place-card-large{
   display: none;
 }
+@media (max-width: 769px ) {
+  .map__txt{
+    display: none;
+  }
+}
 @media (max-width: 481px ) {
   .map{
     .container{
