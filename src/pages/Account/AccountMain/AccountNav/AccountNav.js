@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import "./AccountNav.scss"
 import { ReactComponent as Img1} from './account__info.svg'
 import { ReactComponent as Img2}from './account__adress.svg'
@@ -11,9 +11,7 @@ import {NavLink} from "react-router-dom";
 
 
 const AccountNav = () => {
-    const [isActiveAccountNavLi, setActiveAccountNavLi] = useState(false);
     const toggleClass = () => {
-        setActiveAccountNavLi(!isActiveAccountNavLi);
         animateScroll.scrollToTop({
             delay: 0,
             duration: 0
@@ -21,7 +19,8 @@ const AccountNav = () => {
     };
     return (
         <ul className='account__nav'>
-          <li className={`account__nav-li account__nav-li_active`}><NavLink to="/account/info" onClick={toggleClass}><Img1 className="account__nav-li-svg"/>Личная информация</NavLink></li>
+          <li className={`account__nav-li`}><NavLink to="/account/info" onClick={toggleClass}><Img1 className="account__nav-li-svg"/>Личная информация</NavLink></li>
+          <li className={`account__nav-li`}><NavLink to="/account/buy" onClick={toggleClass}><Img5 className="account__nav-li-svg"/>Купить билет</NavLink></li>
           <li className={`account__nav-li `}><NavLink to="/account/info"><Img2 className="account__nav-li-svg"/>Адрес</NavLink></li>
           <li className={`account__nav-li `}><NavLink to="/account/info"><Img3 className="account__nav-li-svg"/>Лист пожеланий</NavLink></li>
           <li className={`account__nav-li `}><NavLink to="/account/info"><Img4 className="account__nav-li-svg"/>История покупок</NavLink></li>
