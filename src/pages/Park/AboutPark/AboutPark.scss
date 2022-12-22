@@ -7,8 +7,12 @@
   }
   &__left{
     background: #a19f9f;
-    width: 40%;
+    width: 50%;
     padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    column-gap: 20px;
   }
   &__right{
     background: #4d158199;
@@ -16,3 +20,47 @@
     color: white;
   }
 }
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1201px) {
+
+}
+
+@media (max-width: 1025px) {
+  .aboutPark{
+    .container{
+      padding: 30px;
+    }
+    &__left{
+      padding: 10px;
+      flex-direction: column;
+    }
+
+  }
+}
+
+@media (max-width: 769px ) {
+
+
+}
+
+@media (max-width: 481px ) {
+  .aboutPark{
+    .container{
+      padding: 20px;
+      flex-direction: column;
+    }
+    &__left{
+      padding: 10px;
+      width: 100%;
+      flex-direction: column;
+    }
+    &__right{
+
+    }
+
+  }
+}
+
