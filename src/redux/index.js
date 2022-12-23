@@ -3,11 +3,13 @@ import { persistStore, persistReducer } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
 import user from './reducers/user'
 import banners from "./reducers/banners";
+import vacancies from "./reducers/vacancies";
 
 
 const rootReducer = combineReducers({
     user,
     banners,
+    vacancies,
 });
 const persistConfig = {
     key: 'root',

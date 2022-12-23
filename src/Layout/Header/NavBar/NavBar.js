@@ -20,7 +20,7 @@ const NavBar = ({toggleClass}) => {
                 аккаунт</NavLink></li>
             <li className='nav__item'><NavLink className="nav__link" to="/about" onClick={toggleClass}>Контакты</NavLink>
             </li>
-            <li className='nav__item'><NavLink className="nav__link" to="/career"
+            <li className='nav__item'><NavLink className="nav__link" to="/vacancies"
                                                onClick={toggleClass}>Карьера</NavLink></li>
         </ul>
     );
