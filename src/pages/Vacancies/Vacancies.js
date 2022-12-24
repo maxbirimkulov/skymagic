@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import "./Vacancies.scss"
-import vacancies, {changeBranch, getVacancies} from "../../redux/reducers/vacancies";
+import {getVacancies,changeBranch} from "../../redux/reducers/vacancies";
 import SelectBranch from "../../Components/SelectBranch/SelectBranch";
 import BranchMenu from "../../Components/BranchMenu/BranchMenu";
 import {ToastContainer} from "react-toastify";
@@ -43,8 +43,7 @@ const Vacancies = () => {
                             ))
                         }
                     </div>
-                    {/*<BranchMenu changeBranch={changeBranch} route={'vacancies'}/>*/}
-                    {/*не работает вроде changeBranch */}
+                    <BranchMenu changeBranch={changeBranch} route={'vacancies'}/>
                 </div>
 
 

@@ -19,6 +19,7 @@ import Support from "./pages/Support/Support";
 import Services from "./pages/Services/Services";
 
 import Ticket from "./Components/Ticket/Ticket";
+import Gallery from "./pages/Gallery/Gallery";
 
 
 
@@ -30,6 +31,7 @@ function App() {
             <Route path='' element={<Home/>}/>
             <Route path='parks/:name' element={<Park/>}/>
             <Route path='basket' element={<Basket/>}/>
+            <Route path='/gallery' element={<Gallery/>}/>
             <Route path='/vacancies' element={<Vacancies/>}/>
             <Route path='/vacancies/:id' element={<Vacancies/>}/>
             <Route path='*' element={<NotFound/>}/>
@@ -43,10 +45,7 @@ function App() {
             <Route path='/integration' element={<Integration/>}/>
             <Route path='/support' element={<Support/>}/>
             <Route path='/services' element={<Services/>}/>
-
-
             <Route path='/ticket' element={<Ticket/>}/>
-
           </Route>
         </Routes>
     </>
