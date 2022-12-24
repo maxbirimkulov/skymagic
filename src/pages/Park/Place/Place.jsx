@@ -8,15 +8,6 @@ const Place = ({dataPark}) => {
         <section className="place">
             <div className="place__container">
                 <PlaceSwiper dataPark={dataPark}/>
-                <div className="place__txt">
-                    <h2 className="place__title">
-                        {dataPark.title}
-                    </h2>
-                    <p className="place__p">
-                        {dataPark.description}
-                    </p>
-                </div>
-
             </div>
         </section>
     );
