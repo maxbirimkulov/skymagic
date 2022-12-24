@@ -25,7 +25,7 @@ const NavBar = ({toggleClass}) => {
                 Войти в аккаунт</NavLink></li> : <li className='nav__item'><NavLink className="nav__link" to="/account/info" onClick={toggleClass}>Мой
                     аккаунт</NavLink></li>
             }
-
+            <li className='nav__item'><NavLink className="nav__link" to="/reviews" onClick={toggleClass}>Отзывы</NavLink></li>
             <li className='nav__item'><NavLink className="nav__link" to="/about" onClick={toggleClass}>Контакты</NavLink>
             </li>
             <li className='nav__item'><NavLink className="nav__link" to="/vacancies"

@@ -20,7 +20,8 @@ import Services from "./pages/Services/Services";
 
 import Ticket from "./Components/Ticket/Ticket";
 import Gallery from "./pages/Gallery/Gallery";
-
+import Reviews from "./pages/Reviews/Reviews";
+import ReviewsForm from "./pages/Reviews/ReviewsForm";
 
 
 function App() {
@@ -45,6 +46,8 @@ function App() {
             <Route path='/integration' element={<Integration/>}/>
             <Route path='/support' element={<Support/>}/>
             <Route path='/services' element={<Services/>}/>
+            <Route path='/reviews' element={<Reviews/>}/>
+            <Route path='/reviews/form' element={<ReviewsForm/>}/>
             <Route path='/ticket' element={<Ticket/>}/>
           </Route>
         </Routes>
