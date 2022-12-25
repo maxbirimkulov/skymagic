@@ -7,6 +7,22 @@
     align-items: center;
     justify-content: space-between;
   }
+  &__txt,&__numb{
+    margin-top: 30px;
+  }
+  &__error{
+    color: #E64926;
+  }
+  &__select{
+    padding: 0 20px;
+    height: 54px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+
+  }
+  &__option{
+    padding: 20px;
+  }
   &__left{
   width: 45%;
     color: #fff;
@@ -29,10 +45,21 @@ input{
   border: 1px solid #c8c8c8;
   border-radius: 8px;
   padding-left: 20px;
-  margin-bottom: 30px;
+
   font-size: 20px;
   color: black;
 }
+    textarea{
+      width: 100%;
+      height: 108px;
+      border: 1px solid #c8c8c8;
+      border-radius: 8px;
+      padding-left: 20px;
+      margin-bottom: 30px;
+      font-size: 20px;
+      color: black;
+    }
+
   }
 
 

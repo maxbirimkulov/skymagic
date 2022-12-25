@@ -6,13 +6,13 @@ const DownloadButton = ({text}) => {
 
     return (
         <>
-            <a href='' className='downloadButton downloadButton_desktop'>
+            <button type='submit' className='downloadButton downloadButton_desktop'>
                 <span className='first'/>
                 <span className='second'/>
                 <span className='third'/>
                 <span className='fourth'/>
                 {text}
-            </a>
+            </button>
 
 
         </>

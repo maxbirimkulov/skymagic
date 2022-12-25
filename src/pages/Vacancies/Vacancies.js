@@ -27,7 +27,7 @@ const Vacancies = () => {
                     <div className="vacancies__menu">
                         {
                             data && data.map((item) =>  (
-                                <div key={item._id} className="vacancies__card" onClick={() => navigate(`/vacancies/${item._id}`)}>
+                                <div key={item._id} className="vacancies__card">
                                     <div className="vacancies__text">
                                         <h3 className='vacancies__name'>
                                             {item.title}
