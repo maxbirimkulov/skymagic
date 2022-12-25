@@ -8,9 +8,12 @@ import { ReactComponent as Img5} from './account__pass.svg'
 import { ReactComponent as Img6} from './account__exit.svg'
 import {animateScroll} from "react-scroll";
 import {NavLink} from "react-router-dom";
+import {useDispatch} from "react-redux";
+import {logOutUser} from "../../../../redux/reducers/user";
 
 
 const AccountNav = () => {
+    const dispatch = useDispatch()
     const toggleClass = () => {
         animateScroll.scrollToTop({
             delay: 0,
@@ -25,7 +28,7 @@ const AccountNav = () => {
           <li className={`account__nav-li `}><NavLink to="/account/info"><Img3 className="account__nav-li-svg"/>Лист пожеланий</NavLink></li>
           <li className={`account__nav-li `}><NavLink to="/account/info"><Img4 className="account__nav-li-svg"/>История покупок</NavLink></li>
           <li className={`account__nav-li `}><NavLink to="/account/info"><Img5 className="account__nav-li-svg"/>Изменить пароль</NavLink></li>
-          <li className={`account__nav-li `}><NavLink to="/account/info"><Img6 className="account__nav-li-svg"/>Выйти</NavLink></li>
+          <li className={`account__nav-li `}><NavLink to="/" onClick={()=>{dispatch(logOutUser())}}><Img6 className="account__nav-li-svg"/>Выйти</NavLink></li>
         </ul>
     );
 };

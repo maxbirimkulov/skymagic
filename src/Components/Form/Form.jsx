@@ -1,11 +1,18 @@
-import React, {useState} from 'react';
-import {Link, useLocation} from "react-router-dom";
+import React, {useState, useRef, useEffect} from 'react';
+import {Link, useLocation, useNavigate} from "react-router-dom";
 import './form.scss'
 import InputMask from 'react-input-mask';
 import {useForm} from "react-hook-form";
+import axios from "../../utils/axios";
+import {useDispatch} from "react-redux";
+import {registerUser} from "../../redux/reducers/user";
 
 const Form = () => {
     const location = useLocation()
+    const dispatch = useDispatch()
+    const navigate = useNavigate()
+
+
 
     const {
         register,
@@ -16,8 +23,31 @@ const Form = () => {
         }
     } = useForm({mode: "onBlur"})
 
+
+    const createUser = (obj) => {
+        axios.post('auth/register', obj).then( async ({data}) => {
+            await dispatch(registerUser({obj: data}))
+            await localStorage.setItem('user', JSON.stringify(data))
+            await reset();
+            await navigate('/')
+        })  .catch((error) => console.log(`bad request ${error}`));
+    };
+
+    const addUser = (data) => {
+        axios.post('/auth/login', data).then( async (res) => {
+            await dispatch(registerUser({obj: res.data}));
+            await localStorage.setItem('user', JSON.stringify(res.data));
+            await reset();
+            await navigate('/')
+        }) .catch((error) => console.log(`bad request ${error}`));
+    };
+
     const onSubmit = (data) => {
-        console.log(data)
+        if (location.pathname === '/register') {
+            createUser(data)
+        } else {
+            addUser(data)
+        }
     }
 
     const [show, setShow] = useState(false)
@@ -63,6 +93,26 @@ const Form = () => {
                 </label>
 
             }
+            {
+                location.pathname === '/register' &&
+                <label className='register__form-label'>
+                    <input {...register('login', {
+                        required: {
+                            message: 'Логин обязательно к заполнению',
+                            value: true
+                        },
+                        minLength: {
+                            value: 3,
+                            message: "Минимум 3 символа"
+                        }
+                    })} className={`register__form-input ${errors.login ? 'register__form-input_error' : ''}`} placeholder='Логин' type="text"/>
+                    <p className='register__form-error'>
+
+                        {errors.login && errors.login?.message}
+                    </p>
+                </label>
+
+            }
             <label className='register__form-label'>
                 <input {...register('email',{
                     required: {
@@ -100,8 +150,68 @@ const Form = () => {
                         {errors.phone && errors.phone?.message}
                     </p>
                 </label>
+            }
+
+            {
+                location.pathname === '/register' &&
+                <label className='register__form-label'>
+                    <input {...register('age', {
+                        required: {
+                            message: 'Возраст обязателен к заполнению',
+                            value: true
+                        },
+                        min:{
+                            message: 'Укажите возраст корректно',
+                            value: 1,
+                        },
+                        max:{
+                            message: 'Укажите возраст корректно',
+                            value: 90,
+                        }
+                    })} className={`register__form-input ${errors.age ? 'register__form-input_error' : ''}`} placeholder='Возраст' type="number"/>
+                    <p className='register__form-error'>
+                        {errors.age && errors.age?.message}
+                    </p>
+                </label>
 
             }
+
+            {
+                location.pathname === '/register' &&
+                <div className='register__form-gender'>
+                    <p className='register__form-gender-title'>Пол</p>
+                    <div className='register__form-gender-row '>
+                        <label className='register__form-gender-label' >
+                            <input value='men' {...register('gender')} className='register__form-gender-input' type="radio"/>
+                            <span className='register__form-gender-value'>Мужской</span>
+                        </label>
+                        <label className='register__form-gender-label' >
+                            <input value='women' {...register('gender')} className='register__form-gender-input' type="radio"/>
+                            <span className='register__form-gender-value'>Женский</span>
+                        </label>
+                    </div>
+                </div>
+            }
+            {/*{*/}
+            {/*    location.pathname === '/register' &&*/}
+            {/*    <div className='register__form-gender'>*/}
+            {/*        <p className='register__form-gender-title'>Семейное
+
+Максат Биримкулов, [25.12.2022 16:56]
+положение</p>*/}
+            {/*        <div className='register__form-gender-row '>*/}
+            {/*            <label className='register__form-gender-label' >*/}
+            {/*                <input value={true} {...register('married')} className='register__form-gender-input' type="radio"/>*/}
+            {/*                <span className='register__form-gender-value'>В браке</span>*/}
+            {/*            </label>*/}
+            {/*            <label className='register__form-gender-label' >*/}
+            {/*                <input value={false} {...register('married')} className='register__form-gender-input' type="radio"/>*/}
+            {/*                <span className='register__form-gender-value'>Холост</span>*/}
+            {/*            </label>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*}*/}
+
             <label className='register__form-label'>
                 <input {...register('password', {
                     required: {
