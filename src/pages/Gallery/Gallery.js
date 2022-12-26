@@ -32,8 +32,8 @@ const Gallery = () => {
                                 data.map(item => (
                                     <div className="photo__box">
                                         <a data-fancybox="gallery" data-caption={item.text}
-                                           href={`http://localhost:4444${item.imageUrl}`}>
-                                            <img className="photo__img" alt="" src={`http://localhost:4444${item.imageUrl}`}/>
+                                           href={`http://62.113.96.238:4444${item.imageUrl}`}>
+                                            <img className="photo__img" alt="" src={`http://62.113.96.238:4444${item.imageUrl}`}/>
                                         </a>
                                     </div>
                                 ))
