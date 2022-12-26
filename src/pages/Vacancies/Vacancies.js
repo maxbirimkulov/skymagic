@@ -6,7 +6,7 @@ import BranchMenu from "../../Components/BranchMenu/BranchMenu";
 import {ToastContainer} from "react-toastify";
 import {useNavigate} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
-import Video from "./Video";
+import Video from "./Video/Video";
 
 
 

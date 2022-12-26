@@ -1,24 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&display=swap');
 
-.video{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 100px;
-
-  &__card{
-    width: 28%;
-    text-align: center;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;;
-    img{
-      width: 100%;
-      border-radius: 20px;
-    }
-  }
-}
 .vacancies{
   background: #f6f6f6;
+  &__container{
+    padding: 150px 0 0 0;
+  }
   &__create{
     margin: 40px 0;
     padding: 9px 12px;
@@ -30,7 +17,7 @@
   }
   &__content{
     display: flex;
-
+     justify-content: center;
   }
   &__menu{
     width: 80%;
@@ -40,9 +27,9 @@
   &__card{
 
     border-radius: 15px;
-    width: 68%;
+    width: 90%;
     background: white;
-    padding: 24px 0 32px 15px;
+    padding: 24px 15px 32px 15px;
     margin-bottom: 30px;
 display: flex;
     justify-content: space-between;
