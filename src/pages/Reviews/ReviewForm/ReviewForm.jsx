@@ -4,6 +4,8 @@ import {useForm} from "react-hook-form";
 import axios from "../../../utils/axios";
 import {useSelector} from "react-redux";
 
+import "./ReviewForm.scss"
+
 const ReviewForm = () => {
     const {user} = useSelector((store)=> store.user)
     const {
@@ -34,7 +36,7 @@ const ReviewForm = () => {
                 })} className='review__input' type="hidden" value={user.email ? user.name : null}/>
                 <p className='review__error'>{errors?.name && errors?.name.message}</p>
             </label>
-
+                <div className='review__box'>
             <label className='review__label'>
                             <textarea {...register('text', {
                                 required: 'Поле обязательно к заполнению',
@@ -47,6 +49,7 @@ const ReviewForm = () => {
             </label>
 
             <DownloadButton text={'Отправить'}/>
+                </div>
         </form>
 
     );
