@@ -1,4 +1,4 @@
-import React, {useState, useRef, useEffect} from 'react';
+import React, {useState,} from 'react';
 import {Link, useLocation, useNavigate} from "react-router-dom";
 import './form.scss'
 import InputMask from 'react-input-mask';

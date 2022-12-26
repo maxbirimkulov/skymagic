@@ -4,7 +4,6 @@ import AccountInfo from "./AccountInfo/AccountInfo";
 import AccountNav from "./AccountNav/AccountNav";
 import {Route, Routes} from "react-router-dom";
 import AccountBuy from "./AccountBuy/AccountBuy";
-import {useSelector } from 'react-redux'
 
 const AccountMain = () => {
     return (

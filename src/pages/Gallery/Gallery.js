@@ -1,16 +1,12 @@
 import React, {useEffect} from 'react';
 import "./Gallery.scss"
-import {useNavigate} from "react-router-dom";
 import Fancybox from "./Fancybox/Fancybox";
 import {useDispatch, useSelector} from "react-redux";
 import {getGallery} from "../../redux/reducers/gallery";
-import axios from "../../utils/axios";
-import {toast, ToastContainer} from "react-toastify";
+import {ToastContainer} from "react-toastify";
 
 
 const Gallery = () => {
-    const navigate = useNavigate()
-
     const dispatch = useDispatch()
 
     const {data, error, status, filter} = useSelector((s) => s.gallery )

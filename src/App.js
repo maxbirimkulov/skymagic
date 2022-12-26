@@ -6,17 +6,14 @@ import Basket from "./pages/Basket/Basket";
 import Park from "./pages/Park/Park";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
-
 import Vacancies from "./pages/Vacancies/Vacancies";
 import AboutCompany from "./pages/AboutCompany/aboutCompany";
 import Account from "./pages/Account/Account";
-
 import Feedback from "./pages/Feedback/Feedback";
 import Franchise from "./pages/franchise/franchise";
 import Integration from "./pages/Integration/Integration";
 import Support from "./pages/Support/Support";
 import Services from "./pages/Services/Services";
-
 import Ticket from "./Components/Ticket/Ticket";
 import Gallery from "./pages/Gallery/Gallery";
 import Reviews from "./pages/Reviews/Reviews";
