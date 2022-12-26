@@ -5,7 +5,7 @@ import SelectBranch from "../../Components/SelectBranch/SelectBranch";
 import BranchMenu from "../../Components/BranchMenu/BranchMenu";
 import {ToastContainer} from "react-toastify";
 import {useDispatch, useSelector} from "react-redux";
-import Video from "./Video";
+// import Video from "./Video";
 
 
 
@@ -20,7 +20,7 @@ const Vacancies = () => {
     return (
         <section className='vacancies'>
             <div className="vacancies__container container">
-                <Video/>
+                {/*<Video/>*/}
                 <div className="vacancies__content">
                     <div className="vacancies__menu">
                         {

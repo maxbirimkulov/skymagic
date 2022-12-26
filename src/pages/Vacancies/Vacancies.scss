@@ -5,6 +5,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 100px;
+  margin-top: 120px;
 
   &__card{
     width: 28%;
@@ -19,6 +20,7 @@
 }
 .vacancies{
   background: #f6f6f6;
+  padding-top: 120px;
   &__create{
     margin: 40px 0;
     padding: 9px 12px;
