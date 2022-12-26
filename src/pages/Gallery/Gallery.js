@@ -1,16 +1,12 @@
 import React, {useEffect} from 'react';
 import "./Gallery.scss"
-import {useNavigate} from "react-router-dom";
 import Fancybox from "./Fancybox/Fancybox";
 import {useDispatch, useSelector} from "react-redux";
 import {getGallery} from "../../redux/reducers/gallery";
-import axios from "../../utils/axios";
-import {toast, ToastContainer} from "react-toastify";
+import {ToastContainer} from "react-toastify";
 
 
 const Gallery = () => {
-    const navigate = useNavigate()
-
     const dispatch = useDispatch()
 
     const {data, error, status, filter} = useSelector((s) => s.gallery )
@@ -36,8 +32,8 @@ const Gallery = () => {
                                 data.map(item => (
                                     <div className="photo__box">
                                         <a data-fancybox="gallery" data-caption={item.text}
-                                           href={`http://localhost:4444${item.imageUrl}`}>
-                                            <img className="photo__img" alt="" src={`http://localhost:4444${item.imageUrl}`}/>
+                                           href={`http://62.113.96.238:4444${item.imageUrl}`}>
+                                            <img className="photo__img" alt="" src={`http://62.113.96.238:4444${item.imageUrl}`}/>
                                         </a>
                                     </div>
                                 ))

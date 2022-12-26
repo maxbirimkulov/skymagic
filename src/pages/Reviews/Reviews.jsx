@@ -1,35 +1,22 @@
 import React, {useEffect} from 'react';
 import "./Reviews.scss"
-import {useNavigate} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import {toDate} from "../../utils/formatDate";
 
 import {getReviews} from "../../redux/reducers/reviews";
-import axios from "../../utils/axios";
-import {toast, ToastContainer} from "react-toastify";
+import {ToastContainer} from "react-toastify";
 import ReviewForm from "./ReviewForm/ReviewForm";
 
 const Reviews = () => {
-    const navigate = useNavigate()
     const dispatch = useDispatch()
 
 
-    const {data, error, status, filter} = useSelector((s) => s.reviews )
+    const {data,filter} = useSelector((s) => s.reviews )
 
     useEffect(() => {
         dispatch(getReviews(filter))
 
     }, [filter])
-
-
-    const deleteReview = (id) => {
-        axios.delete(`review/${id}`)
-            .then(() => {
-                toast('Отзыв удален')
-                dispatch(getReviews(filter))
-            })
-            .catch(() => toast('Не удалось удалить отзыв'))
-    }
 
     return (
         <section className="reviews">

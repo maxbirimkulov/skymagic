@@ -3,7 +3,6 @@ import './Integration.scss'
 import img1 from './image/DSC_4939_DxO.jpg'
 import img2 from './image/DSC_4975_DxO.jpg'
 import img5 from './image/DSC_5019_DxO.jpg'
-import img4 from './image/DSC_5078_DxO.jpg'
 
 const Integration = () => {
     return (

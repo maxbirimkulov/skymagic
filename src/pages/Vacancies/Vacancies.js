@@ -4,16 +4,14 @@ import {getVacancies,changeBranch} from "../../redux/reducers/vacancies";
 import SelectBranch from "../../Components/SelectBranch/SelectBranch";
 import BranchMenu from "../../Components/BranchMenu/BranchMenu";
 import {ToastContainer} from "react-toastify";
-import {useNavigate} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
-import Video from "./Video/Video";
+// import Video from "./Video/Video";
 
 
 
 const Vacancies = () => {
-    const navigate = useNavigate()
     const dispatch = useDispatch()
-    const {data, filter, status, error} = useSelector((store) => store.vacancies )
+    const {data, filter} = useSelector((store) => store.vacancies )
 
     useEffect(() => {
         dispatch(getVacancies(filter))
@@ -22,7 +20,7 @@ const Vacancies = () => {
     return (
         <section className='vacancies'>
             <div className="vacancies__container container">
-                <Video/>
+                {/*<Video/>*/}
                 <div className="vacancies__content">
                     <div className="vacancies__menu">
                         {

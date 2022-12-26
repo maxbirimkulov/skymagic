@@ -1,0 +1,71 @@
+.issyk-kul{
+&__banner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #202249;
+}
+  &__title{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    font-weight: 800;
+    color: #202249;
+    font-size: 34px;
+
+  }
+  &__right{
+    width: 35%;
+    h2{
+      text-align: center;
+      font-size: 34px;
+    }
+    h4{
+      text-align: center;
+      font-weight: bold;
+      font-size: 24px;
+      margin: 20px 0;
+    }
+  }
+  &__left{
+    width: 60%;
+    img{
+      width: 100%;
+      border-radius: 25px;
+      height: 550px;
+    }
+  }
+  &__attraction{
+    display: flex;
+    column-gap: 15px;
+
+  }
+}
+@media (max-width: 1000px) {
+  .issyk-kul__banner {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+  }
+  .issyk-kul__left {
+    width: 90%;
+  }
+  .issyk-kul__right{
+    width: 100%;
+
+  }
+  .issyk-kul__attraction{
+    justify-content: center;
+    column-gap: 60px;
+  }
+}
+@media (max-width: 769px) {
+  .issyk-kul__left img{
+    height: 400px;
+  }
+}
+@media (max-width: 481px) {
+  .issyk-kul__left img{
+    height: 250px;
+  }
+}

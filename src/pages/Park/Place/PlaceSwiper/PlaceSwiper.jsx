@@ -45,7 +45,7 @@ export default function PlaceSwiper({dataPark}) {
                 {data.map((slide, index) => {
                     return (
                         <SwiperSlide key={index}>
-                            <img src={`http://localhost:4444${slide.images}`} key={index} alt={slide.title}/>
+                            <img src={`http://62.113.96.238:4444${slide.images}`} key={index} alt={slide.title}/>
                             <div className="place__txt">
                                 <h2 className="place__title">
                                     {slide.title}

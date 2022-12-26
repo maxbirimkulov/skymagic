@@ -64,7 +64,10 @@ export const data2 = {
             "../assets/skypark/second/img21.webp",
             "../assets/skypark/second/img22.webp",
         ],
-        "price": ["490","690"]
+        "price": ["490","690"],
+        "location":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2926.0932132720136!2d74.5819391141499!3d42.8286447791582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec9d43eac0e11%3A0x5677e74e53eafc07!2sSky%20Park!5e0!3m2!1sru!2skg!4v1664888891532!5m2!1sru!2skg",
+        "locationText":"299 Пр.Чынгыза Айтматова, Бишкек",
+        "locationTc":"ТРЦ Ала-Арча"
     },
     "Smagic Techno": {
         "branch":"techno",
@@ -111,6 +114,9 @@ export const data2 = {
             "../assets/techno/second/img05.jpg",
         ],
         "price": ["350","690"],
+        "location":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1298.012278715692!2d74.63418399941344!3d42.856562349897274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb6572914c7b7%3A0x669f8315bcc304af!2z0KLQtdGF0L3QviDQn9Cw0YDQug!5e0!3m2!1sru!2skg!4v1672076509770!5m2!1sru!2skg",
+        "locationText":"1/2 ул. Горького, Бишкек",
+        "locationTc":"ТРЦ Техно Парк"
     },
     "Smagic Tsum": {
         "branch":"tsum",
@@ -156,6 +162,9 @@ export const data2 = {
             "../assets/tsum/second/img05.jpg",
         ],
         "price": ["420","600"],
+        "location":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1357.156169869672!2d74.61360720519015!3d42.87640937940031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7c0cdbbae15%3A0xa6b565413fa531df!2z0KbQo9CcINCQ0LnRh9Kv0YDTqdC6!5e0!3m2!1sru!2skg!4v1672075006924!5m2!1sru!2skg",
+        "locationText":"155 просп. Чуй, Бишкек",
+        "locationTc":"ТРЦ Цум2"
     },
     "Smagic Tommi": {
         "branch": "tommy",
@@ -202,6 +211,9 @@ export const data2 = {
             "../assets/tommi/second/img05.jpg",
         ],
         "price": ["300","420"],
+        "location":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2926.5073016378515!2d74.61642721484925!3d42.81989671393118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb51fc17f8ee9%3A0xe1032aa56553d407!2sTommi%20mall!5e0!3m2!1sru!2skg!4v1672075086486!5m2!1sru!2skg",
+        "locationText":"17/2 ул. Аалы Токомбаева, Бишкек",
+        "locationTc":"ТРЦ Tommi mall"
     },
 }
 export default data2

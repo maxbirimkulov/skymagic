@@ -5,8 +5,16 @@ import tommi from '../images/tommi.jpg'
 import tehnopark from '../images/tehno-park.jpg'
 import stum from '../images/цум2.jpg'
 import {NavLink} from "react-router-dom";
+import {animateScroll} from "react-scroll";
+
 
 const Parks = () => {
+    const toTop = () => {
+        animateScroll.scrollToTop({
+            delay: 0,
+            duration: 0
+        })
+    };
     return (
         <section className='parks'>
             <div className="parks__container container">
@@ -19,10 +27,9 @@ const Parks = () => {
                         <h3>Smagic Технопарк</h3>
                         <p>SMagic Технопарк это самый большой по площади парк среди наших филиалов, парк разделен на две зоны Город Активити – игровая площадка где более 20 аттракционов и Город профессий – где имеются 56 профессий и 25 локаций.</p>
                         </div>
-
-
                         </div>
-                        <button><NavLink to='/parks/Sky%20Park'/>Узнать больше</button>
+                        <NavLink onClick={()=>toTop()} to='/parks/Smagic%20Techno'><button>Узнать больше</button></NavLink>
+
                     </div>
 
                     <div className="parks__card">
@@ -35,7 +42,7 @@ const Parks = () => {
                         </div>
 
                         </div>
-                        <button>Узнать больше</button>
+                        <NavLink onClick={()=>toTop()} to='/parks/Smagic%20Tsum'><button>Узнать больше</button></NavLink>
                     </div>
                     <div className="parks__card">
                         <div className="parks__space">
@@ -47,7 +54,7 @@ const Parks = () => {
                         </div>
 
                         </div>
-                        <button>Узнать больше</button>
+                        <NavLink onClick={()=>toTop()} to='/parks/Smagic%20Tommi'><button>Узнать больше</button></NavLink>
                     </div>
                     <div className="parks__card">
                         <div className="parks__space">
@@ -59,7 +66,7 @@ const Parks = () => {
                         </div>
 
                         </div>
-                        <button>Узнать больше</button>
+                        <NavLink onClick={()=>toTop()} to='/parks/Sky%20Park'><button>Узнать больше</button></NavLink>
                     </div>
 
                     </div>

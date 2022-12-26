@@ -10,9 +10,7 @@ import AboutPark from "./AboutPark/AboutPark";
 
 const Park = () => {
     const params = useParams()
-    // if (params.name !== 'park') {
-    //     return <Navigate to='/'/>
-    // }
+
     let dataPark =  data2[`${params.name}`]
     return (
         <>

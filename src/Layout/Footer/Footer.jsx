@@ -3,7 +3,7 @@ import "./Footer.scss"
 import {NavLink} from "react-router-dom";
 import {animateScroll} from "react-scroll";
 import {BsWhatsapp,BsInstagram,BsFacebook} from "react-icons/bs"
-import {SiOdnoklassniki} from "react-icons/si"
+import {FaTiktok} from "react-icons/fa"
 import {MdOutlineEmail} from 'react-icons/md'
 import './media.scss'
 import {clickFunc} from "../../utils/clickFunc";
@@ -121,11 +121,11 @@ const Footer = () => {
                                 }><BsFacebook/></a>
                             </li>
                             <li>
-                                <a href="https://ok.ru/" onClick={
+                                <a href="https://www.tiktok.com/@smagic.kg?is_from_webapp=1&sender_device=pc" onClick={
                                     ()=>{
-                                        clickFunc('ok', user.email ? user._id : null)
+                                        clickFunc('tiktok', user.email ? user._id : null)
                                     }
-                                }><SiOdnoklassniki/></a>
+                                }><FaTiktok/></a>
                             </li>
 
 
