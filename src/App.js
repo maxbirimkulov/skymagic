@@ -1,4 +1,3 @@
-
 import {Route, Routes} from 'react-router-dom'
 import Layout from "./Layout/Layout";
 import Home from "./pages/Home/Home";
@@ -25,34 +24,34 @@ import ReviewsForm from "./pages/Reviews/ReviewsForm";
 
 
 function App() {
-  return (
-    <>
-        <Routes>
-          <Route path='/' element={<Layout/>}>
-            <Route path='' element={<Home/>}/>
-            <Route path='parks/:name' element={<Park/>}/>
-            <Route path='basket' element={<Basket/>}/>
-            <Route path='/gallery' element={<Gallery/>}/>
-            <Route path='/vacancies' element={<Vacancies/>}/>
-            <Route path='/vacancies/:id' element={<Vacancies/>}/>
-            <Route path='*' element={<NotFound/>}/>
-            <Route path='/login' element={<Login/>}/>
-            <Route path='/account/*' element={<Account/>}/>
-            <Route path='/register' element={<Register/>}/>
-            <Route path='/about' element={<AboutCompany/>}/>
-            <Route path='/feedback' element={<Feedback/>}/>
-            <Route path='/franchise' element={<Franchise/>}/>
-            <Route path='/franchise' element={<Franchise/>}/>
-            <Route path='/integration' element={<Integration/>}/>
-            <Route path='/support' element={<Support/>}/>
-            <Route path='/services' element={<Services/>}/>
-            <Route path='/reviews' element={<Reviews/>}/>
-            <Route path='/reviews/form' element={<ReviewsForm/>}/>
-            <Route path='/ticket' element={<Ticket/>}/>
-          </Route>
-        </Routes>
-    </>
-  );
+    return (
+        <>
+            <Routes>
+                <Route path='/' element={<Layout/>}>
+                    <Route path='' element={<Home/>}/>
+                    <Route path='parks/:name' element={<Park/>}/>
+                    <Route path='basket' element={<Basket/>}/>
+                    <Route path='/gallery' element={<Gallery/>}/>
+                    <Route path='/vacancies' element={<Vacancies/>}/>
+                    <Route path='/vacancies/:id' element={<Vacancies/>}/>
+                    <Route path='*' element={<NotFound/>}/>
+                    <Route path='/login' element={<Login/>}/>
+                    <Route path='/account/*' element={<Account/>}/>
+                    <Route path='/register' element={<Register/>}/>
+                    <Route path='/about' element={<AboutCompany/>}/>
+                    <Route path='/feedback' element={<Feedback/>}/>
+                    <Route path='/franchise' element={<Franchise/>}/>
+                    <Route path='/franchise' element={<Franchise/>}/>
+                    <Route path='/integration' element={<Integration/>}/>
+                    <Route path='/support' element={<Support/>}/>
+                    <Route path='/services' element={<Services/>}/>
+                    <Route path='/reviews' element={<Reviews/>}/>
+                    <Route path='/reviews/form' element={<ReviewsForm/>}/>
+                    <Route path='/ticket' element={<Ticket/>}/>
+                </Route>
+            </Routes>
+        </>
+    );
 }
 
 export default App;
