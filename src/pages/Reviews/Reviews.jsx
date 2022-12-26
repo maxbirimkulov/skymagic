@@ -1,62 +1,66 @@
-import React from 'react';
-import DownloadButton from "../../Components/DownloadButton/DownloadButton";
-import './Reviews.scss'
+import React, {useEffect} from 'react';
+import "./Reviews.scss"
+import {useNavigate} from "react-router-dom";
+import {useDispatch, useSelector} from "react-redux";
+import {toDate} from "../../utils/formatDate";
 
+import {getReviews} from "../../redux/reducers/reviews";
+import axios from "../../utils/axios";
+import {toast, ToastContainer} from "react-toastify";
+import ReviewForm from "./ReviewForm/ReviewForm";
 
 const Reviews = () => {
+    const navigate = useNavigate()
+    const dispatch = useDispatch()
+
+
+    const {data, error, status, filter} = useSelector((s) => s.reviews )
+
+    useEffect(() => {
+        dispatch(getReviews(filter))
+
+    }, [filter])
+
+
+    const deleteReview = (id) => {
+        axios.delete(`review/${id}`)
+            .then(() => {
+                toast('Отзыв удален')
+                dispatch(getReviews(filter))
+            })
+            .catch(() => toast('Не удалось удалить отзыв'))
+    }
 
     return (
-        <section className='reviews'>
-            <div className="reviews container">
-                <div className='reviews__box'>
-                    <DownloadButton text={'Оставить отзыв'}/>
-                </div>
-                    <div className='reviews__all'>
-                    <div className="reviews__card">
-                    <ul className='reviews__lists'>
-                        <li className='reviews__name'>Alibek</li>
-                        <li className='reviews__text'>Все было круто, все атракционы понравилис, но обслуживание вашего сотрудника Рустама вообще не понравилось</li>
-                        <li className='reviews__grade'>5 баллов</li>
-                    </ul>
-                </div>
-                    <div className="reviews__card">
-                    <ul className='reviews__lists'>
-                        <li className='reviews__name'>Alibek</li>
-                        <li className='reviews__text'>Все было круто, все атракционы понравилис, но обслуживание вашего сотрудника Рустама вообще не понравилось</li>
-                        <li className='reviews__grade'>5 баллов</li>
-                    </ul>
-                </div>
-                    <div className="reviews__card">
-                    <ul className='reviews__lists'>
-                        <li className='reviews__name'>Alibek</li>
-                        <li className='reviews__text'>Все было круто, все атракционы понравилис, но обслуживание вашего сотрудника Рустама вообще не понравилось</li>
-                        <li className='reviews__grade'>5 баллов</li>
-                    </ul>
-                </div>
-                    <div className="reviews__card">
-                        <ul className='reviews__lists'>
-                            <li className='reviews__name'>Alibek</li>
-                            <li className='reviews__text'>Все было круто, все атракционы понравилис, но обслуживание вашего сотрудника Рустама вообще не понравилось</li>
-                            <li className='reviews__grade'>5 баллов</li>
-                        </ul>
-                    </div>
-                    <div className="reviews__card">
-                        <ul className='reviews__lists'>
-                            <li className='reviews__name'>Alibek</li>
-                            <li className='reviews__text'>Все было круто, все атракционы понравилис, но обслуживание вашего сотрудника Рустама вообще не понравилось</li>
-                            <li className='reviews__grade'>5 баллов</li>
-                        </ul>
-                    </div>
-                    <div className="reviews__card">
-                        <ul className='reviews__lists'>
-                            <li className='reviews__name'>Alibek</li>
-                            <li className='reviews__text'>Все было круто, все атракционы понравилис, но обслуживание вашего сотрудника Рустама вообще не понравилось</li>
-                            <li className='reviews__grade'>5 баллов</li>
-                        </ul>
-                    </div>
-                </div>
+        <section className="reviews">
+            <div className="container">
+                <ReviewForm/>
+                <div className="reviews__content">
+                    {
+                        data.map((item) => (
+                            <div  className='reviews__card' key={item._id}>
+                                <div className='reviews__card-top'>
+                                    <h3 className='reviews__card-title'>{item.name}</h3>
+                                    <p className='reviews__card-time'>{toDate(item.createdAt)}</p>
+                                </div>
 
+                                <p className='reviews__card-text'>{item.text}</p>
+                            </div>
+                        ))
+                    }
+                </div>
             </div>
+            <ToastContainer
+                position="bottom-left"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+            />
         </section>
     );
 };

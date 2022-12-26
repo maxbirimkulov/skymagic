@@ -1,27 +1,54 @@
 .reviews{
-  margin-top: 130px;
-
-  &__card{
-    margin-top: 30px;
-    width: 400px;
-    padding: 20px;
-    border-radius: 15px;
-     box-shadow: 0 0 24px -1px rgba(34, 60, 80, 0.2);;
-  }
-  &__name{
-    font-size: 22px;
-  }
-  &__box{
-    width: 25%;
-    position: relative;
-    top: 79%;
-    left: 50%;
-    transform: translate(-50%,-30%);
-  }
-  &__all{
+  padding-top: 150px;
+  &__content{
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: column;
     row-gap: 40px;
+  }
+  &__card{
+    width: 100%;
+    padding: 20px 30px;
+    background: white;
+    position: relative;
+    &-title{
+      font-family: 'DIN Pro',sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      color: #111111;
+
+    }
+    &-text{
+      font-family: 'DIN Pro',sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: #000000;
+    }
+    &-top{
+      display: flex;
+      column-gap: 50px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    &-time{
+      font-family: 'DIN Pro',sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      color: #A4ACAD;
+    }
+    &-del{
+      cursor: pointer;
+      padding: 7px 20px;
+      font-size: 15px;
+      border: none;
+      background: #640a0a;
+      color: #ffffff;
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+    }
   }
 }

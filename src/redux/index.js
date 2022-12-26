@@ -5,13 +5,15 @@ import user from './reducers/user'
 import banners from "./reducers/banners";
 import vacancies from "./reducers/vacancies";
 import gallery from "./reducers/gallery";
+import reviews from "./reducers/reviews";
 
 
 const rootReducer = combineReducers({
     user,
     banners,
     vacancies,
-    gallery
+    gallery,
+    reviews
 });
 const persistConfig = {
     key: 'root',
