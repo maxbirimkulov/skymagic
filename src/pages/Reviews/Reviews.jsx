@@ -21,16 +21,6 @@ const Reviews = () => {
 
     }, [filter])
 
-
-    const deleteReview = (id) => {
-        axios.delete(`review/${id}`)
-            .then(() => {
-                toast('Отзыв удален')
-                dispatch(getReviews(filter))
-            })
-            .catch(() => toast('Не удалось удалить отзыв'))
-    }
-
     return (
         <section className="reviews">
             <div className="container">

@@ -2,12 +2,19 @@ import React from 'react';
 import DownloadButton from "../../../Components/DownloadButton/DownloadButton";
 import {useForm} from "react-hook-form";
 import axios from "../../../utils/axios";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 
 import "./ReviewForm.scss"
+import {getReviews} from "../../../redux/reducers/reviews";
 
 const ReviewForm = () => {
     const {user} = useSelector((store)=> store.user)
+
+    const dispatch = useDispatch()
+
+
+    const { filter} = useSelector((s) => s.reviews )
+
     const {
         register,
         formState: {
@@ -20,7 +27,7 @@ const ReviewForm = () => {
     const onSubmit = (data) => {
         axios.post('review', data)
             .then(() => {
-                console.log('отзывы отправлена')
+                dispatch(getReviews(filter))
                 reset()
             }).catch(() => console.log('ошибка при отправке'))
     }
