@@ -20,8 +20,6 @@ export default function PlaceSwiper({dataPark}) {
         dispatch(getBanners({branch:dataPark.branch}))
     }, [location.pathname])
 
-    console.log(data)
-
 
     return (
         <>

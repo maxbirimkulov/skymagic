@@ -37,7 +37,6 @@ function App() {
                     <Route path='/about' element={<AboutCompany/>}/>
                     <Route path='/feedback' element={<Feedback/>}/>
                     <Route path='/franchise' element={<Franchise/>}/>
-                    <Route path='/franchise' element={<Franchise/>}/>
                     <Route path='/integration' element={<Integration/>}/>
                     <Route path='/support' element={<Support/>}/>
                     <Route path='/services' element={<Services/>}/>

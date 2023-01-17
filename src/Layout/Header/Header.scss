@@ -6,9 +6,9 @@
   transition: background .3s ease;
   z-index: 100;
   width: 100%;
-  background: #11111170;
+  background: rgba(40, 74, 172, 0.96);
   &.scrolled{
-    background: #111;
+    background: #284AAC;
   }
 
 }
@@ -22,8 +22,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
   }
   &logo{
    width: 189px;
@@ -55,10 +53,25 @@
 }
 
 @media (max-width: 1025px) {
-  .header{
+  .header__{
+    &container.container{
+      justify-content: space-between;
 
-    &__container.container{
-      column-gap: 15px;
+    }
+    &menu{
+      display: none;
+      &_active{
+        display: flex;
+        position: absolute;
+        top: 200px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        background: #11111180;
+        z-index: 99;
+        height: 100vh;
+      }
     }
   }
 }
