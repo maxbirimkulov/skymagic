@@ -10,26 +10,26 @@ const Dropdown = ({toggleClass}) => {
         <div className="dropdown">
             <span className="nav__link nav__link_active">Выберите парк</span>
             <div className="dropdown-content">
-                <li className='nav__link'><NavLink className="nav__link" to="/parks/Sky Park" onClick={() => {
+                <NavLink className="nav__link" to="/parks/Sky Park" onClick={() => {
                     toggleClass()
                     clickFunc('sky', user.email ? user._id : null)
                 }}>Sky
-                    park</NavLink></li>
-                <li className='nav__link'><NavLink className="nav__link" to="/parks/Smagic Techno" onClick={()=>{
+                    park</NavLink>
+                <NavLink className="nav__link" to="/parks/Smagic Techno" onClick={()=>{
                     toggleClass()
                     clickFunc('techno', user.email ? user._id : null)
                 }}>Smagic
-                    Технопарк</NavLink></li>
-                <li className='nav__link'><NavLink className="nav__link" to="/parks/Smagic Tsum" onClick={()=>{
+                    Технопарк</NavLink>
+                <NavLink className="nav__link" to="/parks/Smagic Tsum" onClick={()=>{
                     toggleClass()
                     clickFunc('tsum', user.email ? user._id : null)
                 }}>Smagic
-                    Цум 2</NavLink></li>
-                <li className='nav__link'><NavLink className="nav__link" to="/parks/Smagic Tommi" onClick={()=>{
+                    Цум 2</NavLink>
+               <NavLink className="nav__link" to="/parks/Smagic Tommi" onClick={()=>{
                     toggleClass()
                     clickFunc('tommi', user.email ? user._id : null)
                 }}>Smagic
-                    Tommi mall</NavLink></li>
+                    Tommi mall</NavLink>
             </div>
         </div>
     );

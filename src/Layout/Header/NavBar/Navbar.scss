@@ -16,7 +16,7 @@
     border-radius: 10px;
   }
   &__link{
-   @include text(300,15px,20px,#fff);
+   @include text(500,15px,20px,#fff);
     &:hover{
       color: #ffb825;
     }
