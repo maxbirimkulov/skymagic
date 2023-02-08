@@ -1,14 +1,12 @@
 import React from 'react';
 import "./Price.scss"
-// import {Card3d} from "./Card3d/Card3d";
-// import img1 from "./teens.jpeg"
-// import img2 from "./childrens.png"
+
 const Price = ({dataPark}) => {
     return (
         <section className="price">
             <div className="container">
                 <h2 className="price__title">
-                    {dataPark["full-description"]}
+                    {dataPark["description"]}
                 </h2>
                 <div className="price__cards">
                     <div className="price__card">

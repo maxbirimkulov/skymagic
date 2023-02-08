@@ -2,7 +2,7 @@ export const data2 = {
     "Sky Park": {
         "branch":"sky",
         "title": "Sky Park",
-        "description": "Крупнейший крытый парк в Кыргызстане",
+        "description": "\"Sky Park\" - Крупнейший крытый парк в Кыргызстане",
         "areatitle": "Общая площадь помещения парка:",
         "areatext": [
             "5500 кв. м. Высота самой высокой горки составляет - 13 м,протяженностью - 52 м.",
@@ -39,7 +39,7 @@ export const data2 = {
     "Smagic Techno": {
         "branch":"techno",
         "title": "Smagic Технопарк",
-        "description": "Общая площадь помещения парка: 5500 кв. м.",
+        "description": "",
         "areatitle": "Общая площадь помещения парка:",
         "areatext": [
             "6878 кв. м.",],
@@ -74,7 +74,7 @@ export const data2 = {
     "Smagic Tsum": {
         "branch":"tsum",
         "title": "Smagic Цум 2",
-        "description": "Общая площадь помещения парка: 5500 кв. м.",
+        "description": "",
         "areatitle": "Общая площадь помещения парка:",
         "areatext": [
             "2300 кв. м. Вместимость : 600 человек"],
@@ -108,7 +108,7 @@ export const data2 = {
     "Smagic Tommi": {
         "branch": "tommy",
         "title": "Smagic Tommi mall",
-        "description": "Общая площадь помещения парка: 5500 кв. м.",
+        "description": "",
         "areatitle": "Общая площадь помещения парка:",
         "areatext": [
             "778 кв. м. Вместимость : 200 человек"],
