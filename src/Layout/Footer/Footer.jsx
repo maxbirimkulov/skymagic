@@ -21,7 +21,7 @@ const Footer = () => {
             <div className="container">
                 <div className="footer__lists">
                     <ul className="footer__list">
-                        <li>Частным лицам</li>
+                        <li>Частным клиентам</li>
                         <li>
                             <NavLink className="nav__link" onClick={()=>{
                                 toTop()
