@@ -1,54 +1,64 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
+// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Controller } from 'swiper';
+// Import Swiper styles
 import "swiper/css";
-import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "./Portfolio.scss"
-import { EffectCoverflow} from "swiper";
-import {useDispatch, useSelector} from "react-redux";
-import {useLocation} from "react-router-dom";
-import {getBanners} from "../../../redux/reducers/banners";
-const Portfolio = ({dataPark}) => {
-    const dispatch = useDispatch()
-
-    const location = useLocation()
+import axios from "axios";
 
 
-    const {data, error, status} = useSelector((s) => s.banners )
-
-    useEffect(() => {
-        dispatch(getBanners({branch:dataPark.branch}))
-    }, [location.pathname])
-
+export default function Portfolio() {
+    const [firstSwiper, setFirstSwiper] = useState(null);
+    const [secondSwiper, setSecondSwiper] = useState(null);
+    const [meals,setMeals] =useState([])
+    useEffect(()=>{
+        axios("https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood")
+            .then(({data})=> setMeals(data.meals))
+            .catch((err)=>err)
+    },[])
     return (
-        <section className="portfolio">
+        <div className="portfolio">
             <Swiper
-                effect={"coverflow"}
                 grabCursor={true}
-                slidesPerView={"auto"}
-                coverflowEffect={{
-                    rotate: 50,
-                    stretch: 0,
-                    depth: 100,
-                    modifier: 1,
-                    slideShadows: true,
-                }}
-                pagination={true}
-                modules={[EffectCoverflow]}
-                className="mySwiper"
+                modules={[Controller]}
+                onSwiper={setFirstSwiper}
+                controller={{ control: secondSwiper ,
+                    inverse: true}}
+                slidesPerView={5}
+                spaceBetween={30}
+                initialSlide={3}
+                loop={true}
+                centeredSlides={true}
+                className="firstSwiper"
+
             >
-                {data.map((slide, index) => {
-                    return (
-                        <SwiperSlide key={index}>
-                            <img src={`http://62.113.96.238:4444${slide.images}`} key={index} alt={slide.title}/>
-                        </SwiperSlide>
-                    );
-                })}
+                {meals.length ? meals.map(el => (
+                    <SwiperSlide key={el.idMeal}>
+                        <img src={el.strMealThumb} alt={el.strMeal}/>
+                    </SwiperSlide>
+                )) :"hello"}
             </Swiper>
-
-        </section>
+            <Swiper
+                grabCursor={true}
+                slidesPerView={5}
+                spaceBetween={30}
+                initialSlide={3}
+                loop={true}
+                centeredSlides={true}
+                modules={[Controller]}
+                onSwiper={setSecondSwiper}
+                controller={{ control: firstSwiper,
+                    inverse: true}}
+                className="secondSwiper"
+            >
+                {meals.map(el => (
+                    <SwiperSlide key={el.idMeal}>
+                        <img src={el.strMealThumb} alt={el.strMeal}/>
+                    </SwiperSlide>
+                ))}
+            </Swiper>
+        </div>
     );
-};
-
-export default Portfolio;
-
+}

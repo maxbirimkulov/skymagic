@@ -2,6 +2,35 @@
   .container{
     padding: 80px 0;
   }
+  &__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__tabs{
+    overflow: hidden;
+    border: 5px solid #284AAC;
+    border-radius: 20px;
+  }
+  &__card{
+    padding: 30px 30px;
+    text-align: center;
+  }
+  &__txt{
+    color: #000000;
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 20px;
+  }
+  &__img{
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    background: #284AAC;
+    img{
+      border-radius: 20px;
+    }
+  }
 }
 
 @media (max-width: 1440px) {
