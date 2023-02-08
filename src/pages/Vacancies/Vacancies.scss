@@ -1,80 +1,97 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&display=swap');
-
-.video{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 100px;
-  margin-top: 120px;
-
-  &__card{
-    width: 28%;
+.vacancies{
+  margin-top: 73.31px;
+&__img{
+  padding-top: 100px;
+  padding-left: 70px;
+  padding-bottom: 500px;
+  background: url("images/DSC_4951_DxO.jpg")center/cover no-repeat;
+}
+  &__title{
+    font-size: 44px;
+    color: white;
+  }
+  &__swipper{
     text-align: center;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;;
     img{
-      width: 100%;
-      border-radius: 20px;
+      width: 90%;
+      height: 400px;
     }
   }
-}
-.vacancies{
-  background: #f6f6f6;
-  padding-top: 120px;
-  &__create{
-    margin: 40px 0;
-    padding: 9px 12px;
-    background: black;
+  &__icons{
+    width: 240px;
+    height: 240px;
+    padding: 15px;
+    background: #23549f;
+    border-radius: 20px;
     color: white;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  &__content{
     display: flex;
-
+    text-align: center;
+    align-items: flex-end;
   }
-  &__menu{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-  }
-  &__card{
+&__icon{
+  display: flex;
+  justify-content: space-between;
 
-    border-radius: 15px;
-    width: 68%;
-    background: white;
-    padding: 24px 0 32px 15px;
-    margin-bottom: 30px;
+}
+  &__all{
 display: flex;
-    justify-content: space-between;
-    border: 1px solid #e8e8e8;
-    transition: all .3s ease-in-out;
+    justify-content:space-between;
   }
-  &__card:hover{
-    box-shadow: 1px 16px 30px 0 rgba(34, 60, 80, 0.2);
+  &__one{
+    width: 49%;
+    background: #f4f4f5;
+    padding: 20px 20px;
+    height: 350px;
+    box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+    p{
+      margin-bottom: 15px;
+    }
   }
   &__name{
-    color: #0094ff;
-    font-size: 24px;
-    font-weight: 500;
-
+    color: #23549f;
+    font-weight: 800;
+    margin-bottom: 20px;
   }
   &__text{
-    width: 80%;
-    font-family: "Fira Sans",sans-serif;
+    margin-bottom: 30px;
   }
-  &__description{
-   font-weight: 400;
-    margin-top: 15px;
-
+  &__footer{
+    padding: 40px 0;
+    margin-top: 40px;
+    background: #f4f4f5;
+    text-align: center;
+h2{
+  color: #23549f;
+  font-weight: 800;
+  font-size: 38px;
+}
   }
-  &__location{
+  &__contact{
+    margin-top: 40px;
     display: flex;
-    width: 20%;
-    column-gap: 10px;
-  }
-  &__logo{
+    justify-content: center;
+    align-items: center;
+    column-gap: 59px;
+
+  p{
+    display: flex;
+   font-weight: bold;
+    column-gap: 15px;
+    color: #23549f;
     font-size: 24px;
+  }
+    span{
+      font-size: 36px;
+    }
+  }
+  &__swipper{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  &__our{
+    color: #23549f;
+    font-weight: 800;
+    font-size: 28px;
+    margin-bottom: 20px;
   }
 }

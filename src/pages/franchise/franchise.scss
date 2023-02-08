@@ -1,85 +1,68 @@
 .franchise{
-  background: url("bg1.svg")center/cover no-repeat;
-  margin-top: 81px;
-  font-family: Lineatura;
-
+  margin-top: 120px;
+  padding-bottom: 40px;
   &__about{
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 70px;
+    img{
+      width: 40%;
+      height: 420px;
+    }
+  }
+  &__right{
+    width: 50%;
     h2{
-      font-size: 42px;
-      font-weight: 900;
-      line-height: 43px;
-      margin-bottom: 30px;
-      font-family: Lineatura;
-      color: #3f3f3f;
+      font-size: 46px;
+      color: #23549f;
+      font-weight: 800;
     }
     li{
-      padding-left: 38px;
-      line-height: 1.5em;
-      margin-bottom: 15px;
-      font-family: Lineatura;
+      color: black;
       font-size: 20px;
-      color: #7c7980;
+      font-weight: 600;
+      margin-top: 30px;
       position: relative;
+      margin-left: 25px;
     }
     li:before{
       content: '';
-      display: block;
-      width: 20px;
-      height: 3px;
-      background: #e57b3a;
+      display: flex;
+      width: 15px;
+      height: 15px;
+      background: #23549f;
+      border-radius: 50%;
       position: absolute;
+      left: -25px;
       top: 50%;
       transform: translateY(-50%);
-      left: -6px;
     }
   }
-  &__img img{
-    width: 700px;
-    height: 580px;
-  }
- &__text{
-   width: 40%;
- }
-  &__top{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 40px;
+  &__expert{
+    font-size: 48px;
+    color: #23549f;
+    font-weight: 800;
+    margin-bottom: 40px;
   }
   &__card{
-    width: 48%;
     display: flex;
+    column-gap: 35px;
     align-items: center;
-
+    margin-bottom: 30px;
     img{
-      width: 70px;
-      height: 70px;
+      width: 100px;
+      height: 100px;
     }
-  }
-  &__bottom{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 40px;
-    &__card{
-      width: 48%;
-      display: flex;
-      align-items: center;
+    p{
+      font-size: 22px;
+      font-weight: 600;
+    }
 
-      img{
-        width: 70px;
-        height: 70px;
-      }
-    }
+
   }
-  .expertise__title{
-    text-align: center;
-    font-weight: 900;
-    font-size: 34px;
-    font-family: Lineatura;
-    color: #3f3f3f;
-  }
+
+
+
 }

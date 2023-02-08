@@ -5,11 +5,17 @@ const Baner = () => {
     return (
        <section className='banner'>
            <div className="banner__container container">
-                <h1 className='banner__title'>
-                    <span className='banner__smagic'>SMAGIC</span>
-                    <br/>
-                    <span className='banner__text'>Сеть детских центров развлечений</span>
-                </h1>
+                <div className='banner__title'>
+                    <h1 className='banner__smagic'>НОВОГОДНИЙ
+                       <br/> ВЕЧЕР</h1>
+
+                    <h4 className='banner__text'>Вас ждут интересные игры,
+подарки и крутые призы!</h4>
+                    <h5 className='banner__info'>
+                        Именинникам вход бесплатный!
+                    </h5>
+                    <button className='banner__btn'>Купить билет</button>
+                </div>
            </div>
        </section>
     );

@@ -1,50 +1,57 @@
 .integration{
-  margin-top: 81px;
-  background: url("image/bg1.svg")center/cover no-repeat;
-  font-family: Lineatura;
+  margin-top: 120px;
   &__title{
-    font-weight: 900;
+    font-weight: 800;
+    font-size:56px;
+    color: #23549f;
     margin-bottom: 40px;
-    padding-top: 60px;
-    text-align: center;
   }
-  li{
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 15px;
-    position: relative;
-    padding-left: 38px;
-  }
-  li:before{
-    content: '';
-    display: block;
-    width: 20px;
-    height: 3px;
-    background: #e57b3a;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: -6px;
-  }
-  &__image{
+  &__box{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    row-gap: 20px;
-    margin: 35px 0;
+    align-items: center;
     img{
-      width: 30%;
-      border-radius: 15px;
-
+      width: 40%;
+      height: 400px;
+    }
+    p{
+      margin-bottom: 30px;
+      font-size: 22px;
+      font-weight: 600;
     }
   }
-  &__city-prof{
-    font-size: 34px;
-    font-weight: 600;
-    text-align: center;
+  &__left{
+    width: 55%;
   }
-  &__city-desc{
-    font-size: 22px;
-    margin: 25px 0;
+  &__city{
+    font-weight: 800;
+    font-size:56px;
+    color: #23549f;
+    margin-bottom: 40px;
+    margin-top: 80px;
+  }
+  &__info{
+    font-size: 24px;
+    font-weight: 600;
+  }
+  &__partners{
+    text-align: center;
+    color: #23549f;
+    font-weight: 800;
+    font-size: 32px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+  &__partner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    img{
+     
+      width: 23%;
+      height: 200px;
+    }
   }
 }

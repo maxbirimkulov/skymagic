@@ -1,32 +1,58 @@
-.review{
-    &__form{
-
-       .downloadButton{
-         background: #FFD335;
-         color: black;
-         width: 200px;
-
-       }
-
-     }
-&__box{
-  display: flex;
-  justify-content: space-around;
-  label{
-    width:80%;
-  }
-}
-  &__input{
-width: 100%;
-    border-bottom: 2px solid #80808050;
-
-    padding-left: 40px;
-    font-size: 20px;
-  }
-}
-@media (max-width: 1000px) {
-  .review__box{
-    flex-direction: column;
+.reviews{
+  margin-top: 100px;
+  &__form{
+    display: flex;
+    background: linear-gradient(90deg, rgba(234,196,66,1) 0%, rgba(225,58,45,1) 100%);
+    border-radius: 30px;
+    padding:20px 30px 20px 30px;
+    justify-content: space-between;
     align-items: center;
+
+  }
+  &__left{
+    width: 47%;
+    h2{
+      color: white;
+      font-size: 54px;
+      font-weight: 800;
+      margin-bottom: 70px;
+    }
+    select{
+      padding: 20px;
+      border-radius: 8px;
+    }
+  }
+  &__right{
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    align-items: center;
+
+  }
+  &__fio{
+    width: 90%;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 12px -1px rgba(34, 60, 80, 0.2);
+  }
+  &__text{
+    width: 90%;
+ height: 150px;
+    margin: 20px 0;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 12px -1px rgba(34, 60, 80, 0.2);
+  }
+  &__btn{
+    padding: 1px 15px;
+    font-size: 26px;
+    border-radius: 8px;
+    color: #e57b3a;
+    font-weight: 800;
+    background: white;
+    box-shadow: 0px 0px 12px -1px rgba(34, 60, 80, 0.2);
   }
 }

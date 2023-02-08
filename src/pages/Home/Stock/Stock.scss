@@ -1,66 +1,40 @@
-.stock {
-  &__title {
-    text-align: center;
-    font-weight: 800;
-    color: #202249;
-    margin: 20px 0;
-  }
-}
-
-.accordion {
-
-  width: 100%;
-  margin: 0 auto 20px;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
-
-  &__content {
-    background: #2c3e50;
-  }
-
-  &__subtitle {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em;
-    cursor: pointer;
-
-    &:hover {
-      background: darken(#2c3e50, 10%);
-    }
-    & span {
-      font-weight: 700;
-
-    }
-    .plus{
-      font-size: 34px;
-      color: white;
-    }
-    .minus{
-      font-size: 32px;
-      color: white;
-    }
-  }
-
-  &__stock {
+.stock{
+  background: linear-gradient(90deg, rgba(234,196,66,1) 0%, rgba(225,58,45,1) 100%);
+  padding: 10px 0 20px;
+  &__title{
+  text-align: center;
     color: white;
-  }
-
-  &__dsc {
-    color: black;
-    max-height: 0;
-    overflow: hidden;
-
+    font-weight: 600;
+    font-size: 60px;
+    margin-bottom: 25px;
+}
+  &__card{
+    width: 270px;
+    padding: 15px;
     background: white;
-    transition: all 1s cubic-bezier(0, 2, 0, 2);
-  }
-
-  &__show {
-    height: auto;
-padding: 40px 0;
-    max-height: 9999px;
-    transition: all 1s cubic-bezier(2, 0, 2, 0);
-
+    border-radius: 17px;
+    text-align: center;
+    img{
+      width: 100%;
+      border-radius: 17px;
+      height: 240px;
+    }
+    h4{
+      color: #eac442;
+      font-weight: bold;
+      font-size: 22px;
+    }
+    p{
+      color:#23549f ;
+      font-weight: 500;
+    }
+    button{
+      width: 130px;
+      height: 24px;
+      background: linear-gradient(90deg, rgba(234,196,66,1) 0%, rgba(225,58,45,1) 100%);
+color: white;
+      font-weight: 600;
+      border-radius: 5px;
+    }
   }
 }

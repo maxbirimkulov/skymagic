@@ -1,0 +1,47 @@
+.priceHome{
+  &__box{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__card{
+    width: 290px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+    text-align: center;
+    background: #2343ad;
+    padding-bottom:40px;
+    padding-top: 40px;
+
+
+    color: white;
+    border-radius: 20px;
+    img{
+      width: 50%;
+    }
+    h3{
+      padding: 5px 8px;
+      background: white;
+      color: #2343ad;
+      font-weight: 600;
+      border-radius: 8px;
+      font-size: 26px;
+    }
+    p{
+      font-size: 20px;
+    }
+    h2{
+      font-size: 34px;
+      font-weight: 700;
+    }
+    button{
+      width: 100%;
+      height: 36px;
+      color:#2343ad;
+      font-weight: 700;
+      font-size: 20px;
+    }
+  }
+}

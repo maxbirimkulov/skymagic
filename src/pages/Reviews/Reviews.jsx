@@ -1,53 +1,174 @@
-import React, {useEffect} from 'react';
-import "./Reviews.scss"
-import {useDispatch, useSelector} from "react-redux";
-import {toDate} from "../../utils/formatDate";
-
-import {getReviews} from "../../redux/reducers/reviews";
-import {ToastContainer} from "react-toastify";
+import React from 'react';
 import ReviewForm from "./ReviewForm/ReviewForm";
+import './Reviews.scss'
 
 const Reviews = () => {
-    const dispatch = useDispatch()
-
-
-    const {data,filter} = useSelector((s) => s.reviews )
-
-    useEffect(() => {
-        dispatch(getReviews(filter))
-
-    }, [filter])
-
     return (
-        <section className="reviews">
+        <section>
             <div className="container">
                 <ReviewForm/>
-                <div className="reviews__content">
-                    {
-                        data.map((item) => (
-                            <div  className='reviews__card' key={item._id}>
-                                <div className='reviews__card-top'>
-                                    <h3 className='reviews__card-title'>{item.name}</h3>
-                                    <p className='reviews__card-time'>{toDate(item.createdAt)}</p>
-                                </div>
-
-                                <p className='reviews__card-text'>{item.text}</p>
+                <div className="reviews__skypark">
+                    <h2>SKY PARK</h2>
+                    <div className='reviews__box'>
+                        <div className="reviews__one">
+                            <div className='reviews__module'>
+                            <h3>ИМЯ:АЙНУРА</h3>
+                            <p>Прекрастынй парк, дети
+                                довольны</p>
                             </div>
-                        ))
-                    }
+                        </div>
+                        <div className="reviews__one">
+                            <div className='reviews__module'>
+                                <h3>ИМЯ:АЙНУРА</h3>
+                                <p>Прекрастынй парк, дети
+                                    довольны</p>
+                            </div>
+                        </div>
+                        <div className="reviews__one">
+                            <div className='reviews__module'>
+                                <h3>ИМЯ:АЙНУРА</h3>
+                                <p>Прекрастынй парк, дети
+                                    довольны</p>
+                            </div>
+                        </div>
+                        <div className="reviews__one">
+                            <div className='reviews__module'>
+                                <h3>ИМЯ:АЙНУРА</h3>
+                                <p>Прекрастынй парк, дети
+                                    довольны</p>
+                            </div>
+                        </div>
+                        <div className="reviews__one">
+                            <div className='reviews__module'>
+                                <h3>ИМЯ:АЙНУРА</h3>
+                                <p>Прекрастынй парк, дети
+                                    довольны</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div className="reviews__skypark">
+                    <h2>SKY PARK</h2>
+                    <div className='reviews__box'>
+                        <div className="reviews__one">
+                            <div className='reviews__module'>
+                                <h3>ИМЯ:АЙНУРА</h3>
+                                <p>Прекрастынй парк, дети
+                                    довольны</p>
+                            </div>
+                        </div>
+                        <div className="reviews__one">
+                            <div className='reviews__module'>
+                                <h3>ИМЯ:АЙНУРА</h3>
+                                <p>Прекрастынй парк, дети
+                                    довольны</p>
+                            </div>
+                        </div>
+                        <div className="reviews__one">
+                            <div className='reviews__module'>
+                                <h3>ИМЯ:АЙНУРА</h3>
+                                <p>Прекрастынй парк, дети
+                                    довольны</p>
+                            </div>
+                        </div>
+                        <div className="reviews__one">
+                            <div className='reviews__module'>
+                                <h3>ИМЯ:АЙНУРА</h3>
+                                <p>Прекрастынй парк, дети
+                                    довольны</p>
+                            </div>
+                        </div>
+                        <div className="reviews__one">
+                            <div className='reviews__module'>
+                                <h3>ИМЯ:АЙНУРА</h3>
+                                <p>Прекрастынй парк, дети
+                                    довольны</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="reviews__skypark">
+                    <h2>SKY PARK</h2>
+                    <div className='reviews__box'>
+                        <div className="reviews__one">
+                            <div className='reviews__module'>
+                                <h3>ИМЯ:АЙНУРА</h3>
+                                <p>Прекрастынй парк, дети
+                                    довольны</p>
+                            </div>
+                        </div>
+                        <div className="reviews__one">
+                            <div className='reviews__module'>
+                                <h3>ИМЯ:АЙНУРА</h3>
+                                <p>Прекрастынй парк, дети
+                                    довольны</p>
+                            </div>
+                        </div>
+                        <div className="reviews__one">
+                            <div className='reviews__module'>
+                                <h3>ИМЯ:АЙНУРА</h3>
+                                <p>Прекрастынй парк, дети
+                                    довольны</p>
+                            </div>
+                        </div>
+                        <div className="reviews__one">
+                            <div className='reviews__module'>
+                                <h3>ИМЯ:АЙНУРА</h3>
+                                <p>Прекрастынй парк, дети
+                                    довольны</p>
+                            </div>
+                        </div>
+                        <div className="reviews__one">
+                            <div className='reviews__module'>
+                                <h3>ИМЯ:АЙНУРА</h3>
+                                <p>Прекрастынй парк, дети
+                                    довольны</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="reviews__skypark">
+                    <h2>SKY PARK</h2>
+                    <div className='reviews__box'>
+                        <div className="reviews__one">
+                            <div className='reviews__module'>
+                                <h3>ИМЯ:АЙНУРА</h3>
+                                <p>Прекрастынй парк, дети
+                                    довольны</p>
+                            </div>
+                        </div>
+                        <div className="reviews__one">
+                            <div className='reviews__module'>
+                                <h3>ИМЯ:АЙНУРА</h3>
+                                <p>Прекрастынй парк, дети
+                                    довольны</p>
+                            </div>
+                        </div>
+                        <div className="reviews__one">
+                            <div className='reviews__module'>
+                                <h3>ИМЯ:АЙНУРА</h3>
+                                <p>Прекрастынй парк, дети
+                                    довольны</p>
+                            </div>
+                        </div>
+                        <div className="reviews__one">
+                            <div className='reviews__module'>
+                                <h3>ИМЯ:АЙНУРА</h3>
+                                <p>Прекрастынй парк, дети
+                                    довольны</p>
+                            </div>
+                        </div>
+                        <div className="reviews__one">
+                            <div className='reviews__module'>
+                                <h3>ИМЯ:АЙНУРА</h3>
+                                <p>Прекрастынй парк, дети
+                                    довольны</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <ToastContainer
-                position="bottom-left"
-                autoClose={5000}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
-            />
         </section>
     );
 };

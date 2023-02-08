@@ -1,19 +1,33 @@
 .aboutCompany{
   padding-top: 120px;
-  background: url("bg1.svg")center/cover no-repeat;
-  &__title{
-    margin-bottom: 30px;
-    font-size: 34px;
+  padding-bottom: 60px;
+  &__images{
+    display: flex;
+    justify-content: center;
+    img{
+      width: 25%;
+    }
   }
-  p{
-    margin-bottom: 20px;
+  &__info{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    img{
+      width: 35%;
+    }
   }
-  &__mission{
-    margin-bottom: 20px;
-    font-size: 34px;
+  &__right{
+    width: 53%;
+    h2{
+      color: #23549f;
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+    p{
+      font-weight: 500;
+      font-size: 20px;
+    }
   }
-&__contact{
-  font-size: 34px;
-}
-
 }

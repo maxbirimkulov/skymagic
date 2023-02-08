@@ -1,32 +1,50 @@
 .banner{
   position: relative;
   height: 100vh;
-  background: url("../images/main-baner.jpg")center/cover no-repeat;
+  background: url("../images/DSC_4629_DxO.jpg")center/cover no-repeat;
   &__container{
 
 
   }
+  &__btn{
+    background: none;
+    color: white;
+    border-radius: 15px;
+    border: 3px solid white;
+    width: 100%;
+    font-size: 46px;
+    margin-top: 20px;
+
+  }
   &__title{
     position: absolute;
-    padding: 30px 90px;
-    top: 23%;
-    left: 55%;
+    padding: 10px 40px 30px;
 
+    top: 19%;
+    left: 53%;
     z-index: 1;
     color: white;
+    background: linear-gradient(#eac442,#e13a2d);
+    border-radius: 30px;
+    width: 600px;
 
-    background: #11111170;
-    border-radius: 10px;
-    line-height: 80px;
-    text-align: center;
+
+
 
   }
   &__smagic{
-    font-size: 70px;
-
-
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 30px;
   }
   &__text{
-    font-size: 25px;
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+  &__info{
+    font-size: 26px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
   }
 }

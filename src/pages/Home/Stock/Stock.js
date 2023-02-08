@@ -1,37 +1,27 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './Stock.scss'
-import {AiOutlinePlus,AiOutlineMinus} from 'react-icons/ai'
-
-import {data} from "./data";
+import dr from '../images/Технопарк_2.jpg'
 
 const Stock = () => {
-    const [selected, setSelected] = useState(null)
-
-    const toggle = (i) => {
-        if (selected === i) {
-            return setSelected(null)
-        }
-
-        setSelected(i)
-    }
-
     return (
+        <section className='stock'>
+          <div className="stock container">
+                <h2 className='stock__title'>АКЦИИ И СОБЫТИЯ</h2>
+                <div className="stock__swiper">
+                    <div className="stock__card">
+                        <img src={dr} alt=""/>
+                        <h4 className='stock__name'>
+                            ДНИ РОЖДЕНИЯ
+                        </h4>
+                            <p className='stock__info'>
+                                ДНИ РОЖДЕНИЯ
+                                В ИНТЕРЕСНОМ ПАРКЕ
+                            </p>
+                            <button className='stock__btn'>ПОДРОБНЕЕ</button>
 
-        <section className='stock' id="stock">
-            <div className="stock__container container">
-                <h2 className='stock__title'>Акции</h2>
-                <div className="accordion">
-                    {data && data.map((el, i) => (
-                        <div className='accordion__content'>
-                            <div className="accordion__subtitle" onClick={() => toggle(i)}>
-                                <h3 className='accordion__stock'>{el.stock}</h3>
-                                <span>{selected === i ? <AiOutlineMinus className='minus'/> : <AiOutlinePlus className='plus'/>}</span>
-                            </div>
-                            <p className={selected === i ? 'accordion__dsc accordion__show' : 'accordion__dsc'}>{el.description}</p>
-                        </div>
-                    ))}
+                    </div>
                 </div>
-            </div>
+          </div>
         </section>
     );
 };
