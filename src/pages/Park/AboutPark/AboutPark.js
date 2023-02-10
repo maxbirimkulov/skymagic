@@ -1,56 +1,83 @@
-import React from 'react';
+import React, {useState} from 'react';
+import {AnimatePresence, motion} from "framer-motion";
+import AboutParkTab from "./AboutParkTab/AboutParkTab";
+import data from "../../../utils/data";
 import "./AboutPark.scss"
+const AboutPark = () => {
+    const [cards, setCards] = useState(data.filter(el => el.category === 'аттракционы'))
+    const [ activeBtn, setActiveBtn ] = useState(0)
+    const buttons = data.reduce((acc,el)=>{
+        if (acc.includes(el.category)) return acc;
+        return [...acc,el.category]
+    },[])
+    const handleFilter = (selector,e) => {
+        setActiveBtn(+e.target.dataset.index)
+        setCards(data.filter(el => el.category === selector))
 
-const AboutPark = ({dataPark}) => {
+    }
     return (
-        <section className='aboutPark'>
+        <section className="about-park">
             <div className="container">
-                <div className="aboutPark__left">
-                    <div className="aboutPark__block">
-                        <h2 className="aboutPark__title">{dataPark.title}</h2>
-                        <h3>{dataPark.areatitle}</h3>
-                        <ul>{
-                            dataPark.areatext.map((el,idx)=>{
-                                return (
-                                    <li key={idx}>{el}</li>
-                                )
-                            })
-                        }
-                        </ul>
-                        <h3>{dataPark.about}</h3>
-                    </div>
-                    <div className="aboutPark__block">
 
-                        <h2 className="aboutPark__title">{dataPark.zonestitle}</h2>
-                        <p>{dataPark.zones}</p>
-                        <h2 className="aboutPark__title">Атракционы</h2>
-                        <ul>{
-                            dataPark.attractions.map((el,idx)=>{
-                                return (
-                                    <li key={idx}>{el}</li>
-                                )
-                            })
-                        }
-                        </ul>
-                    </div>
-
+                <div className="about-park__tabs">
+                    {
+                        buttons.map((btn,idx) =>(
+                            <AboutParkTab
+                                active={idx === activeBtn ? 'active' : ''}
+                                key={idx}
+                                text={btn}
+                                idx={idx}
+                                handleClick={(e)=>handleFilter(btn,e)}
+                            />
+                        ))
+                    }
                 </div>
-                <div className="aboutPark__right">
-                    <ul className="aboutPark__right-block">
-                        {
-                            dataPark.gamecomplex.map((el,idx)=>{
-                                return (
-                                    <li key={idx}>{el}</li>
-                                )
-                            })
-                        }
+                <motion.div className="about-park__content"
+                            animate={{y: [100, 0]}}
+                            transition={{
+                                ease: "easeOut",
+                                duration: 4,
 
-                    </ul>
-                </div>
+                            }}
+                            initial={{opacity: 0}}
+                            whileInView={{opacity: 1}}
+                            viewport={{once: true}}
+                >
+                    {
+                        <AnimatePresence initial={false} exitBeforeEnter>
+                            {
+                                cards.map(el => (
+                                    <motion.div
+                                        className="about-park__card"
+                                        key={el.id}
+                                    >
+                                        <div className="about-park__img">
+                                            <motion.img src={el.img} alt={el.title} className="about-park__img-item"
+                                                        animate={{
+                                                            opacity: 1
+                                                        }}
+                                                        transition={{
+
+                                                            duration: 1,
+                                                        }}
+                                                        exit={{opacity: 0}}
+                                                        initial={{opacity: 0}}
+                                            />
+                                        </div>
+
+                                        <h3 className="about-park__txt">{el.title}</h3>
+                                    </motion.div>
+                                ))
+                            }
+                        </AnimatePresence>
+                    }
+                </motion.div>
+
             </div>
-
         </section>
-    );
+    )
+
+
 };
 
 export default AboutPark;

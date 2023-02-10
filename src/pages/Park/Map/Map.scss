@@ -1,58 +1,62 @@
-.map{
+.map {
 
-  .container{
+  .container {
     padding: 80px 0;
     position: relative;
-
+    display: flex;
 
   }
-  &__google{
+
+  &__google {
     width: 100%;
-    height: 70vh;
+    height: 50vh;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 
 
-    iframe{
+    iframe {
       width: 100%;
       height: 100%;
 
     }
   }
-  &__txt{
 
-    background: gray;
-
-color: white;
-
+  &__txt {
+    h2{
+      color: #284AAC;
+      font-weight: 600;
+      font-size: 44px;
+    }
+    h3{
+      color: #3f3f3f;
+      font-weight: 600;
+      font-size: 33px;
+    }
 
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba(255, 255, 255, 0.18);
     padding: 40px;
-    width: 30%;
-    position: absolute;
-    top: 30%;
-    left: 61%;
-
-
   }
 }
-.place-card-large{
+
+.place-card-large {
   display: none;
 }
-@media (max-width: 769px ) {
-  .map__txt{
+
+@media (max-width: 769px) {
+  .map__txt {
     display: none;
   }
 }
-@media (max-width: 481px ) {
-  .map{
-    .container{
+
+@media (max-width: 481px) {
+  .map {
+    .container {
       padding: 20px 0;
     }
   }
-  .map__txt{
+  .map__txt {
     display: none;
   }
 }

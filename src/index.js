@@ -16,7 +16,7 @@ root.render(
         <Provider store={store}>
             <PersistGate loading={null} persistor={persistor}>
                 <Suspense fallback={<h1>Loading...</h1>}>
-                <App />
+                <App/>
                 </Suspense>
             </PersistGate>
         </Provider>

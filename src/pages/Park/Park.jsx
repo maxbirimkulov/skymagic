@@ -16,8 +16,8 @@ const Park = () => {
         <>
 
             <Place dataPark={dataPark}/>
-            <AboutPark dataPark={dataPark}/>
             <Price dataPark={dataPark}/>
+            <AboutPark/>
             <Portfolio dataPark={dataPark}/>
 
             <Map dataPark={dataPark}/>

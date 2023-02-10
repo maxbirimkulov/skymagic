@@ -1,3 +1,4 @@
+
 import React from 'react';
 import './Vacancies.scss'
 import img1 from './images/DSC_4951_DxO.jpg'
