@@ -1,0 +1,77 @@
+.ticket{
+  &__form{
+    background: #284AAC;
+    padding: 30px;
+    border-radius: 30px;
+    color: #FFFFFF;
+    &-row{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-title{
+      font-weight: 500;
+      line-height: 40px;
+    }
+    &-select{
+      padding: 5px 10px;
+      font-size: 33px;
+      border-radius: 10px;
+    }
+    &-txt{
+      padding: 10px 0;
+      font-weight: 500;
+    }
+    &-input{
+      padding: 5px 20px 5px 30px;
+      text-align: center;
+      font-size: 30px;
+    }
+    &-minus,&-plus{
+    color: #284AAC;
+      padding: 5px 20px;
+      text-align: center;
+      font-size: 30px;
+      cursor: pointer;
+    }
+    &-minus{
+
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+    }
+
+    &-plus{
+      border-bottom-right-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    &-right{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 150px;
+    }
+    &-btn{
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-size: 50px;
+      background: #fff;
+      color: #284AAC;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+  }
+  &__price{
+    background: #FFFFFF;
+    width: 200px;
+    border-radius: 10px;
+    height: 100px;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 50px;
+  }
+
+}

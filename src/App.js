@@ -14,11 +14,11 @@ import Franchise from "./pages/franchise/franchise";
 import Integration from "./pages/Integration/Integration";
 import Support from "./pages/Support/Support";
 import Services from "./pages/Services/Services";
-import Ticket from "./Components/Ticket/Ticket";
 import Gallery from "./pages/Gallery/Gallery";
 import Reviews from "./pages/Reviews/Reviews";
 import AllStock from "./pages/oneStock/AllStock";
 import DetailEvents from "./pages/DetailEvents/DetailEvents";
+import BuyTicket from "./pages/BuyTicket/BuyTicket";
 
 
 function App() {
@@ -43,7 +43,7 @@ function App() {
                     <Route path='/support' element={<Support/>}/>
                     <Route path='/services' element={<Services/>}/>
                     <Route path='/reviews' element={<Reviews/>}/>
-                    <Route path='/ticket' element={<Ticket/>}/>
+                    <Route path='/ticket' element={<BuyTicket/>}/>
                     <Route path='/allstock' element={<AllStock/>}/>
                     <Route path='/events' element={<DetailEvents/>}/>
                 </Route>
