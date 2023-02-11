@@ -9,6 +9,11 @@
     text-transform: uppercase;
     padding: 10px 20px ;
     border-radius: 10px;
+    cursor: pointer;
+    &:hover{
+      background: linear-gradient(45deg,#F0382B,#E9BC2E);
+
+    }
   }
   &__acc{
     border: 2px solid #FFFFFF;

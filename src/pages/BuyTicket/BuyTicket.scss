@@ -9,3 +9,64 @@
     font-weight: 700;
   }
 }
+@media (max-width: 1440px) {
+
+}
+@media (max-width: 1201px) {
+
+}
+@media (max-width: 1025px) {
+  .ticket{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .buy-ticket{
+    .container{
+      padding: 80px  0;
+    }}
+}
+@media (max-width: 769px ) {
+  .ticket__form-right {
+    column-gap: 50px;
+  }
+  .buy-ticket__title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .ticket__form-row{
+    flex-direction: column;
+  }
+  .buy-ticket{
+    .container{
+      padding: 80px  0;
+    }}
+
+  .ticket__form-img{
+    display: none;
+  }
+}
+@media (max-width: 481px ) {
+
+  .ticket__form-right {
+    column-gap: 10px;
+  }
+  .buy-ticket__title {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .ticket__form-row{
+    flex-direction: column;
+  }
+  .buy-ticket{
+    .container{
+      padding: 80px  0;
+    }}
+  .ticket__form-right{
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  .ticket__form-select {
+    font-size: 22px;
+  }
+}

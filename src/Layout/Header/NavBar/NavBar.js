@@ -11,7 +11,12 @@ const NavBar = ({toggleClass}) => {
     return (
         <ul className='nav container'>
             <li className="nav__item">
+                <NavLink className="nav__link" to="/ticket" onClick={() => {
+                    toggleClass()
+                    clickFunc('buy-ticket', user.email ? user._id : null)
+                }}>
                 <button className="nav__btn" type="button">Купить билет</button>
+                </NavLink>
             </li>
             <li className='nav__item'>
                 <Dropdown toggleClass={toggleClass}/>
