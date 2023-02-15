@@ -2,7 +2,6 @@ import React from 'react';
 import "./Map.scss"
 
 const Map = ({dataPark}) => {
-    console.log(dataPark)
     return (
         <section className="map">
             <div className="container">

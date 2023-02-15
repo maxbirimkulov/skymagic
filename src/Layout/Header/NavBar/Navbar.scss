@@ -11,8 +11,9 @@
     border-radius: 10px;
     cursor: pointer;
     &:hover{
-      background: linear-gradient(45deg,#F0382B,#E9BC2E);
-
+      background:#F0382B;
+      transform: scale(1.5);
+      transition: 0.5s;
     }
   }
   &__acc{
@@ -24,6 +25,9 @@
    @include text(500,15px,20px,#fff);
     &:hover{
       color: #ffb825;
+      transform: scale(1.2);
+      transition: 0.2s;
+
     }
   }
 }
