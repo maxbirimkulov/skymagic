@@ -5,6 +5,7 @@ import img1 from './Asset 1.png'
 import img2 from './Asset 2.png'
 import img3 from './Asset 3.png'
 import img4 from './Asset 4.png'
+import Application from "../../Components/Application/Application";
 
 const Services = () => {
     return (
@@ -43,6 +44,7 @@ const Services = () => {
                 </div>
                 </div>
             </div>
+            <Application/>
         </section>
     );
 };

@@ -5,6 +5,7 @@ import img2 from './Asset 5 (1).png'
 import img3 from './Asset 6 (1).png'
 import img4 from './Asset 7 (1).png'
 import img5 from './Asset 8 (1).png'
+import Application from "../../Components/Application/Application";
 
 const Franchise = () => {
     return (
@@ -55,6 +56,7 @@ const Franchise = () => {
                         в его оснащении, в обучении персонала и организации открытия</p>
                 </div>
             </div>
+            <Application/>
         </section>
     );
 };

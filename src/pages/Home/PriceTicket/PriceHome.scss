@@ -1,4 +1,11 @@
 .priceHome{
+  padding-top: 30px;
+  &__title{
+    color: #23549f;
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
   &__box{
     display: flex;
     justify-content: space-between;

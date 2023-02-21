@@ -1,9 +1,9 @@
 import React from 'react';
 import './Parks.scss'
-import skypark from '../images/Skypark_5.jpg'
-import tommi from '../images/DSC_5161_DxO.jpg'
-import tehnopark from '../images/Технопарк_2.jpg'
-import stum from '../images/DSC_5248_DxO.jpg'
+import skypark from '../images/1 (5).png'
+import tommi from '../images/2 (5).png'
+import tehnopark from '../images/4 (5).png'
+import stum from '../images/3 (5).png'
 import {NavLink} from "react-router-dom";
 import {animateScroll} from "react-scroll";
 
@@ -21,10 +21,10 @@ const Parks = () => {
                 <h2 className='parks__branches '>НАШИ ПАРКИ</h2>
                 <div className="parks__cards">
                     <div className="parks__card">
-                        <div className="parks__space">
+
                         <img src={tehnopark} alt=""/>
 
-                        </div>
+
                         <div className="parks__text">
                             <h3>SMAGIC <span>ТЕХНОПАРК</span></h3>
                         </div>
@@ -33,28 +33,27 @@ const Parks = () => {
                     </div>
 
                     <div className="parks__card">
-                        <div className="parks__space2">
+
                         <img src={stum} alt=""/>
-                        </div>
+
                         <div className="parks__text">
                             <h3>SMAGIC <span>ЦУМ</span></h3>
                         </div>
                         <NavLink onClick={()=>toTop()} to='/parks/Smagic%20Tsum'><button>ПОДРОБНЕЕ</button></NavLink>
                     </div>
                     <div className="parks__card">
-                        <div className="parks__space">
+
                             <img src={tommi} alt=""/>
-                        </div>
+
                         <div className="parks__text">
                             <h3>SMAGIC <span>TOMMI MALL</span></h3>
                         </div>
                         <NavLink onClick={()=>toTop()} to='/parks/Smagic%20Tommi'><button>ПОДРОБНЕЕ</button></NavLink>
                     </div>
                     <div className="parks__card">
-                        <div className="parks__space2">
+
                         <img src={skypark} alt="sky-park"/>
 
-                        </div>
                         <div className="parks__text">
                             <h3>SKY PARK <span>АЛА-АРЧА</span></h3>
                         </div>

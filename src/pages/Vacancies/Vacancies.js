@@ -37,7 +37,7 @@ const Vacancies = () => {
                             ПРОФЕССИОНАЛОВ</p>
                     </div>
                 </div>
-                <h2>ВАКАНСИИ:</h2>
+                <h2 className='vacancies__vacancy'>ВАКАНСИИ:</h2>
                 <div className="vacancies__all">
                     <div className="vacancies__one">
                         <h3 className='vacancies__name'>АДМИНИСТРАТОР В SKYPARK</h3>

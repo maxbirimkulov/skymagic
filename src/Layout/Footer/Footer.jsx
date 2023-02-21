@@ -50,10 +50,10 @@ const Footer = () => {
                             }>О нас</NavLink>
                         </li>
                         <li>
-                            <NavLink className="nav__link" to="/career" onClick={
+                            <NavLink className="nav__link" to="/vacancies" onClick={
                                 ()=>{
                                     toTop()
-                                    clickFunc('career', user.email ? user._id : null)
+                                    clickFunc('vacancies', user.email ? user._id : null)
                                 }
                             }>Работа в Smagic</NavLink>
                         </li>

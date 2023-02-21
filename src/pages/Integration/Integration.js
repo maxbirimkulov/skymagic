@@ -2,6 +2,9 @@ import React from 'react';
 import './Integration.scss'
 import img1 from '../franchise/Asset 17.png'
 import ocak from './ojak.png'
+import img4 from './DSC_4942_DxO.jpg'
+import img2 from './DSC_4953_DxO.jpg'
+import img3 from './DSC_4988_DxO.jpg'
 
 const Integration = () => {
     return (
@@ -28,7 +31,9 @@ const Integration = () => {
                     рассказать о своем продукте и услуге так, чтобы сделать их любимыми для детей, и для
                     родителей</p>
                 <div className='integration__swiper'>
-
+                    <img src={img2} alt=""/>
+                    <img src={img3} alt=""/>
+                    <img src={img4} alt=""/>
                 </div>
                 <h2 className='integration__partners'>НАШИ ПАРТНЕРЫ:</h2>
                 <div className='integration__partner'>
