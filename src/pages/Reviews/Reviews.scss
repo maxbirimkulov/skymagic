@@ -6,14 +6,32 @@
     font-weight: 700;
     color: #23549f;
   }
+  .branch__menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    .branch__item{
+      text-align: center;
+      font-weight: 700;
+      color: #23549f;
+      border: 1px solid #2343ad;
+      &.active{
+        background: #284AAC;
+        color: #f4f4f5;
+      }
+    }
+  }
 }
+
 .reviews__box{
   display: flex;
-  justify-content: space-between;
+  column-gap: 30px;
+  padding-top: 40px;
+
 }
 
 .reviews__one{
-  width: 16%;
+
   height: 250px;
   background: linear-gradient(90deg, rgba(234,196,66,1) 0%, rgba(225,58,45,1) 100%);
   border-radius: 30px;
@@ -35,11 +53,26 @@
     background: linear-gradient(90deg, rgba(234,196,66,1) 0%, rgba(225,58,45,1) 100%);
 
   }
+  h4{
+    margin-top: auto;
+  }
+  h4::before{
+    width: 100%;
+    content: '';
+    height: 1px;
+    display: block;
+    background: linear-gradient(90deg, rgba(234,196,66,1) 0%, rgba(225,58,45,1) 100%);
+
+  }
 }
 .reviews__module{
   background: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
   height: 100%;
   border-radius: 30px;
-  padding: 10px;
+  padding: 30px;
 
 }

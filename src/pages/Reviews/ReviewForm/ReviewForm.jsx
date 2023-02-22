@@ -44,6 +44,7 @@ const ReviewForm = () => {
                                 <option value="tsum">SMAGIC ЦУМ</option>
                                 <option value="tommy">SMAGIC ТОММИ МОЛ</option>
                             </select>
+                            <p className='request__error'>{errors?.branch && errors?.branch.message}</p>
                         </label>
 
                     </div>
@@ -88,7 +89,7 @@ const ReviewForm = () => {
                                         message : 'Поле обязательно к заполнению',
                                         value : true
                                     }
-                                })} className='reviews__fio request__input' type="number" value={value}/>
+                                })} hidden={true} className='reviews__fio request__input' type="number" value={value}/>
 
                             </label>
                             <button className='reviews__btn' type={"submit"}>Отправить</button>
