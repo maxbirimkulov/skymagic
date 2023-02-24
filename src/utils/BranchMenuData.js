@@ -1,7 +1,7 @@
 export const branchMenuData =  [
     {
         branch: '',
-        text: 'ВСЕ БАННЕРЫ',
+        text: 'ВСЕ ОТЗЫВЫ',
     },
     {
         branch: 'tsum',
