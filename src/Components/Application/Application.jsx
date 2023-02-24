@@ -1,11 +1,32 @@
 import React from 'react';
 import './Application.scss'
+import {useForm} from "react-hook-form";
+import axios from "../../utils/axios";
+import InputMask from "react-input-mask";
+import DownloadButton from "../DownloadButton/DownloadButton";
 
 const Application = () => {
+
+    const {
+        register,
+        formState: {
+            errors,
+        },
+        reset,
+        handleSubmit,
+    } = useForm()
+
+    const onSubmit = (data) => {
+        axios.post('request', data)
+            .then(() => {
+                console.log('заявка отправлена')
+                reset()
+            }).catch(() => console.log('ошибка при отправке'))
+    }
     return (
         <section className='application'>
             <div className="container">
-                <div className="application__box">
+                <form className="application__box" onSubmit={handleSubmit(onSubmit)}>
                     <div className="application__left">
                     <h2 className='application__title'> ЗАПОЛНИТЕ
                         ЗАЯВКУ <br/>
@@ -13,26 +34,54 @@ const Application = () => {
                         <span className='application__miniTitle'>Оставьте контактные данные и мы свяжемся с вами</span>
 
                         <div className="application__goal">
-                        <select name="" id="">
-                            <option value="">Для мероприятия</option>
-                            <option value="">Для партнерства</option>
+                        <select {...register('goal')}>
+                            <option value="Для мероприятия">Для мероприятия</option>
+                            <option value="Для партнерства">Для партнерства</option>
                         </select>
                     </div>
                     </div>
-                    <form action="" className='application__form'>
+                    <div className='application__form'>
                         <label htmlFor="">
-                            <input type="text" placeholder={'Ф.И.О'}/>
+                            <input {...register('name', {
+                                required: 'Поле обязательно к заполнению',
+                                minLength: {
+                                    value: 2,
+                                    message: 'Минимум 2 символа'
+                                }
+                            })}  type="text" placeholder={'Ф.И.О'}/>
+                            <p className='request__error'>{errors?.name && errors?.name.message}</p>
                         </label>
                         <label htmlFor="">
-                            <input placeholder={'Номер телефона'} type="tel"/>
+                            <InputMask mask={`+\\9\\96(999)99-99-99`} type='tel'  {...register('phone', {
+                                required: {
+                                    value: true,
+                                    message: 'Это поле обязательное'
+                                },
+                                pattern: {
+                                    value: /^\+996\(\d{3}\)\d{2}-\d{2}-\d{2}$/,
+                                    message: 'Заполните номер телефона'
+                                }
+                            })} className={`request__input request__numb ${errors.phone ? 'request__input_error' : ''}`} placeholder='Номер телефона'/>
+                            <p className='request__error'>
+                                {errors.phone && errors.phone?.message}
+                            </p>
                         </label>
                         <label htmlFor="">
-                            <textarea className='application__message' placeholder={"Cообщение"}>
+                            <textarea {...register('text', {
+                                required: 'Поле обязательно к заполнению',
+                                minLength: {
+                                    value: 2,
+                                    message: 'Минимум 2 символа'
+                                }
+                            })} className='application__message' placeholder={"Cообщение"}>
 
                             </textarea>
+                            <p className='request__error'>{errors?.text && errors?.text.message}</p>
                         </label>
-                    </form>
-                </div>
+                        <DownloadButton text={'Отправить'}/>
+                    </div>
+
+                </form>
             </div>
         </section>
     );
