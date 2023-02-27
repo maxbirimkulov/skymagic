@@ -1,13 +1,12 @@
 import React, {useState} from 'react';
 import './ReviewForm.scss'
 import {useForm} from "react-hook-form";
-<<<<<<< HEAD
-import axios from "../../../utils/axios";
-
-const ReviewForm = () => {
 
 
-=======
+
+
+
+
 import Rating from '@mui/material/Rating';
 import axios from "../../../utils/axios";
 
@@ -30,7 +29,7 @@ const ReviewForm = () => {
                 reset()
             }).catch(() => console.log('ошибка при отправке'))
     }
->>>>>>> 4d716ccc22af72c12dc0a95a92e45fb4215024a8
+
     return (
         <section className='reviews'>
             <div className="reviews container">

@@ -1,13 +1,7 @@
 import React, {useEffect} from 'react';
 import ReviewForm from "./ReviewForm/ReviewForm";
 import './Reviews.scss'
-<<<<<<< HEAD
-import {useSelector} from "react-redux";
 
-const Reviews = () => {
-
-
-=======
 import Rating from "@mui/material/Rating";
 import {useDispatch, useSelector} from "react-redux";
 import {getReviews,changeBranch} from "../../redux/reducers/reviews";
@@ -21,7 +15,7 @@ const Reviews = () => {
         dispatch(getReviews(filter))
 
     }, [filter.branch])
->>>>>>> 4d716ccc22af72c12dc0a95a92e45fb4215024a8
+
     return (
         <section>
             <div className="container">
@@ -30,7 +24,7 @@ const Reviews = () => {
                 <div className="reviews__skypark">
                     <BranchMenu changeBranch={changeBranch} route={'reviews'}/>
                     <div className='reviews__box'>
-<<<<<<< HEAD
+
                         <div className="reviews__one">
                             {
 
@@ -188,8 +182,7 @@ const Reviews = () => {
                                 <p>Прекрастынй парк, дети
                                     довольны</p>
                             </div>
-                        </div>
-=======
+
                         {
                             data.map(el =>(
                                 <div className="reviews__one">
@@ -207,15 +200,15 @@ const Reviews = () => {
                             ))
                         }
 
->>>>>>> 4d716ccc22af72c12dc0a95a92e45fb4215024a8
                     </div>
 
+                </div>
                 </div>
 
 
             </div>
         </section>
-    );
+    )
 };
 
 export default Reviews;
