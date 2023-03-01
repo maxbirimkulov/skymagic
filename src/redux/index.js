@@ -6,6 +6,9 @@ import banners from "./reducers/banners";
 import vacancies from "./reducers/vacancies";
 import gallery from "./reducers/gallery";
 import reviews from "./reducers/reviews";
+import sales from "./reducers/sales";
+import events from "./reducers/events";
+
 
 
 const rootReducer = combineReducers({
@@ -13,7 +16,9 @@ const rootReducer = combineReducers({
     banners,
     vacancies,
     gallery,
-    reviews
+    reviews,
+    sales,
+    events : events
 });
 const persistConfig = {
     key: 'root',

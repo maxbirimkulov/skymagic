@@ -17,6 +17,9 @@ const BuyTicket = () => {
                         <br/>
                         <NavLink to="/register">
                             Зарегистрироваться </NavLink>
+                        или
+                        <NavLink to="/login">
+                            Войти </NavLink>
                     </h2>
                 :<Ticket/>}
             </div>

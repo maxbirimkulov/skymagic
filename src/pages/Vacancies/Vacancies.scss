@@ -49,6 +49,8 @@
 
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
   }
 
   &__one {
@@ -122,5 +124,10 @@
     color: #23549f;
     font-weight: 700;
     margin-top: 50px;
+  }
+  button{
+    background: #284AAC;
+    padding: 10px 20px;
+    color: #f4f4f5;
   }
 }

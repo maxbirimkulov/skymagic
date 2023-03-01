@@ -16,7 +16,7 @@ import Support from "./pages/Support/Support";
 import Services from "./pages/Services/Services";
 import Gallery from "./pages/Gallery/Gallery";
 import Reviews from "./pages/Reviews/Reviews";
-import AllStock from "./pages/oneStock/AllStock";
+import AllStock from "./pages/AllStock/AllStock";
 import DetailEvents from "./pages/DetailEvents/DetailEvents";
 import BuyTicket from "./pages/BuyTicket/BuyTicket";
 
@@ -44,7 +44,7 @@ function App() {
                     <Route path='/services' element={<Services/>}/>
                     <Route path='/reviews' element={<Reviews/>}/>
                     <Route path='/ticket' element={<BuyTicket/>}/>
-                    <Route path='/allstock' element={<AllStock/>}/>
+                    <Route path='/vacancies/allstock' element={<AllStock/>}/>
                     <Route path='/events' element={<DetailEvents/>}/>
                 </Route>
             </Routes>

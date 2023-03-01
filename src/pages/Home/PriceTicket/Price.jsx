@@ -2,8 +2,16 @@ import React from 'react';
 import './PriceHome.scss'
 import logoSky from '../images/Logo SKYPARK.png'
 import logoSmagic from '../images/Logo_Main.png'
+import {Link} from "react-router-dom";
+import {animateScroll} from "react-scroll";
 
 const Price = () => {
+    const toTop = () => {
+        animateScroll.scrollToTop({
+            delay: 0,
+            duration: 0
+        })
+    };
     return (
         <section className='priceHome'>
             <div className="priceHome container">
@@ -18,7 +26,7 @@ const Price = () => {
                         <p className='priceHome__kids'>БИЛЕТ ОТ 4Х ЛЕТ
                             ДО 16 ЛЕТ</p>
                         <h3 className='priceHome__after' >450 СОМ</h3>
-                        <button>КУПИТЬ</button>
+                        <Link  to='/ticket'><button onClick={toTop}>Купить</button></Link>
 
                     </div>
                     <div className="priceHome__card">
@@ -30,7 +38,7 @@ const Price = () => {
                         <p className='priceHome__kids'>БИЛЕТ ОТ 4Х ЛЕТ
                             ДО 16 ЛЕТ</p>
                         <h3 className='priceHome__after' >450 СОМ</h3>
-                        <button>КУПИТЬ</button>
+                        <Link  to='/ticket'><button onClick={toTop}>Купить</button></Link>
 
                     </div>
                     <div className="priceHome__card">
@@ -42,7 +50,7 @@ const Price = () => {
                         <p className='priceHome__kids'>БИЛЕТ ОТ 4Х ЛЕТ
                             ДО 16 ЛЕТ</p>
                         <h3 className='priceHome__after' >450 СОМ</h3>
-                        <button>КУПИТЬ</button>
+                        <Link  to='/ticket'><button onClick={toTop}>Купить</button></Link>
 
                     </div>
                     <div className="priceHome__card">
@@ -54,7 +62,7 @@ const Price = () => {
                         <p className='priceHome__kids'>БИЛЕТ ОТ 4Х ЛЕТ
                             ДО 16 ЛЕТ</p>
                         <h3 className='priceHome__after' >450 СОМ</h3>
-                        <button>КУПИТЬ</button>
+                        <Link  to='/ticket'><button onClick={toTop}>Купить</button></Link>
                     </div>
                 </div>
             </div>
