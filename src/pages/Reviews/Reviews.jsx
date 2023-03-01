@@ -20,174 +20,15 @@ const Reviews = () => {
         <section>
             <div className="container">
                 <ReviewForm/>
-
                 <div className="reviews__skypark">
                     <BranchMenu changeBranch={changeBranch} route={'reviews'}/>
                     <div className='reviews__box'>
-
-                        <div className="reviews__one">
-                            {
-
-                            }
-                            <div className='reviews__module'>
-                            <h3>ИМЯ:АЙНУРА</h3>
-                            <p>Прекрастынй парк, дети
-                                довольны</p>
-                            </div>
-                        </div>
-                        <div className="reviews__one">
-                            <div className='reviews__module'>
-                                <h3>ИМЯ:АЙНУРА</h3>
-                                <p>Прекрастынй парк, дети
-                                    довольны</p>
-                            </div>
-                        </div>
-                        <div className="reviews__one">
-                            <div className='reviews__module'>
-                                <h3>ИМЯ:АЙНУРА</h3>
-                                <p>Прекрастынй парк, дети
-                                    довольны</p>
-                            </div>
-                        </div>
-                        <div className="reviews__one">
-                            <div className='reviews__module'>
-                                <h3>ИМЯ:АЙНУРА</h3>
-                                <p>Прекрастынй парк, дети
-                                    довольны</p>
-                            </div>
-                        </div>
-                        <div className="reviews__one">
-                            <div className='reviews__module'>
-                                <h3>ИМЯ:АЙНУРА</h3>
-                                <p>Прекрастынй парк, дети
-                                    довольны</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="reviews__skypark">
-                    <h2>SKY PARK</h2>
-                    <div className='reviews__box'>
-                        <div className="reviews__one">
-                            <div className='reviews__module'>
-                                <h3>ИМЯ:АЙНУРА</h3>
-                                <p>Прекрастынй парк, дети
-                                    довольны</p>
-                            </div>
-                        </div>
-                        <div className="reviews__one">
-                            <div className='reviews__module'>
-                                <h3>ИМЯ:АЙНУРА</h3>
-                                <p>Прекрастынй парк, дети
-                                    довольны</p>
-                            </div>
-                        </div>
-                        <div className="reviews__one">
-                            <div className='reviews__module'>
-                                <h3>ИМЯ:АЙНУРА</h3>
-                                <p>Прекрастынй парк, дети
-                                    довольны</p>
-                            </div>
-                        </div>
-                        <div className="reviews__one">
-                            <div className='reviews__module'>
-                                <h3>ИМЯ:АЙНУРА</h3>
-                                <p>Прекрастынй парк, дети
-                                    довольны</p>
-                            </div>
-                        </div>
-                        <div className="reviews__one">
-                            <div className='reviews__module'>
-                                <h3>ИМЯ:АЙНУРА</h3>
-                                <p>Прекрастынй парк, дети
-                                    довольны</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="reviews__skypark">
-                    <h2>SKY PARK</h2>
-                    <div className='reviews__box'>
-                        <div className="reviews__one">
-                            <div className='reviews__module'>
-                                <h3>ИМЯ:АЙНУРА</h3>
-                                <p>Прекрастынй парк, дети
-                                    довольны</p>
-                            </div>
-                        </div>
-                        <div className="reviews__one">
-                            <div className='reviews__module'>
-                                <h3>ИМЯ:АЙНУРА</h3>
-                                <p>Прекрастынй парк, дети
-                                    довольны</p>
-                            </div>
-                        </div>
-                        <div className="reviews__one">
-                            <div className='reviews__module'>
-                                <h3>ИМЯ:АЙНУРА</h3>
-                                <p>Прекрастынй парк, дети
-                                    довольны</p>
-                            </div>
-                        </div>
-                        <div className="reviews__one">
-                            <div className='reviews__module'>
-                                <h3>ИМЯ:АЙНУРА</h3>
-                                <p>Прекрастынй парк, дети
-                                    довольны</p>
-                            </div>
-                        </div>
-                        <div className="reviews__one">
-                            <div className='reviews__module'>
-                                <h3>ИМЯ:АЙНУРА</h3>
-                                <p>Прекрастынй парк, дети
-                                    довольны</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="reviews__skypark">
-                    <h2>SKY PARK</h2>
-                    <div className='reviews__box'>
-                        <div className="reviews__one">
-                            <div className='reviews__module'>
-                                <h3>ИМЯ:АЙНУРА</h3>
-                                <p>Прекрастынй парк, дети
-                                    довольны</p>
-                            </div>
-                        </div>
-                        <div className="reviews__one">
-                            <div className='reviews__module'>
-                                <h3>ИМЯ:АЙНУРА</h3>
-                                <p>Прекрастынй парк, дети
-                                    довольны</p>
-                            </div>
-                        </div>
-                        <div className="reviews__one">
-                            <div className='reviews__module'>
-                                <h3>ИМЯ:АЙНУРА</h3>
-                                <p>Прекрастынй парк, дети
-                                    довольны</p>
-                            </div>
-                        </div>
-                        <div className="reviews__one">
-                            <div className='reviews__module'>
-                                <h3>ИМЯ:АЙНУРА</h3>
-                                <p>Прекрастынй парк, дети
-                                    довольны</p>
-                            </div>
-                        </div>
-                        <div className="reviews__one">
-                            <div className='reviews__module'>
-                                <h3>ИМЯ:АЙНУРА</h3>
-                                <p>Прекрастынй парк, дети
-                                    довольны</p>
-                            </div>
 
                         {
                             data.map(el =>(
                                 <div className="reviews__one">
                                     <div key={el.id} className='reviews__module'>
-                                        <h3>ИМЯ:{el.name}</h3>
+                                        <h3>ИМЯ : {el.name}</h3>
                                         <p>{el.text}</p>
                                         <p>{toDate(el.createdAt)}</p>
                                         <p>{el.branch}</p>
@@ -199,9 +40,6 @@ const Reviews = () => {
                                 </div>
                             ))
                         }
-
-                    </div>
-
                 </div>
                 </div>
 
