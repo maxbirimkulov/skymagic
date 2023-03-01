@@ -40,7 +40,7 @@ const Stock = () => {
                         className="stock__swiper"
                     >
                         {data.map(el =>(
-                            <SwiperSlide key={el.id}>
+                            <SwiperSlide key={el._id}>
                                 <div className="stock__card-wrapper">
                                     <div className="stock__card">
                                         <img src={`${process.env.REACT_APP_URL}${el.images}`} alt=""/>
@@ -50,7 +50,7 @@ const Stock = () => {
                                         <p className='stock__info'>
                                             {el.description}
                                         </p>
-                                        <Link to={"/allstock"}>
+                                        <Link to={`/allstock`}>
                                             <button onClick={toTop} className='stock__btn'>ПОДРОБНЕЕ</button>
                                         </Link>
 

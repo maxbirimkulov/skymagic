@@ -31,7 +31,6 @@ function App() {
                     <Route path='basket' element={<Basket/>}/>
                     <Route path='/gallery' element={<Gallery/>}/>
                     <Route path='/vacancies' element={<Vacancies/>}/>
-                    <Route path='/vacancies/:id' element={<Vacancies/>}/>
                     <Route path='*' element={<NotFound/>}/>
                     <Route path='/login' element={<Login/>}/>
                     <Route path='/account/*' element={<Account/>}/>
@@ -44,7 +43,7 @@ function App() {
                     <Route path='/services' element={<Services/>}/>
                     <Route path='/reviews' element={<Reviews/>}/>
                     <Route path='/ticket' element={<BuyTicket/>}/>
-                    <Route path='/vacancies/allstock' element={<AllStock/>}/>
+                    <Route path='/allstock' element={<AllStock/>}/>
                     <Route path='/events' element={<DetailEvents/>}/>
                 </Route>
             </Routes>

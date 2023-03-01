@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Controller } from 'swiper';
+import { Controller,Autoplay } from 'swiper';
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -26,6 +26,7 @@ export default function Portfolio() {
                 onSwiper={setFirstSwiper}
                 controller={{ control: secondSwiper ,
                     inverse: true}}
+
                 slidesPerView={5}
                 spaceBetween={30}
                 initialSlide={3}
@@ -47,7 +48,11 @@ export default function Portfolio() {
                 initialSlide={3}
                 loop={true}
                 centeredSlides={true}
-                modules={[Controller]}
+                autoplay={{
+                    delay: 4000,
+                    disableOnInteraction: false,
+                }}
+                modules={[Controller,Autoplay]}
                 onSwiper={setSecondSwiper}
                 controller={{ control: firstSwiper,
                     inverse: true}}
