@@ -11,7 +11,7 @@ import Rating from '@mui/material/Rating';
 import axios from "../../../utils/axios";
 
 const ReviewForm = () => {
-    const [value, setValue] = useState(0);
+    const [value, setValue] = useState(5);
     const {
         register,
         formState: {
