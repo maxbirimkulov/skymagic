@@ -50,14 +50,14 @@ const Vacancies = () => {
                 <h2 className='vacancies__vacancy'>ВАКАНСИИ:</h2>
                 <div className="vacancies__all">
                     {data.map((el,idx)=>(
-                        <div className="vacancies__one">
+                        <div className="vacancies__one" key={el._id}>
                             <h3 className='vacancies__name'>{el.title}</h3>
                             <h5 className='vacancies__text'>{el.description}</h5>
                             <p className='vacancies__requirements'>{el.responsibilities[0]?.text}</p>
                             <p className='vacancies__schedule'>{el.requirement[0]?.text}</p>
                             <p className='vacancies__salary'>{el.salary}</p>
                             <p className='vacancies__skills'>{el.graph}</p>
-                            <Link to={"allstock"}>
+                            <Link to={el._id}>
                                 <button>Подробнее</button>
                             </Link>
                         </div>
