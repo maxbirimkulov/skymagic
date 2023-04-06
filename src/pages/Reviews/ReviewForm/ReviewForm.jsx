@@ -1,14 +1,10 @@
 import React, {useState} from 'react';
 import './ReviewForm.scss'
 import {useForm} from "react-hook-form";
-
-
-
-
-
-
 import Rating from '@mui/material/Rating';
 import axios from "../../../utils/axios";
+import {toast, ToastContainer} from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const ReviewForm = () => {
     const [value, setValue] = useState(5);
@@ -25,9 +21,10 @@ const ReviewForm = () => {
 
         axios.post('review', data)
             .then(() => {
-                console.log('отзыв отправлен')
+                toast.success("Отзыв успешно отправлен!");
+                console.log(data)
                 reset()
-            }).catch(() => console.log('ошибка при отправке'))
+            }).catch(() => toast.error("Произошла ошибка!"))
     }
 
     return (
@@ -37,22 +34,86 @@ const ReviewForm = () => {
                     <div className="reviews__left">
                         <h2>ОСТАВЬТЕ <br/>
                             НАМ ОТЗЫВ</h2>
-                        <label className="ticket__form-label">
-                            <select
-                                className={`ticket__form-select ${errors.name ? 'ticket__form-select_error' : ''}`} {...register("branch", {
-                                required: {
-                                    message: 'Филиал обязателен к заполнению',
-                                    value: true
-                                }
-                            })}>
-                                <option hidden={true} value="">Выберите парк</option>
-                                <option value="sky">SKY-PARK АЛА АРЧА</option>
-                                <option value="techno">SMAGIC ТЕНХОПАРК</option>
-                                <option value="tsum">SMAGIC ЦУМ</option>
-                                <option value="tommy">SMAGIC ТОММИ МОЛ</option>
-                            </select>
-                            <p className='request__error'>{errors?.branch && errors?.branch.message}</p>
-                        </label>
+                        <p>Можете оставить нам отзыв о наших <br/>
+                        развлекательных парках. <br/>
+                            мы рассмотрим их в кротчайщее время
+                        </p>
+                        <div className="reviews__radios">
+                            <label className="reviews__radio">
+
+                                <input
+                                    {...register('branch', { required: true })}
+                                    type="radio"
+                                    name="branch"
+                                    value="sky"
+                                    className="reviews__radio-input"
+                                    id="sky"
+                                />
+                                <div className="reviews__radio-btn"></div>
+                                Skypark <br/>
+                                ТЦ "Ала-арча"
+                            </label>
+                            <label className="reviews__radio">
+
+                                <input
+                                    {...register('branch', { required: true })}
+                                    type="radio"
+                                    name="branch"
+                                    value="techno"
+                                    className="reviews__radio-input"
+                                    id="techno"
+                                />
+                                <div className="reviews__radio-btn"></div>
+                                SMagic <br/>
+                                ТЦ "Технопарк"
+                            </label>
+                            <label className="reviews__radio">
+
+                                <input
+                                    {...register('branch', { required: true })}
+                                    type="radio"
+                                    name="branch"
+                                    value="tommy"
+                                    className="reviews__radio-input"
+                                    id="tommy"
+                                />
+                                <div className="reviews__radio-btn"></div>
+                                SMagic <br/>
+                                ТЦ "Tommi Mall"
+                            </label>
+                            <label className="reviews__radio">
+
+                                <input
+                                    {...register('branch', { required: {message: "Выберите филиал", value: true} })}
+                                    type="radio"
+                                    name="branch"
+                                    value="tsum"
+                                    className="reviews__radio-input"
+                                    id="tsum"
+                                />
+                                <div className="reviews__radio-btn"></div>
+                                SMagic <br/>
+                                ТЦ "ЦУМ 2"
+
+                            </label>
+                        </div>
+                        <p className='request__error'>{errors?.branch && errors?.branch.message}</p>
+                        {/*<label className="ticket__form-label">*/}
+                        {/*    <select*/}
+                        {/*        className={`ticket__form-select ${errors.name ? 'ticket__form-select_error' : ''}`} {...register("branch", {*/}
+                        {/*        required: {*/}
+                        {/*            message: 'Филиал обязателен к заполнению',*/}
+                        {/*            value: true*/}
+                        {/*        }*/}
+                        {/*    })}>*/}
+                        {/*        <option hidden={true} value="">Выберите парк</option>*/}
+                        {/*        <option value="sky">S</option>*/}
+                        {/*        <option value="techno">SMAGIC ТЕНХОПАРК</option>*/}
+                        {/*        <option value="tsum">SMAGIC ЦУМ</option>*/}
+                        {/*        <option value="tommy">SMAGIC ТОММИ МОЛ</option>*/}
+                        {/*    </select>*/}
+                        {/*    <p className='request__error'>{errors?.branch && errors?.branch.message}</p>*/}
+                        {/*</label>*/}
 
                     </div>
                     <div className="reviews__right">
@@ -104,6 +165,18 @@ const ReviewForm = () => {
                     </div>
                 </form>
             </div>
+            <ToastContainer
+                position="bottom-left"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable={false}
+                pauseOnHover
+                theme="light"
+            />
         </section>
     );
 };
