@@ -21,7 +21,7 @@ const BuyTicket = () => {
                         <NavLink to="/login">
                             Войти </NavLink>
                     </h2>
-                :<Ticket/>}
+                    :<Ticket/>}
             </div>
         </section>
     );

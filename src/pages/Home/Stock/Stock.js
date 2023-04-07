@@ -1,10 +1,10 @@
 import React,{useEffect} from 'react';
 import './Stock.scss'
-import dr from '../images/Технопарк_2.jpg'
+
 import {useDispatch, useSelector} from "react-redux";
 import {getSales} from "../../../redux/reducers/sales";
 import {Swiper, SwiperSlide} from "swiper/react";
-import {Autoplay, EffectCreative} from "swiper";
+import {Autoplay} from "swiper";
 import {Link} from "react-router-dom";
 import {animateScroll} from "react-scroll";
 const Stock = () => {

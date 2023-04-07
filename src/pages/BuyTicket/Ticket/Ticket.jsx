@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {useForm} from "react-hook-form";
 import "./Ticket.scss"
-
+import logo from './logo.png'
 const Ticket = () => {
     const [threeTicket, setThreeTicket] = useState(0)
     const [sixteenTicket, setSixteenTicket] = useState(0)
@@ -90,7 +90,7 @@ const Ticket = () => {
                         </p>
                     </div>
                     <div className="ticket__form-img">
-                        <img src="" alt="LOGO"/>
+                        <img src={logo} alt="Smagic"/>
                     </div>
                 </div>
                 <div className="ticket__form-row">

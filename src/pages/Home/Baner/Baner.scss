@@ -11,20 +11,19 @@
     color: white;
     border-radius: 15px;
     border: 3px solid white;
-     padding: 20px 40px;
+    padding: 20px 40px;
     font-size: 46px;
     margin-top: 20px;
-
   }
   &__slider{
     position: absolute;
     top: 15%;
-    left: 53%;
+    right: 0;
     z-index: 1;
   }
   .swiper {
     margin: 100px auto;
-    width: 600px;
+    width: 41vw;
   }
 
   .swiper-slide {
@@ -45,7 +44,7 @@
 
   }
   &__smagic{
-    font-size: 60px;
+    font-size: 3.472vw;
     font-weight: 600;
     margin-bottom: 30px;
   }
@@ -59,4 +58,17 @@
     margin-bottom: 20px;
 
   }
+  .banner__btn{
+    font-size: 3.194vw;
+  }
+}
+@media (max-width: 1000px) {
+
+}
+@media (max-width: 769px) {
+
+}
+@media (max-width: 481px) {
+
+
 }
