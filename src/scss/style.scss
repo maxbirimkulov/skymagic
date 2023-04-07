@@ -36,15 +36,76 @@ main{
  }
 }
 
-@media (max-width: 1201px) {
-  .container{
-    max-width: 1101px;
+@media (max-width: 1239px) {
+  .container {
+    max-width: 1000px;
+  }
+  .nav {
+    column-gap: 20px;
+  }
+  .banner__slider{
+    left: 48%;
+  }
+  .banner .swiper {
+    width: 500px;
+  }
+  .banner__smagic {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .banner__text {
+    font-size: 24px;
+  }
+  .banner__btn {
+    padding: 12px 25px;
+    font-size: 40px;
+  }
+  .priceHome__box{
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 40px;
+    row-gap: 40px;
+  }
+  .application{
+    margin-bottom: 30px;
+  }
+  .services__box h2{
+    font-size: 30px;
+  }
+  .services__card{
+    text-align: center;
+  }
+  .reviews__box{
+    justify-content: center;
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 999px) {
   .container{
     max-width: 900px;
+  }
+  .vacancies__icon{
+    flex-wrap: wrap;
+    row-gap: 40px;
+    justify-content: center;
+    column-gap: 30px;
+  }
+  .franchise__about img{
+    width: 70%;
+  }
+  .services__box{
+    flex-direction: column;
+  }
+  .services__box img{
+    width: 70%;
+  }
+  .services__right{
+    width: 100%;
+    text-align: center;
+  }
+  .services__icons{
+    flex-wrap: wrap;
+    row-gap: 40px;
   }
   .services__variants li{
     position: static;
@@ -95,6 +156,25 @@ main{
   .container{
     max-width: 669px;
   }
+  .aboutCompany__info{
+    flex-direction: column;
+  }
+  .aboutCompany__info img{
+    width: 60%;
+  }
+  .aboutCompany__right{
+    width: 100%;
+  }
+  .application__box{
+    flex-direction: column;
+  }
+  .application__left{
+    width: 100%;
+  }
+  .application__form{
+    width: 100%;
+    margin-top: 20px;
+  }
   .footer__connection{
     flex-wrap: wrap;
 
@@ -110,6 +190,15 @@ main{
   .franchise__card{
     width: 100%;
   }
+  .footer__lists{
+    column-gap: 1px;
+  }
+  .franchise__img img{
+    height: 15vh;
+  }
+  .franchise__card p{
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 481px ) {
@@ -117,7 +206,12 @@ main{
     max-width: 421px;
 
   }
-
+  .services__right{
+    text-align: center;
+  }
+  .footer__lists{
+    column-gap: 1px;
+  }
   .banner__title{
     padding: 0 20px;
   }

@@ -8,11 +8,11 @@
   }
   &__box{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     img{
-      width: 40%;
-      height: 400px;
+      width: 35%;
+      height: 360px;
     }
     p{
       margin-bottom: 30px;
@@ -49,8 +49,10 @@
     flex-wrap: wrap;
     row-gap: 20px;
     img{
-     
+     border-radius: 20px;
+      box-shadow: 0 0 24px 7px rgba(34, 60, 80, 0.08);
       width: 23%;
+      padding: 20px;
       height: 200px;
     }
   }

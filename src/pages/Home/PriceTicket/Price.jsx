@@ -23,7 +23,7 @@ const Price = () => {
                         <p className='priceHome__kids'>БИЛЕТ ОТ 1 ГОДА <br/>
                             ДО 3Х ЛЕТ</p>
                         <h3 className='priceHome__under'>330 СОМ</h3>
-                        <p className='priceHome__kids'>БИЛЕТ ОТ 4Х ЛЕТ
+                        <p className='priceHome__kids'>БИЛЕТ ОТ 4Х ЛЕТ <br/>
                             ДО 16 ЛЕТ</p>
                         <h3 className='priceHome__after' >450 СОМ</h3>
                         <Link  to='/ticket'><button onClick={toTop}>Купить</button></Link>
@@ -35,7 +35,7 @@ const Price = () => {
                         <p className='priceHome__kids'>БИЛЕТ ОТ 1 ГОДА <br/>
                             ДО 3Х ЛЕТ</p>
                         <h3 className='priceHome__under'>330 СОМ</h3>
-                        <p className='priceHome__kids'>БИЛЕТ ОТ 4Х ЛЕТ
+                        <p className='priceHome__kids'>БИЛЕТ ОТ 4Х ЛЕТ <br/>
                             ДО 16 ЛЕТ</p>
                         <h3 className='priceHome__after' >450 СОМ</h3>
                         <Link  to='/ticket'><button onClick={toTop}>Купить</button></Link>
@@ -47,7 +47,7 @@ const Price = () => {
                         <p className='priceHome__kids'>БИЛЕТ ОТ 1 ГОДА <br/>
                             ДО 3Х ЛЕТ</p>
                         <h3 className='priceHome__under'>330 СОМ</h3>
-                        <p className='priceHome__kids'>БИЛЕТ ОТ 4Х ЛЕТ
+                        <p className='priceHome__kids'>БИЛЕТ ОТ 4Х ЛЕТ <br/>
                             ДО 16 ЛЕТ</p>
                         <h3 className='priceHome__after' >450 СОМ</h3>
                         <Link  to='/ticket'><button onClick={toTop}>Купить</button></Link>
@@ -59,7 +59,7 @@ const Price = () => {
                         <p className='priceHome__kids'>БИЛЕТ ОТ 1 ГОДА <br/>
                             ДО 3Х ЛЕТ</p>
                         <h3 className='priceHome__under'>330 СОМ</h3>
-                        <p className='priceHome__kids'>БИЛЕТ ОТ 4Х ЛЕТ
+                        <p className='priceHome__kids'>БИЛЕТ ОТ 4Х ЛЕТ <br/>
                             ДО 16 ЛЕТ</p>
                         <h3 className='priceHome__after' >450 СОМ</h3>
                         <Link  to='/ticket'><button onClick={toTop}>Купить</button></Link>

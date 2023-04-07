@@ -2,18 +2,22 @@ import React, {useEffect} from 'react';
 import './Vacancies.scss'
 import img2 from './images/DSC_4921_DxO.jpg'
 import {BsFillTelephoneFill} from 'react-icons/bs'
-import {FiMail} from 'react-icons/fi'
+import  {FiMail} from 'react-icons/fi'
 import {useDispatch, useSelector} from "react-redux";
 import {getVacancies} from "../../redux/reducers/vacancies";
 import {Link} from "react-router-dom";
+import first from './images/Asset 18.png'
+import second from './images/Asset 19.png'
+import third from './images/Asset 20.png'
+import fourth from './images/Asset 21.png'
 
 const Vacancies = () => {
 
-    const {data} = useSelector((s) => s.vacancies)
-    const dispatch = useDispatch()
-    useEffect(() => {
+    const {data}=useSelector((s)=>s.vacancies)
+    const dispatch=useDispatch()
+    useEffect(()=>{
         dispatch(getVacancies())
-    }, [])
+    },[])
     console.log(data)
     return (
         <section className='vacancies'>
@@ -28,26 +32,30 @@ const Vacancies = () => {
                 <h2 className='vacancies__our'>НАШИ ПРЕИМУЩЕСТВА</h2>
                 <div className='vacancies__icon'>
                     <div className="vacancies__icons">
+                        <img src={fourth} alt=""/>
                         <p>ЗАБОТА О КОМАНДЕ
                             И ИНДИВИДУАЛЬНЫЙ
                             ПОДХОД</p>
                     </div>
                     <div className="vacancies__icons">
+                        <img src={third} alt=""/>
                         <p>НАДЕЖНОСТЬ
                             И ОТВЕТСВЕННОСТЬ</p>
                     </div>
                     <div className="vacancies__icons">
+                        <img src={second} alt=""/>
                         <p>КОНКУРЕНТНЫЕ
                             УСЛОВИЯ</p>
                     </div>
                     <div className="vacancies__icons">
+                        <img src={first} alt=""/>
                         <p>КОМАНДА
                             ПРОФЕССИОНАЛОВ</p>
                     </div>
                 </div>
                 <h2 className='vacancies__vacancy'>ВАКАНСИИ:</h2>
                 <div className="vacancies__all">
-                    {data.map((el, idx) => (
+                    {data.map((el,idx)=>(
                             <div className="vacancies__one" key={el._id}>
                                 <h3 className='vacancies__name'>{el.title}</h3>
                                 <h5 className='vacancies__text'>{el.description}</h5>
@@ -60,6 +68,7 @@ const Vacancies = () => {
                                 </Link>
                             </div>
                         )
+
                     )}
 
 
@@ -69,7 +78,7 @@ const Vacancies = () => {
             <div className="vacancies__footer">
                 <h2>СВЯЗАТЬСЯ С HR ОТДЕЛОМ</h2>
                 <div className="vacancies__contact">
-                    <p><span><BsFillTelephoneFill/></span>+996 771 780 708</p>
+                    <p> <span><BsFillTelephoneFill/></span>+996 771 780 708</p>
                     <p><span>{<FiMail/>}</span>Smagic@gmail.com</p>
                 </div>
             </div>
