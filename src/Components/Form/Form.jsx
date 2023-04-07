@@ -30,7 +30,7 @@ const Form = () => {
             await localStorage.setItem('user', JSON.stringify(data))
             await reset();
             await navigate('/')
-        })  .catch((error) => console.log(`bad request ${error}`));
+        }).catch((error) => console.log(`bad request ${error}`));
     };
 
     const addUser = (data) => {
@@ -39,7 +39,7 @@ const Form = () => {
             await localStorage.setItem('user', JSON.stringify(res.data));
             await reset();
             await navigate('/')
-        }) .catch((error) => console.log(`bad request ${error}`));
+        }).catch((error) => console.log(`bad request ${error}`));
     };
 
     const onSubmit = (data) => {
