@@ -36,13 +36,51 @@ main{
  }
 }
 
-@media (max-width: 1201px) {
-  .container{
-    max-width: 1101px;
+@media (max-width: 1239px) {
+  .container {
+    max-width: 1000px;
+  }
+  .nav {
+    column-gap: 20px;
+  }
+  .banner__slider{
+    left: 48%;
+  }
+  .banner .swiper {
+    width: 500px;
+  }
+  .banner__smagic {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .banner__text {
+    font-size: 24px;
+  }
+  .banner__btn {
+    padding: 12px 25px;
+    font-size: 40px;
+  }
+  .priceHome__box{
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 40px;
+    row-gap: 40px;
+  }
+  .application{
+    margin-bottom: 30px;
+  }
+  .services__box h2{
+    font-size: 30px;
+  }
+  .services__card{
+    text-align: center;
+  }
+  .reviews__box{
+    justify-content: center;
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 999px) {
   .container{
     max-width: 900px;
   }

@@ -2,9 +2,10 @@
   padding-top: 30px;
   &__title{
     color: #23549f;
-    font-size: 44px;
-    font-weight: 700;
+    font-size: 42px;
+    font-weight: 900;
     margin-bottom: 30px;
+
   }
   &__box{
     display: flex;
@@ -14,13 +15,13 @@
     width: 290px;
     flex-direction: column;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     row-gap: 15px;
     text-align: center;
     background: #2343ad;
-    padding-bottom:40px;
-    padding-top: 40px;
+    padding: 40px 0;
+    box-shadow: 7px 6px 7px 0 rgba(34, 60, 80, 0.2);
 
 
     color: white;
