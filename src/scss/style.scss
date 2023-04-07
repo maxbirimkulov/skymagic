@@ -84,6 +84,29 @@ main{
   .container{
     max-width: 900px;
   }
+  .vacancies__icon{
+    flex-wrap: wrap;
+    row-gap: 40px;
+    justify-content: center;
+    column-gap: 30px;
+  }
+  .franchise__about img{
+    width: 70%;
+  }
+  .services__box{
+    flex-direction: column;
+  }
+  .services__box img{
+    width: 70%;
+  }
+  .services__right{
+    width: 100%;
+    text-align: center;
+  }
+  .services__icons{
+    flex-wrap: wrap;
+    row-gap: 40px;
+  }
   .services__variants li{
     position: static;
     text-align: center;
@@ -133,6 +156,25 @@ main{
   .container{
     max-width: 669px;
   }
+  .aboutCompany__info{
+    flex-direction: column;
+  }
+  .aboutCompany__info img{
+    width: 60%;
+  }
+  .aboutCompany__right{
+    width: 100%;
+  }
+  .application__box{
+    flex-direction: column;
+  }
+  .application__left{
+    width: 100%;
+  }
+  .application__form{
+    width: 100%;
+    margin-top: 20px;
+  }
   .footer__connection{
     flex-wrap: wrap;
 
@@ -148,6 +190,15 @@ main{
   .franchise__card{
     width: 100%;
   }
+  .footer__lists{
+    column-gap: 1px;
+  }
+  .franchise__img img{
+    height: 15vh;
+  }
+  .franchise__card p{
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 481px ) {
@@ -155,7 +206,12 @@ main{
     max-width: 421px;
 
   }
-
+  .services__right{
+    text-align: center;
+  }
+  .footer__lists{
+    column-gap: 1px;
+  }
   .banner__title{
     padding: 0 20px;
   }

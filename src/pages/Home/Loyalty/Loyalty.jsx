@@ -1,5 +1,6 @@
 import React from 'react';
 import './loyalty.scss'
+import loyalty from './Asset 22.png'
 
 const Loyalty = () => {
     return (
@@ -11,16 +12,7 @@ const Loyalty = () => {
                         <h3>Описание</h3>
                     </div>
                     <div className="loyalty__photo">
-                        <div className='loyalty__card'>
-                            <h2>GOLD CARD</h2>
-                            <div className='loyalty__circles'>
-                                <div className='loyalty__circle'></div>
-                                <div className='loyalty__circle'></div>
-                                <div className='loyalty__circle'></div>
-                                <div className='loyalty__circle'></div>
-                                <div className='loyalty__circle'></div>
-                            </div>
-                        </div>
+                        <img src={loyalty} alt=""/>
                     </div>
                 </div>
             </div>

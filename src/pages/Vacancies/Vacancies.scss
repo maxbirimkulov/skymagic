@@ -27,7 +27,7 @@
   &__icons {
     width: 240px;
     height: 240px;
-    padding: 15px;
+    padding:20px 15px;
     background: #23549f;
     border-radius: 20px;
   }
@@ -37,6 +37,16 @@
   &__icon {
     display: flex;
     justify-content: space-between;
+    text-align: center;
+    color: white;
+   p{
+     font-weight: 600;
+     margin-top: 20px;
+   }
+    img{
+      width: 70%;
+      height: 60%;
+    }
 
   }
 

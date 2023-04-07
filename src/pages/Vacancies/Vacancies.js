@@ -1,13 +1,16 @@
 
 import React, {useEffect} from 'react';
 import './Vacancies.scss'
-import img1 from './images/DSC_4951_DxO.jpg'
 import img2 from './images/DSC_4921_DxO.jpg'
 import {BsFillTelephoneFill} from 'react-icons/bs'
 import  {FiMail} from 'react-icons/fi'
 import {useDispatch, useSelector} from "react-redux";
 import {getVacancies} from "../../redux/reducers/vacancies";
 import {Link} from "react-router-dom";
+import first from './images/Asset 18.png'
+import second from './images/Asset 19.png'
+import third from './images/Asset 20.png'
+import fourth from './images/Asset 21.png'
 
 const Vacancies = () => {
 
@@ -30,19 +33,23 @@ const Vacancies = () => {
                 <h2 className='vacancies__our'>НАШИ ПРЕИМУЩЕСТВА</h2>
                 <div className='vacancies__icon'>
                     <div className="vacancies__icons">
+                        <img src={fourth} alt=""/>
                         <p>ЗАБОТА О КОМАНДЕ
                             И ИНДИВИДУАЛЬНЫЙ
                             ПОДХОД</p>
                     </div>
                     <div className="vacancies__icons">
+                        <img src={third} alt=""/>
                         <p>НАДЕЖНОСТЬ
                             И ОТВЕТСВЕННОСТЬ</p>
                     </div>
                     <div className="vacancies__icons">
+                        <img src={second} alt=""/>
                         <p>КОНКУРЕНТНЫЕ
                             УСЛОВИЯ</p>
                     </div>
                     <div className="vacancies__icons">
+                        <img src={first} alt=""/>
                         <p>КОМАНДА
                             ПРОФЕССИОНАЛОВ</p>
                     </div>

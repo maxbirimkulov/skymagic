@@ -1,10 +1,14 @@
 import React from 'react';
 import './Integration.scss'
 import img1 from '../franchise/Asset 17.png'
-import ocak from './ojak.png'
+import ocak from './Ожак Кебаб.png'
 import img4 from './DSC_4942_DxO.jpg'
 import img2 from './DSC_4953_DxO.jpg'
 import img3 from './DSC_4988_DxO.jpg'
+import bakai from './Бакай Банк.png'
+import bublik from './Бублик.png'
+import dodo from './Додо пицца.png'
+import dolce from './Дольче Вита.png'
 
 const Integration = () => {
     return (
@@ -38,13 +42,11 @@ const Integration = () => {
                 <h2 className='integration__partners'>НАШИ ПАРТНЕРЫ:</h2>
                 <div className='integration__partner'>
                     <img src={ocak} alt=""/>
-                    <img src={ocak} alt=""/>
-                    <img src={ocak} alt=""/>
-                    <img src={ocak} alt=""/>
-                    <img src={ocak} alt=""/>
-                    <img src={ocak} alt=""/>
-                    <img src={ocak} alt=""/>
-                    <img src={ocak} alt=""/>
+                    <img src={bakai} alt=""/>
+                    <img src={dolce} alt=""/>
+                    <img src={bublik} alt=""/>
+                    <img src={dodo} alt=""/>
+
                 </div>
             </div>
         </section>

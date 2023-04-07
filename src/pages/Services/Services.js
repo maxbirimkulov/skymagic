@@ -6,6 +6,7 @@ import img2 from './Asset 2.png'
 import img3 from './Asset 3.png'
 import img4 from './Asset 4.png'
 import Application from "../../Components/Application/Application";
+import {Link} from "react-router-dom";
 
 const Services = () => {
     return (
@@ -26,21 +27,29 @@ const Services = () => {
                 <h2 className='services__event'>ВАРИАНТЫ МЕРОПРИЯТИЙ:</h2>
                 <div className="services__icons">
                     <div className="services__card">
+                        <Link to={'/events'}>
                     <img src={img1} alt=""/>
                         <h3>ДЕТСКИЕ
                             ПРАЗДНИКИ</h3>
+                    </Link>
                     </div>
                     <div className="services__card">
+                        <Link to={'/events'}>
                     <img src={img2} alt=""/>
                         <h3>ТУШОО- ТОЙ</h3>
+                        </Link>
                 </div>
                     <div className="services__card">
+                        <Link to={'/events'}>
                     <img src={img3} alt=""/>
                         <h3>УТРЕННИКИ</h3>
+                        </Link>
                 </div>
                     <div className="services__card">
+                        <Link to={'/events'}>
                     <img src={img4} alt=""/>
                         <h3>ДНИ РОЖДЕНИЯ</h3>
+                        </Link>
                 </div>
                 </div>
             </div>
