@@ -24,7 +24,7 @@ const Stock = () => {
         <section className='stock'>
           <div className="stock">
                 <h2 className='stock__title'>АКЦИИ И СОБЫТИЯ</h2>
-                <div className="stock__slider">
+                <div className="stock__slider container">
                     <Swiper
                         slidesPerView={4}
                         spaceBetween={30}
@@ -35,6 +35,22 @@ const Stock = () => {
                         autoplay={{
                             delay: 2500,
                             disableOnInteraction: false,
+                        }}
+                        breakpoints={{
+                            0: {
+                                slidesPerView: 1,
+                            },
+                            678:{
+                                slidesPerView:2,
+                            },
+                            1000: {
+                                slidesPerView: 3,
+                                spaceBetween: 10
+                            },
+                            1440:{
+                                slidesPerView:4,
+                            },
+
                         }}
                         modules={[Autoplay]}
                         className="stock__swiper"
