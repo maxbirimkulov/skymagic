@@ -5,7 +5,6 @@ import {animateScroll} from "react-scroll";
 import {BsWhatsapp,BsInstagram,BsFacebook} from "react-icons/bs"
 import {FaTiktok} from "react-icons/fa"
 import {MdOutlineEmail} from 'react-icons/md'
-import './media.scss'
 import {clickFunc} from "../../utils/clickFunc";
 import {useSelector} from "react-redux";
 const Footer = () => {
