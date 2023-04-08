@@ -18,13 +18,14 @@
   &__slider{
     position: absolute;
     top: 15%;
-    right: 0;
+    left: 48%;
     z-index: 1;
+    .swiper {
+      margin: 100px auto;
+      width: 41vw;
+    }
   }
-  .swiper {
-    margin: 100px auto;
-    width: 41vw;
-  }
+
 
   .swiper-slide {
     display: flex;
@@ -63,9 +64,17 @@
   .banner__btn{
     font-size: 3.194vw;
   }
+  .banner__second-slider{
+    padding-top: 200px;
+    width: 60%;
+    margin: 0 0 0 auto;
+  }
 }
 @media (max-width: 1000px) {
+ .banner__slider{
 
+   display: none;
+ }
 }
 @media (max-width: 769px) {
 

@@ -43,23 +43,12 @@ main{
   .nav {
     column-gap: 20px;
   }
-  .banner__slider{
-    left: 48%;
-  }
-  .banner .swiper {
-    width: 500px;
-  }
   .banner__smagic {
     font-size: 30px;
     margin-bottom: 20px;
   }
-  .banner__text {
-    font-size: 24px;
-  }
-  .banner__btn {
-    padding: 12px 25px;
-    font-size: 40px;
-  }
+
+
   .priceHome__box{
     flex-wrap: wrap;
     justify-content: center;
@@ -130,11 +119,7 @@ main{
     }
   }
 
-  .banner__title{
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-  }
+
   .projects__container{
     flex-direction: column;
     align-items: center;
@@ -212,9 +197,7 @@ main{
   .footer__lists{
     column-gap: 1px;
   }
-  .banner__title{
-    padding: 0 20px;
-  }
+
   .footer__lists{
     flex-direction: column;
     text-align: center;
