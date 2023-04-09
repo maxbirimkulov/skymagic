@@ -122,7 +122,14 @@
     margin-top: 20px;
     margin-bottom: 20px;
   }
-
+  &__block{
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+    .oneVacancy__name {
+      margin-bottom: 0;
+    }
+  }
   &__our {
     color: #23549f;
     font-weight: 800;
