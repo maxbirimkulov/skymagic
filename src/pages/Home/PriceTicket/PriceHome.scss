@@ -56,5 +56,10 @@
       font-weight: 700;
       font-size: 20px;
     }
+    button:hover{
+      background: linear-gradient(90deg, rgb(234, 196, 66) 0%, rgb(225, 58, 45) 100%);
+      color: white;
+      cursor: pointer;
+    }
   }
 }
