@@ -2,9 +2,8 @@
   position: relative;
   height: 100vh;
   background: url("../images/DSC_4629_DxO.jpg")center/cover no-repeat;
-  &__container{
-
-
+  &__second-slider{
+    display: none;
   }
   &__btn{
     background: none;
@@ -72,12 +71,17 @@
 }
 @media (max-width: 1000px) {
  .banner__slider{
-
    display: none;
  }
-}
-@media (max-width: 769px) {
+  .banner__second-slider{
+    display: flex;
+  }
 
+}
+@media (max-width: 500px) {
+  .banner .banner__second-slider{
+    width: 100%;
+  }
 }
 @media (max-width: 481px) {
 

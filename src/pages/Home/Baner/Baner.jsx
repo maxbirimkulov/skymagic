@@ -58,10 +58,10 @@ const Baner = () => {
                 </div>
                 <div className="banner__second-slider">
                     <Swiper
-                        // autoplay={{
-                        //     delay: 2500,
-                        //     disableOnInteraction: false,
-                        // }}
+                        autoplay={{
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        }}
                         slidesPerView={"auto"}
                         centeredSlides={true}
                         spaceBetween={30}

@@ -4,9 +4,11 @@ import {useForm} from "react-hook-form";
 import axios from "../../utils/axios";
 import InputMask from "react-input-mask";
 import DownloadButton from "../DownloadButton/DownloadButton";
+import {useLocation} from "react-router-dom";
+import {clickFunc} from "../../utils/clickFunc";
 
 const Application = () => {
-
+    const location = useLocation()
     const {
         register,
         formState: {
@@ -31,13 +33,26 @@ const Application = () => {
                     <h2 className='application__title'> ЗАПОЛНИТЕ
                         ЗАЯВКУ <br/>
                     </h2>
-                        <span className='application__miniTitle'>Оставьте контактные данные и мы свяжемся с вами</span>
+                        <span className='application__miniTitle'>Оставьте контактные данные и мы свяжемся с вами <br/> {
+                            location.pathname === '/services' ? <>
+                                <a href='tel:+996771780708'>+996 (771) 780 708</a></>: ""
+                        }</span>
 
                         <div className="application__goal">
-                        <select {...register('goal')}>
-                            <option value="Для мероприятия">Для мероприятия</option>
-                            <option value="Для партнерства">Для партнерства</option>
-                        </select>
+                            {
+                                location.pathname === '/services' ?
+                                    <select {...register('goal')}>
+                                        <option value="Для мероприятия">Для мероприятия</option>
+                                        <option value="Для партнерства">Для партнерства</option>
+                                    </select> :
+                                    <select {...register('goal')}>
+                                        <option value="Для партнерства">Для партнерства</option>
+                                        <option value="Для мероприятия">Для мероприятия</option>
+
+                                    </select>
+
+                            }
+
                     </div>
                     </div>
                     <div className='application__form'>
