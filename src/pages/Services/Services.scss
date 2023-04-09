@@ -1,16 +1,18 @@
 .services{
   padding-top: 100px;
   &__box{
+    margin-top: 40px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-
+    justify-content: center;
+    column-gap: 80px;
     h2{
       color: #23549f;
-      font-weight: 700;
+      font-weight: 500;
+      font-size: 24px;
     }
     img{
-      width: 45%;
+      width: 30%;
     }
   }
   &__right{
@@ -39,13 +41,13 @@ row-gap: 15px;
       height: 150px;
     }
     h3{
-      font-weight: 700;
+      font-weight: 600;
       color:#23549f
     }
   }
   &__event{
     text-align: center;
-    font-size: 32px;
+    font-size: 24px;
     margin-top: 40px;
     margin-bottom: 50px;
     font-weight: 700;

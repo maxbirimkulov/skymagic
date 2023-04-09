@@ -1,7 +1,7 @@
 import React from 'react';
 import './PriceHome.scss'
-import logoSky from '../images/Logo SKYPARK.png'
-import logoSmagic from '../images/Logo_Main.png'
+import logoSmagic from '../images/Logo SKYPARK.png'
+import logoSky from './Logo_Main (1).png'
 import {Link} from "react-router-dom";
 import {animateScroll} from "react-scroll";
 

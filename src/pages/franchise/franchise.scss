@@ -8,21 +8,21 @@
 
     margin-bottom: 70px;
     img{
-      width: 35%;
-      height: 360px;
+      width: 26%;
+      height: 270px;
     }
   }
   &__right{
     width: 50%;
     h2{
-      font-size: 46px;
+      font-size: 26px;
       color: #23549f;
-      font-weight: 800;
+      font-weight: 700;
     }
     li{
       color: black;
-      font-size: 20px;
-      font-weight: 600;
+      font-size: 18px;
+      font-weight: 500;
       margin-top: 30px;
       position: relative;
       margin-left: 25px;
@@ -30,8 +30,8 @@
     li:before{
       content: '';
       display: flex;
-      width: 15px;
-      height: 15px;
+      width: 8px;
+      height: 8px;
       background: #23549f;
       border-radius: 50%;
       position: absolute;
@@ -41,9 +41,9 @@
     }
   }
   &__expert{
-    font-size: 48px;
+    font-size: 28px;
     color: #23549f;
-    font-weight: 800;
+    font-weight: 700;
     margin-bottom: 40px;
   }
   &__card{
@@ -56,8 +56,8 @@
       height: 100px;
     }
     p{
-      font-size: 22px;
-      font-weight: 600;
+      font-size: 16px;
+      font-weight: 500;
     }
 
 

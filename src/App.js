@@ -19,6 +19,7 @@ import Reviews from "./pages/Reviews/Reviews";
 import AllStock from "./pages/AllStock/AllStock";
 import DetailEvents from "./pages/DetailEvents/DetailEvents";
 import BuyTicket from "./pages/BuyTicket/BuyTicket";
+import OneVacancy from "./pages/OneVacancy/OneVacancy";
 function App() {
     return (
         <>
@@ -29,7 +30,6 @@ function App() {
                     <Route path='basket' element={<Basket/>}/>
                     <Route path='/gallery' element={<Gallery/>}/>
                     <Route path='/vacancies' element={<Vacancies/>}/>
-                    <Route path='/vacancies/:id' element={<Vacancies/>}/>
                     <Route path='*' element={<NotFound/>}/>
                     <Route path='/login' element={<Login/>}/>
                     <Route path='/account/*' element={<Account/>}/>
@@ -44,6 +44,7 @@ function App() {
                     <Route path='/ticket' element={<BuyTicket/>}/>
                     <Route path='/allstock' element={<AllStock/>}/>
                     <Route path='/events' element={<DetailEvents/>}/>
+                    <Route path='/vacancies/:id' element={<OneVacancy/>}/>
                 </Route>
             </Routes>
         </>
