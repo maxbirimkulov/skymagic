@@ -1,12 +1,17 @@
 .aboutParkTab{
-  font-size: 50px;
-  background: #FFFFFF;
-  color: #284AAC;
+  font-size: 30px;
+  padding-bottom: 10px;
+  border-bottom: 4px solid #80808050;
+  color: #80808050;
+
   width: 50%;
   cursor: pointer;
+  background: white;
   transition: 1s;
   &.active{
-    background: #284AAC;
-    color: #FFFFFF;
+    border-bottom: 4px solid #284AAC;
+    background: white;
+    color: #23549f;
+
   }
 }
