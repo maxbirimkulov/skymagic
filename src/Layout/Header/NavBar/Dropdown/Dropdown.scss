@@ -2,14 +2,26 @@
   position: relative;
   display: inline-block;
   cursor: pointer;
+  &-arrow{
+    position: relative;
+    width: 40px;
+    align-self: center;
+    bottom: -20px;
+  }
+  &-border{
+    background: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 15px 15px 16px 0 #72727290,-3px -3px 16px 0 #72727290
+  }
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background: #FFFFFF;
+  right: -60px;
   min-width: 250px;
-  box-shadow: 15px 15px 16px 0 #72727290,-3px -3px 16px 0 #72727290;
 
   z-index: 1;
   flex-direction: column;

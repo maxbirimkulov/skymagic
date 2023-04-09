@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {useForm} from "react-hook-form";
 import "./Ticket.scss"
+
 import logo from './logo.png'
 const Ticket = () => {
     const [threeTicket, setThreeTicket] = useState(0)
