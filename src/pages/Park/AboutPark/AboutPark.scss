@@ -6,6 +6,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    row-gap: 40px;
   }
   &__tabs{
     overflow: hidden;
@@ -14,6 +15,8 @@
   }
   &__card{
     padding: 30px 30px;
+    width: 250px;
+    height: 250px;
     text-align: center;
   }
   &__txt{
@@ -26,7 +29,7 @@
     width: 150px;
     height: 150px;
     border-radius: 20px;
-    background: #284AAC;
+    //background: #284AAC;
     img{
       width: 100%;
       height: 100%;
