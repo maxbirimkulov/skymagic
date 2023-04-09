@@ -1,7 +1,7 @@
 import React from 'react';
 import './PriceHome.scss'
-import logoSmagic from '../images/Logo SKYPARK.png'
-import logoSky from './Logo_Main (1).png'
+import logoSky from '../images/Logo SKYPARK.png'
+import logoSmagic from './Logo_Main (1).png'
 import {Link} from "react-router-dom";
 import {animateScroll} from "react-scroll";
 
@@ -42,7 +42,7 @@ const Price = () => {
 
                     </div>
                     <div className="priceHome__card">
-                        <img className='priceHome__img' src={logoSky} alt=""/>
+                        <img className='priceHome__img' src={logoSmagic} alt=""/>
                         <h2 className='priceHome__location'>TOMMI MALL</h2>
                         <p className='priceHome__kids'>БИЛЕТ ОТ 1 ГОДА <br/>
                             ДО 3Х ЛЕТ</p>
@@ -54,7 +54,7 @@ const Price = () => {
 
                     </div>
                     <div className="priceHome__card">
-                        <img className='priceHome__img' src={logoSky} alt=""/>
+                        <img className='priceHome__img' src={logoSmagic} alt=""/>
                         <h2 className='priceHome__location'>ЦУМ 2</h2>
                         <p className='priceHome__kids'>БИЛЕТ ОТ 1 ГОДА <br/>
                             ДО 3Х ЛЕТ</p>
