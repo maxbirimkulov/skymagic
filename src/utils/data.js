@@ -1,5 +1,5 @@
 export const data = [
-    {id:"09",img: "./a/a.png",title:"Тюбинговая горка",category:"аттракционы"},
+    {id:"09",img: "/assets/Asset 43.png",title:"Тюбинговая горка",category:"аттракционы"},
     {id:"10",img: "",title:"Вулкан",category:"аттракционы"},
     {id:"11",img: "",title:"Зиплайн",category:"аттракционы"},
     {id:"12",img: "",title:"Lego зона",category:"аттракционы"},

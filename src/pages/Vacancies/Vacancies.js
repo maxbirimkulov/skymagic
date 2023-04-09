@@ -61,8 +61,15 @@ const Vacancies = () => {
                                 <h5 className='vacancies__text'>{el.description}</h5>
                                 <p className='vacancies__requirements'>{el.responsibilities[0]?.text}</p>
                                 <p className='vacancies__schedule'>{el.requirement[0]?.text}</p>
-                                <p className='vacancies__salary'>{el.salary}</p>
-                                <p className='vacancies__skills'>{el.graph}</p>
+                                <div className="vacancies__block">
+                                    <h3 className={"vacancies__name"}>Зарплата:</h3>
+                                    <p className='vacancies__salary'>{el.salary}</p>
+                                </div>
+                                <div className="vacancies__block">
+                                    <h3 className={"vacancies__name"}>График:</h3>
+                                    <p className='vacancies__skills'>{el.graph}</p>
+                                </div>
+
                                 <Link to={el._id}>
                                     <button>Подробнее</button>
                                 </Link>
