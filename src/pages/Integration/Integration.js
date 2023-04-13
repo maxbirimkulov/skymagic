@@ -10,32 +10,26 @@ import bublik from './Бублик.png'
 import dodo from './Додо пицца.png'
 import dolce from './Дольче Вита.png'
 import {IoMdClose} from 'react-icons/io'
+import {data3} from '../../utils/data3'
+import {motion} from "framer-motion";
 
 const Integration = () => {
     const [popup,setPopup]=useState('')
 
-    const partner = [
-        {name:'bakai',
-        img:'https://thumb.tildacdn.com/tild3737-6130-4036-b135-656263643463/-/resize/760x/-/format/webp/0293_1.jpg',
-            text:'qwerrtyui'
+    const animation = {
+        hidden:{
+            x:-100,
+            opacity:0,
         },
-        {name:'dodo',
-            img:'',
-            text:'qwerrtyui'
-        },
-        {name:'dolce',
-            img:'',
-            text:'qwerrtyui'
-        },
-        {name:'bublik',
-            img:'',
-            text:'qwerrtyui'
-        },
-        {name:'ocak',
-            img:'',
-            text:'qwerrtyui'
-        }
-    ]
+        visible: custom=>({
+            x:0,
+            opacity:1,
+            transition:{delay:custom *0.2 }
+        })
+    }
+
+
+
     return (
         <section className='integration'>
             <div className="container">
@@ -75,9 +69,9 @@ const Integration = () => {
                 </div>
             </div>
 
-            <div className='integration__popup'>
+            <motion.div className='integration__popup' initial='hidden' whileInView='visible'>
                 {
-                    partner.filter((el)=>(
+                    data3.filter((el)=>(
                             el.name === popup
                         )
                     ).map((el,idx)=>(
@@ -95,7 +89,7 @@ const Integration = () => {
 
                     ))
                 }
-            </div>
+            </motion.div>
 
         </section>
     );
