@@ -38,7 +38,7 @@ const Vacancies = () => {
                             ПОДХОД</p>
                     </div>
                     <div className="vacancies__icons">
-                        <img src={third} alt=""/>
+                        <img className='vacancies__img2' src={third} alt=""/>
                         <p>НАДЕЖНОСТЬ
                             И ОТВЕТСВЕННОСТЬ</p>
                     </div>
