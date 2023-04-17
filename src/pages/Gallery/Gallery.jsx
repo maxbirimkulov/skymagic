@@ -2,15 +2,15 @@ import React, {useEffect, useState} from 'react';
 import "./Gallery.scss"
 import Fancybox from "./Fancybox/Fancybox";
 import {useDispatch, useSelector} from "react-redux";
-import {getGallery,changeBranchG} from "../../redux/reducers/gallery";
+import {getGallery,changeBranch} from "../../redux/reducers/gallery";
 import {ToastContainer} from "react-toastify";
 import {Swiper, SwiperSlide} from "swiper/react";
-import BranchMenu from "../../Components/BranchMenu/BranchMenu";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import {FreeMode, Navigation, Thumbs} from "swiper";
+import BranchMenu from "../../Components/BranchMenu/BranchMenu";
 
 
 const Gallery = () => {
@@ -28,7 +28,8 @@ const Gallery = () => {
     return (
         <section className="gallery">
             <div className="container">
-                <BranchMenu changeBranch={changeBranchG} route={'gallery'}/>
+
+                <BranchMenu changeBranch={changeBranch} route={'gallery'}/>
                 {error.length ? <div>
                     <h2 className='gallery__error'>{error}</h2>
                     <p>На экране выведен старый список картин</p>
