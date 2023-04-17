@@ -37,63 +37,76 @@ const Gallery = () => {
 
                 {
                     status === 'loading' ? '' :
-                        <div className="gallery__sliders">
-                            {
-                                <Swiper
-                                    style={{
-                                        "--swiper-navigation-color": "#fff",
-                                        "--swiper-pagination-color": "#fff",
-                                    }}
-                                    loop={true}
-                                    spaceBetween={10}
-                                    navigation={true}
-                                    thumbs={{swiper: thumbsSwiper}}
-                                    modules={[FreeMode, Navigation, Thumbs]}
-                                    className="mySwiper2"
-                                >
-                                    {
-                                        data.map(item => (
-                                            <SwiperSlide key={item._id}>
-                                                <Fancybox>
-                                                    <div className="photo__wrapper">
-                                                        <div className="photo__box">
-                                                            <a data-fancybox="gallery" data-caption={item.text}
-                                                               href={`${process.env.REACT_APP_URL}${item.imageUrl}`}>
-                                                                <img className="photo__img" alt=""
-                                                                     src={`${process.env.REACT_APP_URL}${item.imageUrl}`}/>
-                                                            </a>
-                                                            <h2>{item.branch}</h2>
-                                                        </div>
-                                                    </div>
-                                                </Fancybox>
-                                            </SwiperSlide>
-                                        ))
-                                    }
-                                </Swiper>
+                <div className="gallery__sliders">
+                    {
+                        data.map(item => (
+                            <div className="photo__box">
+                                <a data-fancybox="gallery" data-caption={item.text}
+                                   href={`${process.env.REACT_APP_URL}${item.imageUrl}`}>
+                                    <img className="photo__img" alt="" src={`${process.env.REACT_APP_URL}${item.imageUrl}`}/>
+                                </a>
+                            </div>
+                        ))
+                    }
+                </div>
 
-
-                            }
-                            <Swiper
-                                onSwiper={setThumbsSwiper}
-                                loop={true}
-                                spaceBetween={10}
-                                slidesPerView={4}
-                                freeMode={true}
-                                watchSlidesProgress={true}
-                                modules={[FreeMode, Navigation, Thumbs]}
-                                className="mySwiper"
-                            >
-                                {
-                                    data.map(item => (
-                                        <SwiperSlide key={item._id}>
-
-                                            <img className="photo__thumb" alt=""
-                                                 src={`${process.env.REACT_APP_URL}${item.imageUrl}`}/>
-                                        </SwiperSlide>))
-                                }
-                            </Swiper>
-
-                        </div>
+                //         <div className="gallery__sliders">
+                //             {
+                //                 <Swiper
+                //                     style={{
+                //                         "--swiper-navigation-color": "#fff",
+                //                         "--swiper-pagination-color": "#fff",
+                //                     }}
+                //                     loop={true}
+                //                     spaceBetween={10}
+                //                     navigation={true}
+                //                     thumbs={{swiper: thumbsSwiper}}
+                //                     modules={[FreeMode, Navigation, Thumbs]}
+                //                     className="mySwiper2"
+                //                 >
+                //                     {
+                //                         data.map(item => (
+                //                             <SwiperSlide key={item._id}>
+                //                                 <Fancybox>
+                //                                     <div className="photo__wrapper">
+                //                                         <div className="photo__box">
+                //                                             <a data-fancybox="gallery" data-caption={item.text}
+                //                                                href={`${process.env.REACT_APP_URL}${item.imageUrl}`}>
+                //                                                 <img className="photo__img" alt=""
+                //                                                      src={`${process.env.REACT_APP_URL}${item.imageUrl}`}/>
+                //                                             </a>
+                //                                             <h2>{item.branch}</h2>
+                //                                         </div>
+                //                                     </div>
+                //                                 </Fancybox>
+                //                             </SwiperSlide>
+                //                         ))
+                //                     }
+                //                 </Swiper>
+                //
+                //
+                //             }
+                //             <Swiper
+                //                 onSwiper={setThumbsSwiper}
+                //                 loop={true}
+                //                 spaceBetween={10}
+                //                 slidesPerView={4}
+                //                 freeMode={true}
+                //                 watchSlidesProgress={true}
+                //                 modules={[FreeMode, Navigation, Thumbs]}
+                //                 className="mySwiper"
+                //             >
+                //                 {
+                //                     data.map(item => (
+                //                         <SwiperSlide key={item._id}>
+                //
+                //                             <img className="photo__thumb" alt=""
+                //                                  src={`${process.env.REACT_APP_URL}${item.imageUrl}`}/>
+                //                         </SwiperSlide>))
+                //                 }
+                //             </Swiper>
+                //
+                //         </div>
                 }
             </div>
 
