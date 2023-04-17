@@ -28,7 +28,7 @@ const gallerySlice = createSlice({
         error: ''
     },
     reducers: {
-        changeBranch : (state, action) => {
+        changeBranchG : (state, action) => {
             state.filter = {
                 ...state.filter,
                 branch: action.payload
@@ -52,5 +52,5 @@ const gallerySlice = createSlice({
     }
 })
 
-export const {changeBranch} = gallerySlice.actions
+export const {changeBranchG} = gallerySlice.actions
 export default gallerySlice.reducer

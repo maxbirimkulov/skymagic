@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import "./Gallery.scss"
 import Fancybox from "./Fancybox/Fancybox";
 import {useDispatch, useSelector} from "react-redux";
-import {getGallery,changeBranch} from "../../redux/reducers/gallery";
+import {getGallery,changeBranchG} from "../../redux/reducers/gallery";
 import {ToastContainer} from "react-toastify";
 import {Swiper, SwiperSlide} from "swiper/react";
 import BranchMenu from "../../Components/BranchMenu/BranchMenu";
@@ -21,14 +21,14 @@ const Gallery = () => {
     const {data, error, status, filter} = useSelector((s) => s.gallery)
 
     useEffect(() => {
-       dispatch(getGallery(filter))
+        dispatch(getGallery(filter))
 
     }, [filter.branch])
 
     return (
         <section className="gallery">
             <div className="container">
-                <BranchMenu changeBranch={changeBranch} route={'gallery'}/>
+                <BranchMenu changeBranch={changeBranchG} route={'gallery'}/>
                 {error.length ? <div>
                     <h2 className='gallery__error'>{error}</h2>
                     <p>На экране выведен старый список картин</p>
@@ -53,7 +53,7 @@ const Gallery = () => {
                                     {
                                         data.map(item => (
                                             <SwiperSlide key={item._id}>
-                                                <Fancybox >
+                                                <Fancybox>
                                                     <div className="photo__wrapper">
                                                         <div className="photo__box">
                                                             <a data-fancybox="gallery" data-caption={item.text}
