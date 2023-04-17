@@ -16,7 +16,7 @@ export const getGallery = createAsyncThunk(
         }
     }
 )
-
+// aziz
 const gallerySlice = createSlice({
     name: 'gallery',
     initialState: {
