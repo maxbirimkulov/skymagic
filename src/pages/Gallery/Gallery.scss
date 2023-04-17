@@ -1,4 +1,19 @@
 .gallery{
+  .branch__menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    .branch__item{
+      text-align: center;
+      font-weight: 700;
+      color: #23549f;
+      border: 1px solid #2343ad;
+      &.active{
+        background: #284AAC;
+        color: #f4f4f5;
+      }
+    }
+  }
   .container{
     padding: 150px 0  0;
 
