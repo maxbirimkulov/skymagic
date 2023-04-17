@@ -1,28 +1,35 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import "./Gallery.scss"
 import Fancybox from "./Fancybox/Fancybox";
 import {useDispatch, useSelector} from "react-redux";
 import {getGallery} from "../../redux/reducers/gallery";
 import {ToastContainer} from "react-toastify";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
+import {Swiper, SwiperSlide} from "swiper/react";
+import BranchMenu from "../../Components/BranchMenu/BranchMenu";
+import {changeBranch} from "../../redux/reducers/reviews";
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/navigation";
+import "swiper/css/thumbs";
+import {FreeMode, Navigation, Thumbs} from "swiper";
 
 
 const Gallery = () => {
+    const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
     const dispatch = useDispatch()
 
-    const {data, error, status, filter} = useSelector((s) => s.gallery )
+    const {data, error, status, filter} = useSelector((s) => s.gallery)
 
     useEffect(() => {
-        dispatch(getGallery())
+        dispatch(getGallery(filter))
 
-    }, [])
-    console.log(data)
+    }, [filter.branch])
 
     return (
         <section className="gallery">
             <div className="container">
-
+                <BranchMenu changeBranch={changeBranch} route={'gallery'}/>
                 {error.length ? <div>
                     <h2 className='gallery__error'>{error}</h2>
                     <p>На экране выведен старый список картин</p>
@@ -33,23 +40,27 @@ const Gallery = () => {
                         <div className="gallery__sliders">
                             {
                                 <Swiper
-                                    direction={"vertical"}
-                                    pagination={{
-                                        clickable: true,
+                                    style={{
+                                        "--swiper-navigation-color": "#fff",
+                                        "--swiper-pagination-color": "#fff",
                                     }}
-                                    modules={[Pagination]}
-                                    className="gallery_tsum"
+                                    loop={true}
+                                    spaceBetween={10}
+                                    navigation={true}
+                                    thumbs={{swiper: thumbsSwiper}}
+                                    modules={[FreeMode, Navigation, Thumbs]}
+                                    className="mySwiper2"
                                 >
-
                                     {
-                                        data.filter(el=> el.branch === "tsum").map(item => (
-                                            <SwiperSlide>
-                                                <Fancybox key={item.id}>
+                                        data.map(item => (
+                                            <SwiperSlide key={item._id}>
+                                                <Fancybox >
                                                     <div className="photo__wrapper">
                                                         <div className="photo__box">
                                                             <a data-fancybox="gallery" data-caption={item.text}
                                                                href={`${process.env.REACT_APP_URL}${item.imageUrl}`}>
-                                                                <img className="photo__img" alt="" src={`${process.env.REACT_APP_URL}${item.imageUrl}`}/>
+                                                                <img className="photo__img" alt=""
+                                                                     src={`${process.env.REACT_APP_URL}${item.imageUrl}`}/>
                                                             </a>
                                                             <h2>{item.branch}</h2>
                                                         </div>
@@ -61,8 +72,27 @@ const Gallery = () => {
                                 </Swiper>
 
 
-
                             }
+                            <Swiper
+                                onSwiper={setThumbsSwiper}
+                                loop={true}
+                                spaceBetween={10}
+                                slidesPerView={4}
+                                freeMode={true}
+                                watchSlidesProgress={true}
+                                modules={[FreeMode, Navigation, Thumbs]}
+                                className="mySwiper"
+                            >
+                                {
+                                    data.map(item => (
+                                        <SwiperSlide key={item._id}>
+
+                                            <img className="photo__thumb" alt=""
+                                                 src={`${process.env.REACT_APP_URL}${item.imageUrl}`}/>
+                                        </SwiperSlide>))
+                                }
+                            </Swiper>
+
                         </div>
                 }
             </div>
