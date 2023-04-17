@@ -21,6 +21,9 @@ const gallerySlice = createSlice({
     name: 'gallery',
     initialState: {
         data: [],
+        filter: {
+            branch: ''
+        },
         status: '',
         error: ''
     },
