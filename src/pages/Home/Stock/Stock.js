@@ -59,7 +59,7 @@ const Stock = () => {
                             <SwiperSlide key={el._id}>
                                 <div className="stock__card-wrapper">
                                     <div className="stock__card">
-                                        <img src={`${process.env.REACT_APP_URL}${el.images}`} alt=""/>
+                                        <img src={`${process.env.REACT_APP_URL}${el.images.slice(1,100)}`} alt=""/>
                                         <h4 className='stock__name'>
                                             {el.title}
                                         </h4>
