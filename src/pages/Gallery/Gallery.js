@@ -6,7 +6,7 @@ import {getGallery} from "../../redux/reducers/gallery";
 import {ToastContainer} from "react-toastify";
 import {Swiper, SwiperSlide} from "swiper/react";
 import BranchMenu from "../../Components/BranchMenu/BranchMenu";
-import {changeBranch} from "../../redux/reducers/reviews";
+import {changeBranch} from "../../redux/reducers/gallery";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
@@ -25,6 +25,7 @@ const Gallery = () => {
         dispatch(getGallery(filter))
 
     }, [filter.branch])
+    console.log(data)
 
     return (
         <section className="gallery">
