@@ -6,7 +6,7 @@ export const getGallery = createAsyncThunk(
     'gallery/getGallery',
     async (filter, {rejectWithValue}) => {
         try {
-            const res = await axios(`/gallery`)
+            const res = await axios(`/gallery?${filter?.branch ? 'branch=' + filter.branch + '&' : ''}`)
             if (res.statusText !== 'OK' && res.status !== 200) {
                 throw new Error('Server error !')
             }
@@ -16,16 +16,24 @@ export const getGallery = createAsyncThunk(
         }
     }
 )
-
+// aziz
 const gallerySlice = createSlice({
     name: 'gallery',
     initialState: {
         data: [],
+        filter: {
+            branch: ''
+        },
         status: '',
         error: ''
     },
     reducers: {
-
+        changeBranch : (state, action) => {
+            state.filter = {
+                ...state.filter,
+                branch: action.payload
+            }
+        }
     },
     extraReducers: {
         [getGallery.pending] : (state,action) => {
@@ -44,5 +52,5 @@ const gallerySlice = createSlice({
     }
 })
 
-export const {} = gallerySlice.actions
+export const {changeBranch} = gallerySlice.actions
 export default gallerySlice.reducer
