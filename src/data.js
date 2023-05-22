@@ -100,7 +100,7 @@ export const data2 = {
             "- Настольные игры(хоккей и аэро-хоккей",
             "- Автодром",
         ],
-        "price": ["420","600"],
+        "price": ["490","690"],
         "location":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1357.156169869672!2d74.61360720519015!3d42.87640937940031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7c0cdbbae15%3A0xa6b565413fa531df!2z0KbQo9CcINCQ0LnRh9Kv0YDTqdC6!5e0!3m2!1sru!2skg!4v1672075006924!5m2!1sru!2skg",
         "locationText":"155 просп. Чуй, Бишкек",
         "locationTc":"ТРЦ Цум2"
@@ -134,7 +134,7 @@ export const data2 = {
             "- Автодром",
 
         ],
-        "price": ["300","420"],
+        "price": ["300","450"],
         "location":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2926.5073016378515!2d74.61642721484925!3d42.81989671393118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb51fc17f8ee9%3A0xe1032aa56553d407!2sTommi%20mall!5e0!3m2!1sru!2skg!4v1672075086486!5m2!1sru!2skg",
         "locationText":"17/2 ул. Аалы Токомбаева, Бишкек",
         "locationTc":"ТРЦ Tommi mall"
