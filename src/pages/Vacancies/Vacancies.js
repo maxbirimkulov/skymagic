@@ -10,8 +10,15 @@ import first from './images/Asset 18.png'
 import second from './images/Asset 19.png'
 import third from './images/Asset 20.png'
 import fourth from './images/Asset 21.png'
+import {animateScroll} from "react-scroll";
 
 const Vacancies = () => {
+    const toTop = () => {
+        animateScroll.scrollToTop({
+            delay: 0,
+            duration: 0
+        })
+    };
 
     const {data}=useSelector((s)=>s.vacancies)
     const dispatch=useDispatch()
@@ -70,7 +77,9 @@ const Vacancies = () => {
                                     <p className='vacancies__skills'>{el.graph}</p>
                                 </div>
 
-                                <Link to={el._id}>
+                                <Link to={el._id} onClick={()=>{
+                                    toTop()
+                                }}>
                                     <button>Подробнее</button>
                                 </Link>
                             </div>

@@ -28,14 +28,14 @@ const Footer = () => {
                             }} to="/services">Услуги</NavLink>
                         </li>
 
-                        <li>
-                            <NavLink className="nav__link" to="/gallery" onClick={
-                                ()=>{
-                                    toTop()
-                                    clickFunc('gallery', user.email ? user._id : null)
-                                }
-                            }>Галерея</NavLink>
-                        </li>
+                        {/*<li>*/}
+                        {/*    <NavLink className="nav__link" to="/gallery" onClick={*/}
+                        {/*        ()=>{*/}
+                        {/*            toTop()*/}
+                        {/*            clickFunc('gallery', user.email ? user._id : null)*/}
+                        {/*        }*/}
+                        {/*    }>Галерея</NavLink>*/}
+                        {/*</li>*/}
                     </ul>
 
                     <ul className="footer__list">

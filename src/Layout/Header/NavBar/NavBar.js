@@ -5,26 +5,31 @@ import {useSelector} from "react-redux";
 import {clickFunc} from "../../../utils/clickFunc";
 import Dropdown from "./Dropdown/Dropdown";
 
+import { HashLink } from 'react-router-hash-link';
+
 
 const NavBar = ({toggleClass}) => {
+
     const {user} = useSelector((store) => store.user)
     return (
         <ul className='nav container'>
-            <li className="nav__item">
-                <NavLink className="nav__link" to="/ticket" onClick={() => {
-                    toggleClass()
-                    clickFunc('buy-ticket', user.email ? user._id : null)
-                }}>
-                <button className="nav__btn" type="button">Купить билет</button>
-                </NavLink>
-            </li>
+            {/*<li className="nav__item">*/}
+            {/*    <NavLink className="nav__link" to="/ticket" onClick={() => {*/}
+            {/*        toggleClass()*/}
+            {/*        clickFunc('buy-ticket', user.email ? user._id : null)*/}
+            {/*    }}>*/}
+            {/*    <button className="nav__btn" type="button">Купить билет</button>*/}
+            {/*    </NavLink>*/}
+            {/*</li>*/}
             <li className='nav__item'>
                 <Dropdown toggleClass={toggleClass}/>
             </li>
-            <li className='nav__item'><NavLink className="nav__link" to="/" onClick={() => {
+            <li className='nav__item'><HashLink to="/#price" scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}  className="nav__link"  onClick={() => {
                 toggleClass()
+
                 clickFunc('price', user.email ? user._id : null)
-            }}>Цены</NavLink></li>
+
+            }}>Цены</HashLink></li>
             <li className='nav__item'><NavLink className="nav__link" to="/services" onClick={() => {
                 toggleClass()
                 clickFunc('services', user.email ? user._id : null)
