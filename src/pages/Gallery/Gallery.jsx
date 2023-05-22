@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import "./Gallery.scss"
-import Fancybox from "./Fancybox/Fancybox";
 import {useDispatch, useSelector} from "react-redux";
 import {getGallery,changeBranch} from "../../redux/reducers/gallery";
 import {ToastContainer} from "react-toastify";
