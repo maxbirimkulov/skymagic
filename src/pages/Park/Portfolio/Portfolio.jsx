@@ -5,7 +5,7 @@ import { Controller,Autoplay } from 'swiper';
 import "swiper/css";
 import "swiper/css/pagination";
 import "./Portfolio.scss"
-import axios from "axios";
+import axios from "../../../utils/axios";
 
 
 export default function Portfolio() {
@@ -13,8 +13,8 @@ export default function Portfolio() {
     const [secondSwiper, setSecondSwiper] = useState(null);
     const [meals,setMeals] =useState([])
     useEffect(()=>{
-        axios("https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood")
-            .then(({data})=> setMeals(data.meals))
+        axios("/gallery")
+            .then(({data})=> setMeals(data))
             .catch((err)=>err)
     },[])
     return (
@@ -36,8 +36,8 @@ export default function Portfolio() {
 
             >
                 {meals.length ? meals.map(el => (
-                    <SwiperSlide key={el.idMeal}>
-                        <img src={el.strMealThumb} alt={el.strMeal}/>
+                    <SwiperSlide key={el._id}>
+                        <img src={`${process.env.REACT_APP_URL}${el.imageUrl}`} alt={el.text}/>
                     </SwiperSlide>
                 )) :"hello"}
             </Swiper>
@@ -59,8 +59,8 @@ export default function Portfolio() {
                 className="secondSwiper"
             >
                 {meals.map(el => (
-                    <SwiperSlide key={el.idMeal}>
-                        <img src={el.strMealThumb} alt={el.strMeal}/>
+                    <SwiperSlide key={el._id}>
+                        <img src={`${process.env.REACT_APP_URL}${el.imageUrl}`} alt={el.text}/>
                     </SwiperSlide>
                 ))}
             </Swiper>
