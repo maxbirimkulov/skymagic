@@ -66,7 +66,7 @@ export const data2 = {
             "- Лего большое и маленькое",
             "- Настольные игры",
         ],
-        "price": ["350","690"],
+        "price": ["490","690"],
         "location":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1298.012278715692!2d74.63418399941344!3d42.856562349897274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb6572914c7b7%3A0x669f8315bcc304af!2z0KLQtdGF0L3QviDQn9Cw0YDQug!5e0!3m2!1sru!2skg!4v1672076509770!5m2!1sru!2skg",
         "locationText":"1/2 ул. Горького, Бишкек",
         "locationTc":"ТРЦ Техно Парк"
@@ -134,7 +134,7 @@ export const data2 = {
             "- Автодром",
 
         ],
-        "price": ["300","450"],
+        "price": ["490","690"],
         "location":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2926.5073016378515!2d74.61642721484925!3d42.81989671393118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb51fc17f8ee9%3A0xe1032aa56553d407!2sTommi%20mall!5e0!3m2!1sru!2skg!4v1672075086486!5m2!1sru!2skg",
         "locationText":"17/2 ул. Аалы Токомбаева, Бишкек",
         "locationTc":"ТРЦ Tommi mall"

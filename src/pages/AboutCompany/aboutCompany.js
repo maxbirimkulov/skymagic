@@ -1,22 +1,19 @@
 import React from 'react';
 import './aboutCompany.scss'
-import img1 from './Asset 13.png'
-import img2 from './Asset 14.png'
-import img3 from './Asset 15.png'
-import logoSecond from '../Home/images/Logo SKYPARK.png'
-import logoFirst from '../Home/images/Logo_Main.png'
+
+import img3 from './Pony_Photo.png'
+import logoSecond from '../../Layout/Header/Logo_SKYPARK_2.png'
+import logoFirst from '../../Layout/Header/Asset 4 (2).png'
 
 const AboutCompany = () => {
     return (
         <div className='aboutCompany'>
             <div className="container">
             <div className='aboutCompany__images'>
-                <img src={logoSecond} alt=""/>
-                <img src={logoFirst} alt=""/>
+                <img className='aboutCompany__sky' src={logoFirst} alt=""/>
+                <img className='aboutCompany__smagic' src={logoSecond} alt=""/>
             </div>
-                <div className='aboutCompany__info'>
-                    <img src={img1} alt=""/>
-                    <div className='aboutCompany__right'>
+                <div className='aboutCompany__right'>
                         <h2>О КОМПАНИИ</h2>
                         <p>«SMagic» и «Sky Park» - это известные брэнды
                             международной Компании проектировщика и создателя
@@ -27,14 +24,11 @@ const AboutCompany = () => {
                             главное отвечающие самым высоким стандартам
                             качества и безопасности!
                             <br/>
-                            <br/>
+
                             Если вы думали что здесь вы найдете фантастические,
                             уникальные детские развлекательные комплексы, - то вы
                             не ошиблись!</p>
                     </div>
-                </div>
-                <div className='aboutCompany__info'>
-
                     <div className='aboutCompany__right'>
                         <h2>МИССИЯ КОМПАНИИ</h2>
                         <p>Миссия «SMagic» и «Sky Park» - обеспечение реализации
@@ -44,8 +38,6 @@ const AboutCompany = () => {
                             здоровья и дарят самые яркие и незабываемые моменты,
                             сохраняемые в памяти на всегда!</p>
                     </div>
-                    <img src={img2} alt=""/>
-                </div>
                 <div className='aboutCompany__info'>
                     <img src={img3} alt=""/>
                     <div className='aboutCompany__right'>

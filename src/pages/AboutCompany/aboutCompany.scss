@@ -1,33 +1,42 @@
 .aboutCompany{
   padding-top: 120px;
   padding-bottom: 60px;
+  &__sky{
+    width: 25%;
+  }
+  &__smagic{
+    width: 35%;
+    height: 70px;
+  }
   &__images{
     display: flex;
     justify-content: center;
-    img{
-      width: 25%;
-    }
+    align-items: center;
+    column-gap: 50px;
+
   }
   &__info{
     margin-top: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+
     img{
       width: 30%;
     }
   }
   &__right{
-    width: 40%;
+    margin-bottom: 50px;
     h2{
-      color: #23549f;
-      font-size: 30px;
+      color: #1392cd;
+      font-size: 34px;
       font-weight: 700;
       margin-bottom: 30px;
     }
     p{
       font-weight: 500;
-      font-size: 16px;
+      font-size: 20px;
+      line-height: 32px;
     }
   }
 }

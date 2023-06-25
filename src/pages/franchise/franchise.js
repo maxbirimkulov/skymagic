@@ -1,10 +1,10 @@
 import React from 'react';
 import './franchise.scss'
-import img1 from './Asset 17.png'
-import img2 from './Asset 5 (1).png'
-import img3 from './Asset 6 (1).png'
-import img4 from './Asset 7 (1).png'
-import img5 from './Asset 8 (1).png'
+import img1 from '../Integration/Asset 1 (1).png'
+import img2 from './Icon_1.png'
+import img3 from './Icon_2.png'
+import img4 from './Icon_3.png'
+import img5 from './Icon_4.png'
 import Application from "../../Components/Application/Application";
 
 const Franchise = () => {

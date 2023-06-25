@@ -4,8 +4,8 @@ import "./Header.scss"
 import HamburgerToggle from "./HamburgerToggle/HamburgerToggle";
 import NavBar from "./NavBar/NavBar";
 import {animateScroll} from "react-scroll";
-import logo from './logo.png'
-import logo2 from './logo2.png'
+import logo from './SMagic - Logo.png'
+import logo2 from './SKY PARK - logo.png'
 const Header = () => {
     const [isActiveHamburger, setActiveHamburger] = useState(false);
     const [isActiveHamburgerMenu, setActiveHamburgerMenu] = useState(false);
@@ -35,11 +35,10 @@ const Header = () => {
         }`}>
             <div className="header__container container ">
                 <NavLink className="header__logo" to='/'>
-                    <img src={logo} alt="skymagic"/>
-                    <img src={logo2} alt="skypark"/>
+                    <img className='smagic' src={logo} alt="skymagic"/>
+                    <img className='skypark' src={logo2} alt="skypark"/>
                 </NavLink>
                     <HamburgerToggle toggleClass={toggleClass} isActiveHamburger={isActiveHamburger}/>
-
                 <nav className={`header__menu ${isActiveHamburger ? "header__menu_active" : null}`}>
                     <NavBar toggleClass={toggleClass}/>
                 </nav>

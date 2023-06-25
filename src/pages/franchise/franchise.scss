@@ -16,7 +16,7 @@
     width: 50%;
     h2{
       font-size: 26px;
-      color: #23549f;
+      color:#1392cd;
       font-weight: 700;
     }
     li{
@@ -30,19 +30,20 @@
     li:before{
       content: '';
       display: flex;
-      width: 8px;
-      height: 8px;
-      background: #23549f;
-      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      background: url("STAR.png")center/cover no-repeat;
       position: absolute;
       left: -25px;
       top: 50%;
       transform: translateY(-50%);
+
+
     }
   }
   &__expert{
     font-size: 28px;
-    color: #23549f;
+    color: #1392cd;
     font-weight: 700;
     margin-bottom: 40px;
   }

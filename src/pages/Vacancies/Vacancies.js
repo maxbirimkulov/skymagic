@@ -41,8 +41,7 @@ const Vacancies = () => {
                     <div className="vacancies__icons">
                         <img src={fourth} alt=""/>
                         <p>ЗАБОТА О КОМАНДЕ
-                            И ИНДИВИДУАЛЬНЫЙ
-                            ПОДХОД</p>
+                            </p>
                     </div>
                     <div className="vacancies__icons">
                         <img className='vacancies__img2' src={third} alt=""/>

@@ -9,7 +9,7 @@ const Dropdown = ({toggleClass}) => {
     const {user} = useSelector((store)=> store.user)
     return (
         <div className="dropdown">
-            <span className="nav__link nav__link_active">Выберите парк</span>
+            <span className="nav__link nav__link_active">Наши парки</span>
             <div className="dropdown-content">
                 <div className="dropdown-arrow">
                     <img src={triangle} alt="triangle"/>
@@ -18,8 +18,8 @@ const Dropdown = ({toggleClass}) => {
                     <NavLink className="nav__link" to="/parks/Sky Park" onClick={() => {
                         toggleClass()
                         clickFunc('sky', user.email ? user._id : null)
-                    }}>Sky
-                        park</NavLink>
+                    }}>SKY
+                        PARK</NavLink>
                     <NavLink className="nav__link" to="/parks/Smagic Techno" onClick={()=>{
                         toggleClass()
                         clickFunc('techno', user.email ? user._id : null)

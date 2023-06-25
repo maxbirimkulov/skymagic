@@ -1,13 +1,14 @@
 .stock{
-  background: linear-gradient(90deg, rgba(234,196,66,1) 0%, rgba(225,58,45,1) 100%);
-  padding: 10px 0 20px;
+  background:url("Asset 3 (1).png")center/cover no-repeat;
+  padding: 10px 0 10px;
 
   &__title{
   text-align: center;
-    color: white;
+
     font-weight: 600;
     font-size: 40px;
     margin-bottom: 25px;
+    color:#fae002 ;
 }
 
   &__card{
@@ -16,10 +17,11 @@
         padding: 0 30px;
         justify-content: center;
         align-items: center;
+
       }
-    width: 270px;
+    width: 300px;
     padding: 15px;
-    background: white;
+    background: none;
     border-radius: 17px;
     text-align: center;
     img{
@@ -28,12 +30,12 @@
       height: 240px;
     }
     h4{
-      color: #eac442;
+      color: white;
       font-weight: bold;
       font-size: 22px;
     }
     p{
-      color:#23549f ;
+      color: white; ;
       font-weight: 500;
     }
     button{
@@ -43,6 +45,10 @@
 color: white;
       font-weight: 600;
       border-radius: 5px;
+    }
+    button:hover{
+      cursor: pointer;
+      background: #23549f;
     }
   }
 }

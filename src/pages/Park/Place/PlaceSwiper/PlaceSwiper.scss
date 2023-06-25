@@ -25,6 +25,7 @@
     object-fit: cover;
     -o-object-fit: cover;
     transition: 3s;
+    height: 800px;
     &:hover{
       transform: scale(1.1);
     }

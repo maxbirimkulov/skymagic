@@ -17,12 +17,13 @@
     }
   }
   &__acc{
-    border: 2px solid #FFFFFF;
-    padding: 5px 10px;
+
+    padding: 7px 15px;
     border-radius: 10px;
+    background: #cccf29;
   }
   &__link{
-   @include text(500,15px,20px,#fff);
+   @include text(500,17px,20px,#fff);
     &:hover{
       color: #ffb825;
       transform: scale(1.2);
@@ -34,12 +35,13 @@
 @media (max-width: 1440px) {
   .nav{
     column-gap: 30px;
+
   }
 }
 
 @media (max-width: 1201px) {
   .nav__link{
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 

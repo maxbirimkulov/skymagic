@@ -35,6 +35,7 @@ const Stock = () => {
                         autoplay={{
                             delay: 2500,
                             disableOnInteraction: false,
+                            pauseOnMouseEnter:true
                         }}
                         breakpoints={{
                             0: {
@@ -59,16 +60,18 @@ const Stock = () => {
                             <SwiperSlide key={el._id}>
                                 <div className="stock__card-wrapper">
                                     <div className="stock__card">
-                                        <img src={`${process.env.REACT_APP_URL}${el.images.slice(1,100)}`} alt=""/>
+                                        <Link onClick={toTop} to={`/allstock`}>
+                                        <img src={`${process.env.REACT_APP_URL}${el.images}`} alt=""/>
+                                        </Link>
                                         <h4 className='stock__name'>
                                             {el.title}
                                         </h4>
                                         <p className='stock__info'>
                                             {el.description}
                                         </p>
-                                        <Link to={`/allstock`}>
-                                            <button onClick={toTop} className='stock__btn'>ПОДРОБНЕЕ</button>
-                                        </Link>
+
+
+
 
                                     </div>
                                 </div>

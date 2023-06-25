@@ -1,0 +1,9 @@
+.lastBanner{
+  background: url("Asset 11.png")center/cover no-repeat;
+  padding: 300px 0 350px;
+  &__title{
+    color: white;
+    font-weight: 600;
+    font-size: 42px;
+  }
+}

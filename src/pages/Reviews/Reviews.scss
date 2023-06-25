@@ -4,7 +4,7 @@
     text-align: center;
     font-size: 54px;
     font-weight: 700;
-    color: #23549f;
+    color: #1392cd;
   }
   .branch__menu {
     display: flex;
@@ -13,10 +13,10 @@
     .branch__item{
       text-align: center;
       font-weight: 700;
-      color: #23549f;
-      border: 1px solid #2343ad;
+      color: #1392cd;
+      border: 1px solid #1392cd;
       &.active{
-        background: #284AAC;
+        background: #1392cd;
         color: #f4f4f5;
       }
     }
@@ -34,7 +34,7 @@
 .reviews__one{
 
   height: 250px;
-  background: linear-gradient(90deg, rgba(234,196,66,1) 0%, rgba(225,58,45,1) 100%);
+  background: #1392cd;
   border-radius: 30px;
   text-align: center;
   display: flex;
@@ -51,7 +51,7 @@
     content: '';
     height: 1px;
     display: block;
-    background: linear-gradient(90deg, rgba(234,196,66,1) 0%, rgba(225,58,45,1) 100%);
+    background: #1392cd;
 
   }
   h4{
@@ -62,7 +62,7 @@
     content: '';
     height: 1px;
     display: block;
-    background: linear-gradient(90deg, rgba(234,196,66,1) 0%, rgba(225,58,45,1) 100%);
+    background: #1392cd;
 
   }
 }

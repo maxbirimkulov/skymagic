@@ -1,10 +1,20 @@
+.priceHome__img.sky{
+  padding: 13px 0;
+  width: 75%;
+}
+
 .priceHome{
-  padding-top: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-family: 'Montserrat', sans-serif;
+  background: url("Asset 5 (2).png")center/cover no-repeat;
+
   &__title{
-    color: #23549f;
+    color: #1392cd;
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 30px;
+    text-align: center;
 
   }
   &__box{
@@ -17,44 +27,48 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    row-gap: 15px;
+    row-gap: 10px;
     text-align: center;
-    background: #2343ad;
-    padding: 40px 0;
-    box-shadow: 7px 6px 7px 0 rgba(34, 60, 80, 0.2);
+    background:white;
+    padding: 20px 0;
+    box-shadow: 0 0 20px 3px rgba(34, 60, 80, 0.2);
+    overflow: hidden;
 
 
-    color: white;
+
+    color: #1392cd;
     border-radius: 20px;
     img{
-      width: 50%;
+      width: 70%;
     }
     h3{
       padding: 5px 8px;
       background: white;
-      color: #2343ad;
-      font-weight: 600;
+      color: #1392cd;
+font-weight: 600;
       border-radius: 8px;
-      font-size: 22px;
+      font-size: 30px;
     }
     p{
-      font-size: 18px;
+      font-size: 14px;
       font-weight: 500;
     }
     h2{
-      font-size: 28px;
-      font-weight: 600;
+      font-size: 20px;
+      font-weight: 500;
     }
     a{
       width: 100%;
     }
     button{
 
-      width: 100%;
+      width: 70%;
       height: 36px;
-      color:#2343ad;
-      font-weight: 700;
+    color: white;
+      font-weight: 400;
       font-size: 20px;
+      background:#1392cd ;
+      border-radius: 8px;
     }
     button:hover{
       background: linear-gradient(90deg, rgb(234, 196, 66) 0%, rgb(225, 58, 45) 100%);

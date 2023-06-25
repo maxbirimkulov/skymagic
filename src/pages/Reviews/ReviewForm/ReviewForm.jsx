@@ -126,7 +126,7 @@ const ReviewForm = () => {
                                 value: 2,
                                 message: 'Минимум 2 символа'
                             }
-                        })} className='reviews__fio request__input' type="text" placeholder={"Ф.И.О"}/>
+                        })} className='reviews__fio request__input' type="text" placeholder={"Имя"}/>
                         <p className='request__error'>{errors?.name && errors?.name.message}</p>
 
                         <textarea {...register('text', {

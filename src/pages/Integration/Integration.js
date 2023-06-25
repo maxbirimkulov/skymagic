@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './Integration.scss'
-import img1 from '../franchise/Asset 17.png'
+import img1 from './Asset 1 (1).png'
 import ocak from './Ожак Кебаб.png'
 import img4 from './DSC_4942_DxO.jpg'
 import img2 from './DSC_4953_DxO.jpg'

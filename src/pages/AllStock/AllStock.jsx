@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react';
 import './AllStock.scss'
-import img1 from '../Home/images/Технопарк_2.jpg'
 import {useDispatch, useSelector} from "react-redux";
 import {getSales} from "../../redux/reducers/sales";
 
@@ -13,7 +12,7 @@ const AllStock = () => {
     },[])
     return (
         <section className='allStock'>
-            <div className="allStock__container">
+            <div className="allStock__container container">
                 <h2 className='allStock__title'>АКЦИИ И СОБЫТИЯ</h2>
                 {
                     data.map(el=>(

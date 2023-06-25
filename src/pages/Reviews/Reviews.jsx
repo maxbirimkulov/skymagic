@@ -19,7 +19,7 @@ const Reviews = () => {
     return (
         <section>
             <div className="container">
-                <ReviewForm/>
+
                 <div className="reviews__skypark">
                     <BranchMenu changeBranch={changeBranch} route={'reviews'}/>
                     <div className='reviews__box'>
@@ -42,6 +42,7 @@ const Reviews = () => {
                         }
                 </div>
                 </div>
+                <ReviewForm/>
 
 
             </div>

@@ -31,8 +31,9 @@ const Baner = () => {
                                 translate: ["100%", 0, 0],
                             },
                         }} autoplay={{
-                        delay: 2500,
-                        disableOnInteraction: false,
+                        delay: 5000,
+                        // disableOnInteraction: false,
+                        loop:true
                     }}
 
                         modules={[Autoplay, EffectCreative]}
@@ -51,7 +52,7 @@ const Baner = () => {
                                     {el.description}
                                 </h4>
 
-                                <Link  to='/ticket'><button className='banner__btn'>Купить билет</button></Link>
+                                <Link  to='/allstock'><button className='banner__btn'>Подробнее</button></Link>
                             </SwiperSlide>
                         ))}
                     </Swiper>

@@ -3,8 +3,8 @@ import Baner from "./Baner/Baner";
 import Parks from "./Parks/Parks";
 import Stock from "./Stock/Stock";
 import Price from './PriceTicket/Price'
-import Loyalty from "./Loyalty/Loyalty";
 import HomeGallery from "./HomeGallery/HomeGallery";
+import HomeBannerLast from "./HomeBannerLast/HomeBannerLast";
 
 
 
@@ -15,8 +15,9 @@ const Home = () => {
             <Parks/>
             <Stock/>
             <Price/>
-            <Loyalty/>
+<HomeBannerLast/>
             <HomeGallery/>
+
 
 
 

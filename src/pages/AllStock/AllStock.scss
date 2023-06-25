@@ -1,10 +1,11 @@
 .allStock{
-  margin-top: 120px;
+  padding-top: 120px;
+
 
   &__title{
     font-size: 54px;
     font-weight: 800;
-    color: #23549f;
+    color: rgba(19,146,205,1);
    text-align: center;
     margin-bottom: 30px;
   }
@@ -12,24 +13,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 400px;
+    height: 500px;
     margin-bottom: 10px;
+    background: rgba(19,146,205,1);
+border-radius: 39px;
+    padding: 5px;
     img{
-      width: 40%;
-      object-fit: cover;
+      width: 50%;
+      height: 100%;
+      border-radius: 40px;
     }
-    &:nth-child(odd){
-      flex-direction: row-reverse;
-      .allStock__info{
-        background: #284AAC;
-      }
-    }
+
 
   }
   &__info{
-    color: white;
+color: white;
     padding-left: 40px;
-    background: linear-gradient(90deg, rgba(236,134,46,1) 0%, rgba(241,51,42,1) 100%);
     height: 100%;
     width: 100%;
     padding-top: 30px;
@@ -39,18 +38,21 @@
     justify-content: space-between;
   }
   &__name{
-
-    font-size: 42px;
+color: rgba(229,206,3,1);
+    font-size: 50px;
     margin-bottom: 30px;
     font-weight: 800;
   }
   &__text{
 
-    font-size: 22px;
+    font-size: 24px;
+    font-weight: normal;
   }
   &__clock{
     font-size: 32px;
     font-weight: 700;
+    color: rgba(229,206,3,1);
+
   }
 
 }

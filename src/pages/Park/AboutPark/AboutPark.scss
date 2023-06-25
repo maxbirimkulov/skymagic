@@ -10,7 +10,9 @@
   }
   &__tabs{
     overflow: hidden;
-    color: #80808050;
+
+    border: 4px solid #1392cd;
+    border-radius: 10px;
 
   }
   &__card{

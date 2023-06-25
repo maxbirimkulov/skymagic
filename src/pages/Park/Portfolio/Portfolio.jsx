@@ -1,8 +1,7 @@
 import React, {useEffect, useState} from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Controller,Autoplay } from 'swiper';
-// Import Swiper styles
+
 import "swiper/css";
 import "swiper/css/pagination";
 import "./Portfolio.scss"
@@ -20,6 +19,7 @@ export default function Portfolio() {
     },[])
     return (
         <div className="portfolio">
+            <h2 className='portfolio__title'>Галлерея</h2>
             <Swiper
                 grabCursor={true}
                 modules={[Controller]}

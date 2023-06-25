@@ -7,6 +7,9 @@ import {FaTiktok} from "react-icons/fa"
 import {MdOutlineEmail} from 'react-icons/md'
 import {clickFunc} from "../../utils/clickFunc";
 import {useSelector} from "react-redux";
+
+import logo from '../Header/SMagic - Logo.png'
+import logo2 from '../Header/SKY PARK - logo.png'
 const Footer = () => {
     const {user} = useSelector((store)=> store.user)
     const toTop = () => {
@@ -19,6 +22,16 @@ const Footer = () => {
         <footer className='footer'>
             <div className="container">
                 <div className="footer__lists">
+                    <ul className='footer__logo'>
+                        <li className='footer__li'>
+                            <img className='footer__sky' src={logo2} alt=""/>
+                            <img className='footer__smagic' src={logo} alt=""/>
+                        </li>
+                        <li>Международная сеть детских <br/>
+                            развлекательных комплексов <br/>
+                            "Smagic" и "Skypark"
+                        </li>
+                    </ul>
                     <ul className="footer__list">
                         <li>Частным клиентам</li>
                         <li>

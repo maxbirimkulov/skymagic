@@ -1,24 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800;900&display=swap');
+
+
 .header{
   position: fixed;
   top: 0;
   left: 0;
-  padding: 11px 15px 0 ;
+  padding: 10px 15px 10px ;
   transition: background .3s ease;
   z-index: 100;
   width: 100%;
-  background: rgba(40, 74, 172, 0.96);
-  font-family: 'Fira Sans', sans-serif;
+  background: #1392cd;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   &.scrolled{
-    background: #284AAC;
+    background: #1392cd;
   }
 
 }
+.skypark{
+width: 170px;
+  height: 35px;
+}
+.smagic{
+  width: 140px;
+  height: 50px;
+}
 
 .header__{
-  &logo img{
-    width: 140px;
-    height: auto;
-  }
+
   &container{
     display: flex;
     justify-content: space-between;
@@ -27,7 +36,9 @@
 
   &logo{
     display: flex;
-   width: 189px;
+
+    align-items: center;
+    column-gap: 10px;
     svg{
       fill: #ffffff;
     }

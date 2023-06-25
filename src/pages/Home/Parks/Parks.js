@@ -1,11 +1,15 @@
 import React from 'react';
 import './Parks.scss'
-import skypark from '../images/1 (5).png'
-import tommi from '../images/2 (5).png'
-import tehnopark from '../images/4 (5).png'
-import stum from '../images/3 (5).png'
+import smagic from '../../../Layout/Header/Asset 4 (2).png'
+import skyparklogo from '../../../Layout/Header/Logo_SKYPARK_2.png'
+import skypark from './SKYPARK.png'
+import tommi from './TOMMI.png'
+import tehno from './TEHNO.png'
+import tsum from './TSUM.png'
+
 import {NavLink} from "react-router-dom";
 import {animateScroll} from "react-scroll";
+import {motion} from "framer-motion";
 
 
 const Parks = () => {
@@ -15,46 +19,71 @@ const Parks = () => {
             duration: 0
         })
     };
+    const shakeVariants = {
+        hover: {
+
+            rotate:[0,8,-6,6,0],
+            transition: {
+                duration: 0.5,
+            },
+        },
+    };
+
     return (
         <section className='parks'>
             <div className="parks__container container">
                 <h2 className='parks__branches '>НАШИ ПАРКИ</h2>
                 <div className="parks__cards">
-                    <div className="parks__card">
-                        <NavLink onClick={()=>toTop()} to='/parks/Smagic%20Techno'>
-                            <img  src={tehnopark} alt=""/>
-                        </NavLink>
+                    <div className='parks__card'>
+                        <motion.div whileHover='hover'
+                                    variants={shakeVariants} className="parks__card">
+                            <NavLink onClick={()=>toTop()} to='/parks/Smagic%20Techno'>
+                                <motion.img variants={shakeVariants}
+                                            className='parks__img' src={tehno}/>
+                            </NavLink>
+                        </motion.div>
+
                         <div className="parks__text">
-                            <h3>SMAGIC <span>ТЕХНОПАРК</span></h3>
+                            <img className='parks__logo' src={smagic} alt=""/>
+                            <h3>ТЕХНОПАРК</h3>
                         </div>
-                        <NavLink onClick={()=>toTop()} to='/parks/Smagic%20Techno'><button>ПОДРОБНЕЕ</button></NavLink>
                     </div>
+
                     <div className="parks__card">
+                        <motion.div whileHover='hover'
+                                    variants={shakeVariants} className="parks__card">
                         <NavLink onClick={()=>toTop()} to='/parks/Smagic%20Tsum'>
-                            <img  src={stum} alt=""/>
+                            <motion.img variants={shakeVariants}  className='parks__img' src={tsum} alt=""/>
                         </NavLink>
+                        </motion.div>
                         <div className="parks__text">
-                            <h3>SMAGIC <span>ЦУМ</span></h3>
+                            <img  className='parks__logo' src={smagic} alt=""/>
+                            <h3> ЦУМ</h3>
                         </div>
-                        <NavLink onClick={()=>toTop()} to='/parks/Smagic%20Tsum'><button>ПОДРОБНЕЕ</button></NavLink>
                     </div>
                     <div className="parks__card">
+                        <motion.div whileHover='hover'
+                                    variants={shakeVariants} className="parks__card">
                         <NavLink onClick={()=>toTop()} to='/parks/Smagic%20Tommi'>
-                            <img  src={tommi} alt=""/>
+                            <motion.img variants={shakeVariants} className='parks__img'  src={tommi} alt=""/>
                         </NavLink>
+                        </motion.div>
                         <div className="parks__text">
-                            <h3>SMAGIC <span>TOMMI MALL</span></h3>
+                            <img  className='parks__logo' src={smagic} alt=""/>
+                            <h3>TOMMI MALL</h3>
                         </div>
-                        <NavLink onClick={()=>toTop()} to='/parks/Smagic%20Tommi'><button>ПОДРОБНЕЕ</button></NavLink>
                     </div>
                     <div className="parks__card">
+                        <motion.div whileHover='hover'
+                                    variants={shakeVariants} className="parks__card">
                         <NavLink onClick={()=>toTop()} to='/parks/Sky%20Park'>
-                            <img  src={skypark} alt="sky-park"/>
+                            <motion.img variants={shakeVariants}  className='parks__img' src={skypark} alt="sky-park"/>
                         </NavLink>
+                        </motion.div>
                         <div className="parks__text">
-                            <h3>SKY PARK <span>АЛА-АРЧА</span></h3>
+                            <img className='parks__skypark' src={skyparklogo} alt=""/>
+                            <h3> АЛА-АРЧА</h3>
                         </div>
-                        <NavLink onClick={()=>toTop()} to='/parks/Sky%20Park'><button>ПОДРОБНЕЕ</button></NavLink>
                     </div>
                     </div>
                 </div>

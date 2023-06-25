@@ -13,7 +13,7 @@ export const branchMenuData =  [
     },
     {
         branch: 'techno',
-        text: 'SMAGIC ТЕНХОПАРК',
+        text: 'SMAGIC ТЕХНОПАРК',
     },
     {
         branch: 'sky',

@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&display=swap');
 .vacancies{
-  margin-top: 73.31px;
+  margin-top:70.31px;
   &__img{
-    padding-top: 400px;
+    padding-top: 500px;
     padding-left: 70px;
     padding-bottom: 400px;
     background: url("images/DSC_4951_DxO.jpg")center/cover no-repeat;
@@ -25,10 +25,10 @@
     }
   }
   &__icons {
-    width: 240px;
-    height: 240px;
+    width: 200px;
+    height: 200px;
     padding:20px 15px;
-    background: #23549f;
+    background: #1392cd;
     border-radius: 20px;
   }
 
@@ -36,7 +36,7 @@
 
   &__icon {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
     color: white;
     p{
@@ -76,7 +76,7 @@
   }
 
   &__name {
-    color: #23549f;
+    color: #1392cd;
     font-weight: 800;
     margin-bottom: 20px;
   }
@@ -92,7 +92,7 @@
     text-align: center;
 
     h2 {
-      color: #23549f;
+      color: #1392cd;
       font-weight: 800;
       font-size: 38px;
     }
@@ -109,7 +109,7 @@
       display: flex;
       font-weight: bold;
       column-gap: 15px;
-      color: #23549f;
+      color: #1392cd;
       font-size: 24px;
     }
 
@@ -131,19 +131,19 @@
     }
   }
   &__our {
-    color: #23549f;
+    color: #1392cd;
     font-weight: 800;
     font-size: 28px;
     margin-bottom: 20px;
   }
   &__vacancy{
     font-size: 40px;
-    color: #23549f;
+    color: #1392cd;
     font-weight: 700;
     margin-top: 50px;
   }
   button{
-    background: #284AAC;
+    background: #1392cd;
     padding: 10px 20px;
     color: #f4f4f5;
   }
