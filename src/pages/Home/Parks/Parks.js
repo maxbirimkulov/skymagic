@@ -36,7 +36,7 @@ const Parks = () => {
                 <div className="parks__cards">
                     <div className='parks__card'>
                         <motion.div whileHover='hover'
-                                    variants={shakeVariants} className="parks__card">
+                                    variants={shakeVariants} >
                             <NavLink onClick={()=>toTop()} to='/parks/Smagic%20Techno'>
                                 <motion.img variants={shakeVariants}
                                             className='parks__img' src={tehno}/>
@@ -51,7 +51,7 @@ const Parks = () => {
 
                     <div className="parks__card">
                         <motion.div whileHover='hover'
-                                    variants={shakeVariants} className="parks__card">
+                                    variants={shakeVariants} >
                         <NavLink onClick={()=>toTop()} to='/parks/Smagic%20Tsum'>
                             <motion.img variants={shakeVariants}  className='parks__img' src={tsum} alt=""/>
                         </NavLink>
@@ -63,7 +63,7 @@ const Parks = () => {
                     </div>
                     <div className="parks__card">
                         <motion.div whileHover='hover'
-                                    variants={shakeVariants} className="parks__card">
+                                    variants={shakeVariants}>
                         <NavLink onClick={()=>toTop()} to='/parks/Smagic%20Tommi'>
                             <motion.img variants={shakeVariants} className='parks__img'  src={tommi} alt=""/>
                         </NavLink>
@@ -75,7 +75,7 @@ const Parks = () => {
                     </div>
                     <div className="parks__card">
                         <motion.div whileHover='hover'
-                                    variants={shakeVariants} className="parks__card">
+                                    variants={shakeVariants} >
                         <NavLink onClick={()=>toTop()} to='/parks/Sky%20Park'>
                             <motion.img variants={shakeVariants}  className='parks__img' src={skypark} alt="sky-park"/>
                         </NavLink>
