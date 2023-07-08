@@ -15,7 +15,8 @@ const Footer = () => {
     const toTop = () => {
         animateScroll.scrollToTop({
             delay: 0,
-            duration: 0
+            duration: 0,
+            smooth:true
         })
     };
     return (

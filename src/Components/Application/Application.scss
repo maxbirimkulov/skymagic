@@ -63,9 +63,13 @@
       font-weight: 500;
       border-radius: 8px;
       padding: 5px 10px;
-      background: #23549f;
+      background:  none;
       color: white;
-
+      border: 2px solid white;
+    }
+    option{
+      color: black;
+      background: none;
     }
 
   }

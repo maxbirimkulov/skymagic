@@ -1,19 +1,25 @@
 import React from 'react';
 import './Services.scss'
-import dr from './Asset 16.png'
+import dr from './Asset 10.png'
 import img1 from './Asset 7 (2).png'
 import img2 from './Asset 8 (2).png'
 import img3 from './Asset 9.png'
-
-import img5 from './1 (7).png'
-import img6 from './2 (6).png'
-import img7 from './3 (6).png'
-import img8 from './4 (6).png'
-import img9 from './5 (6).png'
+import img5 from './Asset 16 (1).png'
+import img6 from './Asset 11 (1).png'
+import img7 from './Asset 14 (1).png'
+import img8 from './Asset 13 (1).png'
+import img9 from './Asset 12.png'
+import imgb1 from './children_wearing_costume_having_fun_during_birthday_party_107420.jpg'
+import imgb2 from './images.jpeg'
+import imgb3 from './outdoor-birthday-party.jpeg'
 import Application from "../../Components/Application/Application";
 import {animateScroll} from "react-scroll";
 
 const Services = () => {
+
+    let date = new Date()
+
+    console.log(date.getTime())
     const toTop = () => {
         animateScroll.scrollToTop({
             delay: 0,
@@ -80,6 +86,11 @@ const Services = () => {
                                 супергероев и вдоволь порезвится на аттракционах.</p>
                         </div>
                     </div>
+                    <div className="services__image">
+                        <img src={imgb1} alt=""/>
+                        <img src={imgb2} alt=""/>
+                        <img src={imgb3} alt=""/>
+                    </div>
                     <div className="services__card">
                         <img src={img2} alt=""/>
                         <div className="services__text">
@@ -90,6 +101,11 @@ const Services = () => {
                                 аттракционах.</p>
                         </div>
                     </div>
+                    <div className="services__image">
+                        <img src={imgb1} alt=""/>
+                        <img src={imgb2} alt=""/>
+                        <img src={imgb3} alt=""/>
+                    </div>
                     <div className="services__card">
                         <img src={img1} alt=""/>
                         <div className="services__text">
@@ -99,6 +115,11 @@ const Services = () => {
                                 любимых супергероев и вдоволь порезвится на
                                 аттракционах.</p>
                         </div>
+                    </div>
+                    <div className="services__image">
+                        <img src={imgb1} alt=""/>
+                        <img src={imgb2} alt=""/>
+                        <img src={imgb3} alt=""/>
                     </div>
                 </div>
             </div>

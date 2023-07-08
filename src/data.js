@@ -39,7 +39,7 @@ export const data2 = {
     "Smagic Techno": {
         "branch":"techno",
         "title": "Smagic Технопарк",
-        "description": "",
+        "description": "\"Sky Park\" - Крупнейший крытый парк в Кыргызстане",
         "areatitle": "Общая площадь помещения парка:",
         "areatext": [
             "6878 кв. м.",],
@@ -69,12 +69,12 @@ export const data2 = {
         "price": ["490","690"],
         "location":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1298.012278715692!2d74.63418399941344!3d42.856562349897274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb6572914c7b7%3A0x669f8315bcc304af!2z0KLQtdGF0L3QviDQn9Cw0YDQug!5e0!3m2!1sru!2skg!4v1672076509770!5m2!1sru!2skg",
         "locationText":"1/2 ул. Горького, Бишкек",
-        "locationTc":"ТРЦ Техно Парк"
+        "locationTc":"ТРЦ Техно Парк",
     },
     "Smagic Tsum": {
         "branch":"tsum",
         "title": "Smagic Цум 2",
-        "description": "",
+        "description": "\"Sky Park\" - Крупнейший крытый парк в Кыргызстане",
         "areatitle": "Общая площадь помещения парка:",
         "areatext": [
             "2300 кв. м. Вместимость : 600 человек"],
@@ -108,7 +108,7 @@ export const data2 = {
     "Smagic Tommi": {
         "branch": "tommy",
         "title": "Smagic Tommi mall",
-        "description": "",
+        "description": "\"Sky Park\" - Крупнейший крытый парк в Кыргызстане",
         "areatitle": "Общая площадь помещения парка:",
         "areatext": [
             "778 кв. м. Вместимость : 200 человек"],

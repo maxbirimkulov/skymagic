@@ -5,7 +5,6 @@ import axios from "../../utils/axios";
 import InputMask from "react-input-mask";
 import DownloadButton from "../DownloadButton/DownloadButton";
 import {useLocation} from "react-router-dom";
-import {clickFunc} from "../../utils/clickFunc";
 
 const Application = () => {
     const location = useLocation()
@@ -33,11 +32,7 @@ const Application = () => {
                     <h2 className='application__title'> ЗАПОЛНИТЕ
                         ЗАЯВКУ <br/>
                     </h2>
-                        <span className='application__miniTitle'>Оставьте контактные данные и мы свяжемся с вами <br/> {
-                            location.pathname === '/services' ? <>
-                                <a href='tel:+996771780708'>+996 (771) 780 708</a></>: ""
-                        }</span>
-
+                        <span className='application__miniTitle'>Оставьте контактные данные и мы свяжемся с вами</span>
                         <div className="application__goal">
                             {
                                 location.pathname === '/services' ?

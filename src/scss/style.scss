@@ -34,10 +34,38 @@ main{
    max-width: 1240px;
  }
 }
+@media (max-width: 1300px) {
+  .lastBanner{
+    padding: 200px 0 250px;
+  }
 
+}
 @media (max-width: 1239px) {
   .container {
     max-width: 1000px;
+  }
+  .price__card{
+    width: 45%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .price__card-text{
+    text-align: center;
+  }
+  .price__card-price{
+    font-size: 68px;
+    display: flex;
+    align-items: center;
+  }
+  .map .container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .map__google{
+    width: 90%;
+  }
+  .lastBanner{
+    padding: 200px 0 250px;
   }
   .nav {
     column-gap: 20px;
@@ -72,6 +100,9 @@ main{
   .container{
     max-width: 900px;
   }
+  .lastBanner{
+    padding: 150px 0 180px;
+  }
   .vacancies__icon{
     flex-wrap: wrap;
     row-gap: 40px;
@@ -83,9 +114,15 @@ main{
   }
   .services__box{
     flex-direction: column;
+    row-gap: 30px;
   }
   .services__box img{
     width: 70%;
+  }
+  .services__cards{
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 15px;
   }
   .services__right{
     width: 100%;
@@ -134,11 +171,61 @@ main{
     justify-content: center;
     column-gap: 60px;
   }
-}
+  .footer__lists{
+    flex-wrap: wrap;
+    column-gap: 0;
+  }
+  .footer__list{
+    padding: 20px;
+  }
+  .place__txt{
+    width: 45%;
+    height: 400px;
+    right: 70px;
+  }
+  }
 
 @media (max-width: 769px ) {
   .container{
     max-width: 669px;
+  }
+  .integration__box{
+    flex-direction: column;
+  }
+  .integration__box img{
+    width: 100%;
+  }
+  .integration__box p{
+    width: 100%;
+  }
+  .reviews__form{
+    flex-direction: column;
+  }
+  .reviews__right{
+    width: 100%;
+  }
+  .about-park__card{
+    width: 205px;
+  }
+  .footer .container{
+    padding: 0;
+  }
+  .footer__lists{
+    flex-wrap: wrap;
+    column-gap: 20px;
+  }
+  .footer__list{
+    padding: 0;
+  }
+
+  .banner__smagic{
+    font-size: 24px;
+  }
+  .banner__text{
+    font-size: 20px;
+  }
+  .banner .banner__second-slider{
+    padding-top: 89px;
   }
   .aboutCompany__info{
     flex-direction: column;
@@ -183,12 +270,96 @@ main{
   .franchise__card p{
     font-size: 18px;
   }
+  .price__cards{
+    justify-content: space-between;
+    column-gap: 0;
+    flex-direction: column;
+    row-gap: 40px;
+  }
+  .price__card{
+    width: 90%;
+  }
+  .price__title{
+    font-size: 50px;
+  }
+  .place__txt{
+    width: 50%;
+    height: 350px;
+    right: 60px;
+  }
+  .reviews__left h2{
+    font-size: 36px;
+  }
+  .integration__swiper img {
+  width: 270px;
+  }
+  .integration__swiper{
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  }
+@media (max-width: 669px) {
+  .container{
+    max-width:481px ;
+  }
+  .services__card{
+    flex-direction: column;
+  }
+  .services__text{
+    width: 100%;
+  }
+  .services__image{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+  }
+  .services__image img{
+    width: 250px;
+  }
+  .banner__text{
+    font-size: 18px;
+    margin-bottom: 2px;
+  }
+  .banner__smagic{
+    font-size: 20px;
+  }
+  .footer__lists{
+    justify-content: center;
+    row-gap: 15px;
+  }
+  .footer__list{
+    width: 200px;
+  }
+  .lastBanner{
+    padding: 90px 0 100px;
+  }
+  .price__card{
+    padding: 10px 15px;
+  }
+  .price__card-price{
+    font-size: 50px;
+  }
+  .price__card-title{
+    font-size: 30px;
+  }
+  .price__card-desc{
+    font-size: 24px;
+  }
+  .place__txt{
+    width: 50%;
+    height: 350px;
+    right: 60px;
+  }
 }
 
 @media (max-width: 481px ) {
   .container{
     max-width: 421px;
 
+  }
+  .reviews__skypark .branch__menu{
+    width: 100%;
   }
   .services__right{
     text-align: center;
@@ -200,6 +371,59 @@ main{
   .footer__lists{
     flex-direction: column;
     text-align: center;
+    justify-content: center;
+    align-items: center;
   }
+  .lastBanner{
+    padding: 80px 40px;
+  }
+  .application__title{
+    font-size: 30px;
+  }
+  .application__box{
+    padding: 25px;
+  }
+  .application__miniTitle{
+    font-size: 22px;
+  }
+  .reviews__skypark .branch__menu{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 
+  }
+  .header__logo img{
+    width: 100px;
+  }
+  .header__logo img{
+
+  }
+  .reviews__form{
+    flex-direction: column;
+  }
+  .reviews__left h2{
+    font-size: 30px;
+  }
+  .reviews__left{
+    width: 100%;
+  }
+  .reviews__left p{
+    font-size: 26px;
+    width: 100%;
+  }
+  .reviews__radios{
+    flex-wrap: wrap;
+  }
+  .reviews__right{
+    width: 100%;
+  }
+  .reviews__row{
+    flex-direction: column;
+  }
+  .reviews__stars{
+    width: 100%;
+  }
+  .integration__partner{
+    flex-wrap: wrap;
+  }
 }

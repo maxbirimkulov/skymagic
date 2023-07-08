@@ -7,18 +7,24 @@ import Map from "./Map/Map";
 
 import {data2} from "../../data.js"
 import AboutPark from "./AboutPark/AboutPark";
+import MapIcons from "./MapIcons/mapIcons";
 
 const Park = () => {
     const params = useParams()
 
+
     let dataPark =  data2[`${params.name}`]
+    console.log(dataPark)
+
     return (
         <>
 
             <Place dataPark={dataPark}/>
             <Price dataPark={dataPark}/>
+            {/*{params.name === 'Smagic Techno'? <MapIcons/>:''}*/}
             <AboutPark/>
             <Portfolio dataPark={dataPark}/>
+
 
             <Map dataPark={dataPark}/>
         </>

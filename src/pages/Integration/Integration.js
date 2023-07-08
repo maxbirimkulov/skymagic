@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import './Integration.scss'
-import img1 from './Asset 1 (1).png'
+import imgbox1 from './Brand_1.png'
+import imgbox2 from './Brand_1_1.png'
+import imgbox3 from './Brand_1_2.png'
 import ocak from './Ожак Кебаб.png'
 import img4 from './DSC_4942_DxO.jpg'
 import img2 from './DSC_4953_DxO.jpg'
@@ -36,18 +38,24 @@ const Integration = () => {
                 <h2 className='integration__title'>БРЕНД-ИНТЕГРАЦИИ ДЛЯ ПАРТНЁРА <br/>
                     В ГОРОДЕ-ПРОФЕССИЙ SMAGIC ЭТО:</h2>
                 <div className="integration__box">
-                    <img src={img1} alt=""/>
-                    <div className='integration__left'>
+                    <img src={imgbox1} alt=""/>
+
                         <p>Уникальная площадка для длительной и непрерывной
                         коммуникации с аудиторией;</p>
+                </div>
+                <div className="integration__box">
+                    <img src={imgbox2} alt=""/>
                         <p>Идеальная локация для знакомства потребителей с
                         продуктом или услугой с использованием нативной
                         рекламы;</p>
+            </div>
+                <div className="integration__box">
+                    <img src={imgbox3} alt=""/>
                         <p>Среда, где в сознании аудитории формируется
                         положительный имидж бренда через участие в социально
                         значимом проекте;</p>
-                    </div>
-                </div>
+
+        </div>
                 <h2 className='integration__city'>ЧТО ТАКОЕ «ГОРОД ПРОФЕССИЙ»?</h2>
                 <p className='integration__info'>Город профессий- уникальная система в которой обычная реклама принимает новые
                     формы. Через позитивные эмоции детей бренды получают уникальную возможность

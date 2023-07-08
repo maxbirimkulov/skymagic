@@ -17,15 +17,14 @@
       overflow: hidden;
     }
     &title{
-      @include text(900,50px,100px,#fff);
-
+      @include text(900,34px,50px,#fff);
     }
     &p{
-      @include text(600,30px,55px,#fff);
+      @include text(500,23px,55px,#fff);
       min-height: 200px;
     }
     &btn{
-      @include text(400,50px,77px,#fff);
+      @include text(400,30px,77px,#fff);
       text-transform: uppercase;
       background: transparent;
       border: 4px solid #FFFFFF;

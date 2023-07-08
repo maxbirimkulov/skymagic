@@ -10,20 +10,19 @@ import Application from "../../Components/Application/Application";
 const Franchise = () => {
     return (
         <section className='franchise'>
-            <div className="container">
-                <div className="franchise__about">
-                    <img src={img1} alt=""/>
-                    <div className="franchise__right">
-                        <h2>ФРАНШИЗА ОТ SMAGIC
-                            И SKY PARK ЭТО:</h2>
-                            <ul>
-                                <li>Прибыльные проекты для разной целевой аудитории</li>
-                                <li>Гарантия постоянного трафика посетителей</li>
-                                <li>Социально значимые проекты для города и региона
-                                </li>
-                            </ul>
-                    </div>
+            <div className="franchise__banner">
+                <div className="franchise__container container">
+                    <h2>ФРАНШИЗА ОТ SMAGIC <br/>
+                        И SKY PARK ЭТО:</h2>
                 </div>
+            </div>
+            <div className="container">
+                <ul className='franchise__about'>
+                    <li>Прибыльные проекты для разной целевой аудитории</li>
+                    <li>Гарантия постоянного трафика посетителей</li>
+                    <li>Большая зона охвата благодаря уникальности форматов</li>
+                    <li>Социально значимые проекты для города и региона</li>
+                </ul>
                 <h2 className='franchise__expert'>НАША ЭКСПЕРТИЗА</h2>
                 <div className="franchise__card">
                     <div className='franchise__img'>

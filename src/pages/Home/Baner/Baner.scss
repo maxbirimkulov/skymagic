@@ -1,35 +1,38 @@
 .banner{
   position: relative;
   height: 100vh;
-  background: url("../images/DSC_4629_DxO.jpg")center/cover no-repeat;
+  background: url("../images/Artboard 1 (2).jpg")center/cover no-repeat;
   &__second-slider{
     display: none;
+  }
+  &__maintitle{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: start;
   }
   &__btn{
     background: none;
     color: white;
     border-radius: 15px;
     border: 3px solid white;
-     padding: 15px 30px;
+    padding: 15px 30px;
     font-size: 46px;
     margin-top: 20px;
   }
   &__slider{
     position: absolute;
-    top: 15%;
+    top: 12%;
     left: 48%;
     z-index: 1;
-
     .swiper {
       margin: 100px auto;
       width: 41vw;
     }
   }
-
-
   .swiper-slide {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     font-size: 22px;
     font-weight: bold;
@@ -37,7 +40,7 @@
 
   }
   &__title{
-    padding: 15px 20px 15px;
+    padding: 15px 5px 15px 20px;
     opacity: 1;
     display: flex;
     flex-direction: column;
@@ -48,15 +51,13 @@
   }
 
   &__smagic{
-
     font-size: 30px;
-
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 30px;
   }
   &__text{
     font-size: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     opacity: 1;
   }
   &__info{

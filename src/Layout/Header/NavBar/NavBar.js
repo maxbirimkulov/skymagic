@@ -41,7 +41,7 @@ const NavBar = ({toggleClass}) => {
             <li className='nav__item'><NavLink className="nav__link" to="/about" onClick={() => {
                 toggleClass()
                 clickFunc('contacts', user.email ? user._id : null)
-            }}>Контакты</NavLink>
+            }}>О нас</NavLink>
             </li>
             <li className='nav__item'>
                 <NavLink className="nav__link" to="/vacancies"

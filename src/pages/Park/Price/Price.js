@@ -35,8 +35,7 @@ const Price = ({dataPark}) => {
                     </div>
                 </div>
             </div>
-            {/*<Card3d dataPark={dataPark} price={dataPark.price[0]} text="Детский" img={img1}/>*/}
-            {/*<Card3d dataPark={dataPark} price={dataPark.price[1]} text="Взрослый" img={img2}/>*/}
+
         </section>
     );
 };

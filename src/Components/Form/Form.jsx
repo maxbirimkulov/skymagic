@@ -7,6 +7,7 @@ import axios from "../../utils/axios";
 import {useDispatch} from "react-redux";
 import {registerUser} from "../../redux/reducers/user";
 
+
 const Form = () => {
     const location = useLocation()
     const dispatch = useDispatch()

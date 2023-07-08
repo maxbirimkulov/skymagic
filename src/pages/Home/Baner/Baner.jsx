@@ -41,7 +41,7 @@ const Baner = () => {
                     >
                         {data.map((el)=>(
                             <SwiperSlide key={el} className={"banner__title"}>
-                                <h2 className='banner__smagic'>
+                                <h2 className='banner__maintitle'>
                                     {el.title}
                                 </h2>
                                 <h2 className="banner__smagic">

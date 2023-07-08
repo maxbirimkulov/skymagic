@@ -16,6 +16,7 @@
     background: #1392cd;
   }
 
+
 }
 .skypark{
 width: 170px;
@@ -56,15 +57,7 @@ width: 170px;
 
 }
 
-@media (max-width: 1201px) {
-  .header{
-    padding: 5px 10px 0;
-    &__container.container{
-      width: 100%;
-    }
-  }
 
-}
 
 @media (max-width: 1025px) {
   .header__{

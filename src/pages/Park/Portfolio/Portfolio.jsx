@@ -6,12 +6,17 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "./Portfolio.scss"
 import axios from "../../../utils/axios";
+import {useParams} from "react-router-dom";
 
 
 export default function Portfolio() {
     const [firstSwiper, setFirstSwiper] = useState(null);
     const [secondSwiper, setSecondSwiper] = useState(null);
     const [meals,setMeals] =useState([])
+
+
+    const params = useParams()
+    console.log(params.name)
     useEffect(()=>{
         axios("/gallery")
             .then(({data})=> setMeals(data))

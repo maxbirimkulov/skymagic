@@ -18,8 +18,6 @@ const AboutPark = () => {
     return (
         <section className="about-park">
             <div className="container">
-
-
                 <div className="about-park__tabs">
                     {
                         buttons.map((btn,idx) =>(
