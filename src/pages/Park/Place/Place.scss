@@ -53,20 +53,23 @@
  .place{
 
    &__txt{
-     padding: 10px;
-     left: 30px;
-     top: 60%;
+     padding: 10px 5px;
+     right: 20px;
+     top: 30%;
+
    }
    &__title{
-     @include text(500,40px,35px,#fff);
+     @include text(500,40px,25px,#fff);
+     margin-bottom: 13px;
 
    }
    &__p{
      @include text(500,10px,8px,#fff);
+     min-height: 50px;
 
    }
    .place__swiper .swiper-slide img {
-     height: 70vh;
+     height: 48vh;
 
    }
  }

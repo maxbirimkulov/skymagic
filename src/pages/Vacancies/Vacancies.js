@@ -77,9 +77,11 @@ const Vacancies = () => {
                     {data.map((el,idx)=>(
                             <div className="vacancies__one" key={el._id}>
                                 <h3 className='vacancies__name'>{el.title}</h3>
-                                <h5 className='vacancies__text'>{el.description}</h5>
-                                <p className='vacancies__requirements'>{el.responsibilities[0]?.text}</p>
-                                <p className='vacancies__schedule'>{el.requirement[0]?.text}</p>
+                                {
+                                    el.description.length >=120? el.description.slice(0,120) + ". . .":el.description
+                                }
+                                {/*<p className='vacancies__requirements'>{el.responsibilities[0]?.text}</p>*/}
+                                {/*<p className='vacancies__schedule'>{el.requirement[0]?.text}</p>*/}
                                 <div className="vacancies__block">
                                     <h3 className={"vacancies__name"}>Зарплата:</h3>
                                     <p className='vacancies__salary'>{el.salary}</p>

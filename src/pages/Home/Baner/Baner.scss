@@ -2,6 +2,10 @@
   position: relative;
   height: 100vh;
   background: url("../images/Artboard 1 (2).jpg")center/cover no-repeat;
+  &__btns{
+    text-align: center;
+    width: 100%;
+  }
   &__second-slider{
     display: none;
   }
@@ -9,7 +13,8 @@
     font-size: 36px;
     font-weight: 600;
     margin-bottom: 30px;
-    text-align: start;
+    text-align: center;
+    width: 100%;
   }
   &__btn{
     background: none;

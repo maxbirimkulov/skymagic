@@ -347,9 +347,11 @@ main{
     font-size: 24px;
   }
   .place__txt{
-    width: 50%;
-    height: 350px;
-    right: 60px;
+    .place__txt {
+      width: 53%;
+      height: 215px;
+      right: 60px;
+    }
   }
 }
 
@@ -369,22 +371,21 @@ main{
   }
 
   .footer__lists{
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    margin-left: 20px;
+    justify-content: left;
   }
   .lastBanner{
     padding: 80px 40px;
   }
   .application__title{
-    font-size: 30px;
+    font-size: 20px;
+    margin-bottom: 10px;
   }
   .application__box{
     padding: 25px;
   }
   .application__miniTitle{
-    font-size: 22px;
+    font-size: 18px;
   }
   .reviews__skypark .branch__menu{
     flex-wrap: wrap;
@@ -392,23 +393,20 @@ main{
     justify-content: center;
 
   }
-  .header__logo img{
-    width: 100px;
-  }
+
   .header__logo img{
 
   }
   .reviews__form{
     flex-direction: column;
+    padding: 13px 15px 15px 19px;
   }
-  .reviews__left h2{
-    font-size: 30px;
-  }
+
   .reviews__left{
     width: 100%;
   }
   .reviews__left p{
-    font-size: 26px;
+    font-size: 18px;
     width: 100%;
   }
   .reviews__radios{
@@ -425,5 +423,340 @@ main{
   }
   .integration__partner{
     flex-wrap: wrap;
+  }
+  .about-park__content{
+    justify-content: space-between;
+  }
+  .about-park__card{
+    width: 100px;
+    height: 130px;
+  }
+  .about-park__img{
+    width: 100%;
+    height: 100px;
+  }
+  .about-park__txt{
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .skypark{
+    width: 110px;
+    height: 23px;
+  }
+  .smagic{
+    height: 36px;
+    width: 100px;
+
+  }
+  .header{
+    padding: 5px 15px 5px;
+  }
+  .parks__cards{
+    row-gap: 0;
+    column-gap: 7px;
+  }
+  .parks__card{
+    width: 177px;
+  }
+  .parks__img{
+    width: 147px;
+    height: 140px;
+  }
+  .parks__logo{
+    width: 117px;
+    height: 41px;
+  }
+  .parks__skypark{
+    width: 130px;
+    height: 23px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  .parks__card h3{
+    margin:0;
+  }
+  .priceHome__box{
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+  .priceHome__card{
+    width: 170px;
+    row-gap: 4px;
+  }
+  .priceHome__card h3{
+    font-size: 25px;
+    padding: 2px 0;
+  }
+  .priceHome__card h2{
+    font-weight: 600;
+  }
+  .priceHome{
+    padding-top: 20px;
+  }
+  .priceHome__title{
+    margin-bottom: 17px;
+  }
+  .services__box h2{
+    font-size: 24px;
+  }
+  .services__one{
+    width: 150px;
+    height: 200px;
+  }
+  .services__one p {
+    font-size: 11px;
+  }
+    .services__image{
+column-gap: 20px;
+  }
+  .services__image img{
+    width: 140px;
+    box-shadow: 4px 6px 4px 0 rgba(34, 60, 80, 0.10);
+    border-radius: 8px;
+  }
+  .services__event{
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+  .services__card{
+    flex-direction: row;
+    text-align: start;
+    column-gap: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .services__card img {
+width: 100px;
+    height: 100px;
+    border-radius: 15px;
+  }
+  .services__card h3{
+    font-size: 20px;
+  }
+  .services__card p{
+    font-size: 11px;
+  }
+  .application__form input{
+    height: 40px;
+    font-size: 17px;
+  }
+  .application__goal select{
+    font-size: 16px;
+  }
+  .application__message{
+    height: 130px;
+  }
+  .franchise__about{
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 23px;
+  }
+  .franchise__about li{
+    margin-left: 0;
+    font-size: 14px;
+  }
+  .franchise__about li:before{
+    width: 15px;
+    height: 15px;
+    left: -21px;
+  }
+  .franchise__banner h2{
+    font-size: 26px;
+    margin-left: 15px;
+  }
+  .franchise__img img{
+    height: 9vh;
+    width: 80px;
+  }
+  .franchise__card p{
+    font-size: 12px;
+    width: 70%;
+  }
+  .franchise__card{
+    column-gap: 10px;
+    justify-content: center;
+  }
+  .integration__title{
+    font-size: 18px;
+  }
+  .integration__box{
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 15px;
+  }
+  .integration__box p{
+    width: 45%;
+    font-size: 11px;
+  }
+  .integration__box img{
+    width: 45%;
+    height: 80px;
+    border-radius: 8px;
+  }
+  .integration__city{
+    font-size: 24px;
+  }
+  .integration__info{
+    font-size: 15px;
+  }
+  .integration__swiper{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 15px;
+    row-gap: 15px;
+  }
+  .integration__swiper img{
+    width: 150px;
+  }
+  .price__title{
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  .nav{
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+  }
+  .header__menu_active{
+    height: 160vh;
+  }
+  .vacancies__contact{
+    column-gap: 10px;
+  }
+  .vacancies__footer h2{
+    font-size: 20px;
+  }
+  .vacancies__contact p{
+    font-size: 14px;
+    align-items: center;
+    column-gap: 5px;
+  }
+  .vacancies__title{
+    font-size: 20px;
+  }
+  .vacancies{
+    margin-top: 0;
+  }
+  .vacancies__icon{
+flex-wrap: nowrap;
+    align-items: center;
+    column-gap: 15px;
+    justify-content: center;
+  }
+  .vacancies__icon h2{
+font-size: 15px;
+  }
+  .vacancies__icon p{
+    font-size: 13px;
+  }
+  .vacancies__vacancy{
+    font-size: 24px;
+  }
+  .aboutParkTab{
+    font-size: 12px;
+  }
+  .place__title{
+    font-size: 16px;
+  }
+  .price__cards{
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10px;
+
+  }
+  .price__card{
+width: 45%;
+    padding: 5px 8px;
+  }
+  .price__card-price{
+    font-size: 22px;
+    column-gap: 5px;
+  }
+  .price__card-title{
+    font-size: 14px;
+  }
+  .price__card-money{
+    font-size: 20px;
+  }
+  .price__card-desc{
+    font-size: 13px;
+  }
+  .place__txt{
+    height: 200px;
+    top: 100px;
+    right: 25px;
+  }
+  .footer__list{
+width: 150px;
+  }
+  .footer__list li{
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .nav__link{
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .reviews__left h2{
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .reviews__radio{
+    row-gap: 0;
+  }
+  .reviews__text{
+    margin: 10px 0;
+    padding: 10px;
+  }
+  .reviews__stars{
+    margin: 0 0 10px 0;
+  }
+  .reviews .request__error{
+    margin-bottom: 5px;
+    padding: 10px 0 0 0;
+  }
+  .vacancies__all{
+    flex-direction: column;
+    width: 100%;
+  }
+  .vacancies__one{
+    width: 100%;
+    height: auto;
+  }
+  .vacancies__name{
+    margin-bottom: 8px;
+  }
+  .vacancies__text{
+    margin-bottom: 10px;
+  }
+  .oneVacancy__text{
+    width: 100%;
+    text-align: left;
+  }
+  .oneVacancy__wrapper{
+    width: 90%;
+    padding: 5px;
+  }
+  .oneVacancy__name{
+    margin-bottom: 10px;
+  }
+  .oneVacancy__lists{
+    column-gap: 20px;
+  }
+  .allStock__oneStock{
+    height: auto;
+    flex-direction: column;
+  }
+  .allStock__oneStock img{
+    width: 90%;
+  }
+  .allStock__name{
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .allStock__text{
+    font-size: 18px;
   }
 }
