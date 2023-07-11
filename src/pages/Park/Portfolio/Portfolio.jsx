@@ -1,12 +1,14 @@
 import React, {useEffect, useState} from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Controller,Autoplay } from 'swiper';
-
-import "swiper/css";
-import "swiper/css/pagination";
+import SwiperCore, { Controller } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper.min.css';
+import 'swiper/swiper-bundle.min.css';
 import "./Portfolio.scss"
 import axios from "../../../utils/axios";
 import {useParams} from "react-router-dom";
+
+SwiperCore.use([Controller]);
+
 
 
 export default function Portfolio() {
@@ -22,51 +24,54 @@ export default function Portfolio() {
             .then(({data})=> setMeals(data))
             .catch((err)=>err)
     },[])
+    console.log(params.name.toLowerCase().split(' ').includes(meals[0]?.branch))
+    console.log(meals)
     return (
         <div className="portfolio">
             <h2 className='portfolio__title'>Галлерея</h2>
+
             <Swiper
-                grabCursor={true}
-                modules={[Controller]}
                 onSwiper={setFirstSwiper}
-                controller={{ control: secondSwiper ,
-                    inverse: true}}
-
+                controller={{ control: secondSwiper, inverse: true}}
                 slidesPerView={5}
                 spaceBetween={30}
-                initialSlide={3}
+                initialSlide={2}
                 loop={true}
                 centeredSlides={true}
-                className="firstSwiper"
-
             >
-                {meals.length ? meals.map(el => (
-                    <SwiperSlide key={el._id}>
-                        <img src={`${process.env.REACT_APP_URL}${el.imageUrl}`} alt={el.text}/>
-                    </SwiperSlide>
-                )) :"hello"}
+                {meals.map((el) => (
+
+                        params.name.toLowerCase().split(' ').includes(el.branch)? <SwiperSlide key={el._id}>
+                            <picture>
+                                <source srcSet={`${process.env.REACT_APP_URL}${el.imageUrl}`} type="image/webp"/>
+                                <source srcSet={`${process.env.REACT_APP_URL}${el.imageUrl}`} type="image/jpeg"/>
+                                <img src={`${process.env.REACT_APP_URL}${el.imageUrl}`} alt={el.text} />
+                            </picture>
+
+                        </SwiperSlide>:''
+
+
+                ))}
             </Swiper>
+
             <Swiper
-                grabCursor={true}
+                onSwiper={setSecondSwiper}
+                controller={{ control: firstSwiper, inverse: true }}
                 slidesPerView={5}
                 spaceBetween={30}
-                initialSlide={3}
+                initialSlide={2}
                 loop={true}
                 centeredSlides={true}
-                autoplay={{
-                    delay: 4000,
-                    disableOnInteraction: false,
-                }}
-                modules={[Controller,Autoplay]}
-                onSwiper={setSecondSwiper}
-                controller={{ control: firstSwiper,
-                    inverse: true}}
-                className="secondSwiper"
             >
-                {meals.map(el => (
-                    <SwiperSlide key={el._id}>
-                        <img src={`${process.env.REACT_APP_URL}${el.imageUrl}`} alt={el.text}/>
-                    </SwiperSlide>
+                {meals.map((el) => (
+                    params.name.toLowerCase().split(' ').includes(el.branch)? <SwiperSlide key={el._id}>
+                        <picture>
+                            <source srcSet={`${process.env.REACT_APP_URL}${el.imageUrl}`} type="image/webp"/>
+                            <source srcSet={`${process.env.REACT_APP_URL}${el.imageUrl}`} type="image/jpeg"/>
+                            <img src={`${process.env.REACT_APP_URL}${el.imageUrl}`} alt={el.text} />
+                        </picture>
+
+                    </SwiperSlide>:''
                 ))}
             </Swiper>
         </div>

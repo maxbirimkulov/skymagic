@@ -299,6 +299,30 @@ main{
   }
   }
 @media (max-width: 669px) {
+  .parks__cards {
+    row-gap: 0;
+    column-gap: 7px;
+  }
+  .parks__card {
+    width: 177px;
+  }
+  .parks__img {
+    width: 147px;
+    height: 140px;
+  }
+  .parks__logo {
+    width: 117px;
+    height: 41px;
+  }
+  .parks__card h3 {
+    margin: 0;
+  }
+  .parks__skypark {
+    width: 130px;
+    height: 23px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
   .container{
     max-width:481px ;
   }
@@ -684,8 +708,8 @@ width: 45%;
     font-size: 13px;
   }
   .place__txt{
-    height: 200px;
-    top: 100px;
+    height: 128px;
+    top: 55px;
     right: 25px;
   }
   .footer__list{
@@ -758,5 +782,37 @@ width: 150px;
   }
   .allStock__text{
     font-size: 18px;
+  }
+  .about-park__tabs{
+    height: 56px;
+  }
+  .aboutParkTab.active{
+    height: 100%;
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+  .aboutParkTab{
+    height: 100%;
+  }
+  .aboutCompany__smagic{
+    width: 38%;
+    height: 28px;
+  }
+  .aboutCompany__sky{
+    width: 36%;
+  }
+  .aboutCompany__right h2{
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  .aboutCompany__right p{
+    font-size: 16px;
+  }
+  .aboutCompany__right{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .aboutCompany__info img{
+    width: 50%;
   }
 }
