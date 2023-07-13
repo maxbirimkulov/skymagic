@@ -1,12 +1,20 @@
 import React from 'react';
 import "./Price.scss"
+import {useParams} from "react-router-dom";
+import smagic from '../../../Layout/Header/Asset 4 (2).png'
+import skypark from '../../../Layout/Header/Logo_SKYPARK_2.png'
 
 const Price = ({dataPark}) => {
+    let params = useParams()
+
+
     return (
         <section className="price">
             <div className="container">
                 <h2 className="price__title">
-                    {dataPark["description"]}
+                    <img className='price__imageTitle' src={params.name === 'Smagic Tsum'? smagic:params.name==='Sky Park'?skypark:params.name==='Smagic Techno'?smagic:params.name ==='Smagic Tommy'?smagic:''} alt=""/>
+                    {params.name ==='Smagic Tsum'? dataPark["description"]:params.name==='Sky Park'?dataPark["description"]:params.name==='Smagic Techno'?dataPark["description"]:params.name ==='Smagic Tommy'?dataPark["description"]:''}
+
                 </h2>
                 <div className="price__cards">
                     <div className="price__card">

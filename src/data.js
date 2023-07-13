@@ -2,7 +2,7 @@ export const data2 = {
     "Sky Park": {
         "branch":"sky",
         "title": "Sky Park",
-        "description": "\"Sky Park\" - Крупнейший крытый парк в Кыргызстане",
+        "description": " - Крупнейший крытый парк в Кыргызстане",
         "areatitle": "Общая площадь помещения парка:",
         "areatext": [
             "5500 кв. м. Высота самой высокой горки составляет - 13 м,протяженностью - 52 м.",
@@ -39,7 +39,7 @@ export const data2 = {
     "Smagic Techno": {
         "branch":"techno",
         "title": "Smagic Технопарк",
-        "description": "\"Sky Park\" - Крупнейший крытый парк в Кыргызстане",
+        "description": "Технопарк - уникальный город профессий и зона активити",
         "areatitle": "Общая площадь помещения парка:",
         "areatext": [
             "6878 кв. м.",],
@@ -74,7 +74,7 @@ export const data2 = {
     "Smagic Tsum": {
         "branch":"tsum",
         "title": "Smagic Цум 2",
-        "description": "\"Sky Park\" - Крупнейший крытый парк в Кыргызстане",
+        "description": "ЦУМ - Окунись в подводный мир волшебства",
         "areatitle": "Общая площадь помещения парка:",
         "areatext": [
             "2300 кв. м. Вместимость : 600 человек"],
@@ -108,7 +108,7 @@ export const data2 = {
     "Smagic Tommy": {
         "branch": "tommy",
         "title": "Smagic Tommi mall",
-        "description": "\"Sky Park\" - Крупнейший крытый парк в Кыргызстане",
+        "description": "Tommi mall - уютный парк для маленьких искателей приключений",
         "areatitle": "Общая площадь помещения парка:",
         "areatext": [
             "778 кв. м. Вместимость : 200 человек"],
@@ -134,7 +134,7 @@ export const data2 = {
             "- Автодром",
 
         ],
-        "price": ["490","690"],
+        "price": ["350","450"],
         "location":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2926.5073016378515!2d74.61642721484925!3d42.81989671393118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb51fc17f8ee9%3A0xe1032aa56553d407!2sTommi%20mall!5e0!3m2!1sru!2skg!4v1672075086486!5m2!1sru!2skg",
         "locationText":"17/2 ул. Аалы Токомбаева, Бишкек",
         "locationTc":"ТРЦ Tommi mall"

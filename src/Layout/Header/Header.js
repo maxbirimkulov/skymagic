@@ -6,7 +6,16 @@ import NavBar from "./NavBar/NavBar";
 import {animateScroll} from "react-scroll";
 import logo from './SMagic - Logo.png'
 import logo2 from './SKY PARK - logo.png'
+
+
 const Header = () => {
+    const toTop = () => {
+        animateScroll.scrollToTop({
+            delay: 0,
+            duration: 0,
+            smooth:true
+        })
+    };
     const [isActiveHamburger, setActiveHamburger] = useState(false);
     const [isActiveHamburgerMenu, setActiveHamburgerMenu] = useState(false);
 
@@ -35,7 +44,11 @@ const Header = () => {
         }`}>
             <div className="header__container container ">
                 <NavLink className="header__logo" to='/'>
-                    <img className='smagic' src={logo} alt="skymagic"/>
+                    <img onClick={
+                        ()=>{
+                            toTop()
+                        }
+                    } className='smagic' src={logo} alt="skymagic"/>
                     <img className='skypark' src={logo2} alt="skypark"/>
                 </NavLink>
                     <HamburgerToggle toggleClass={toggleClass} isActiveHamburger={isActiveHamburger}/>

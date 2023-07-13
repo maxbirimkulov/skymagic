@@ -33,17 +33,249 @@ main{
  .container{
    max-width: 1240px;
  }
+  .mapIcons__row{
+    column-gap: 12px;
+    margin-bottom: 41px;
+  }
+  .mapIcons__row2 {
+    margin-bottom: 9px;
+    column-gap: 10px;
+  }
+  .mapIcons__row2 img:nth-child(1){
+    height: 83px;
+    width: 110px;
+  }
+  .mapIcons__row2 img:nth-child(2){
+    height: 78px;
+    width: 115px;
+  }
+  .mapIcons__row2 img:nth-child(3){
+    height: 76px;
+    width: 110px;
+  }
+  .mapIcons__row2 img:nth-child(4){
+    height: 73px;
+    width: 100px;
+  }
+  .mapIcons__row2 img:nth-child(5){
+    height: 80px;
+    width: 100px;
+  }
+  .mapIcons__row2 img:nth-child(6){
+    height: 73px;
+    width: 100px;
+  }
+  .mapIcons__row2 img:nth-child(7){
+    height: 73px;
+    width: 100px;
+  }
+  .mapIcons__row2 img:nth-child(8){
+    height: 73px;
+    width: 100px;
+  }
+  .mapIcons__row3{
+    column-gap: 36px;
+  }
+  .mapIcons__row4{
+    column-gap: 93px;
+    margin-top: 57px;
+  }
+  .mapIcons__left2{
+    width: 34%;
+  }
+  .mapIcons__right2{
+    width: 32%;
+  }
+
 }
 @media (max-width: 1300px) {
   .lastBanner{
     padding: 200px 0 250px;
   }
-
+  .mapIcons__row{
+    column-gap: 12px;
+    margin-bottom: 41px;
+  }
+  .mapIcons__row2 {
+  margin-bottom: 9px;
+    column-gap: 10px;
+  }
+  .mapIcons__row2 img:nth-child(1){
+  height: 83px;
+    width: 110px;
+  }
+  .mapIcons__row2 img:nth-child(2){
+    height: 78px;
+    width: 115px;
+  }
+  .mapIcons__row2 img:nth-child(3){
+    height: 76px;
+    width: 110px;
+  }
+  .mapIcons__row2 img:nth-child(4){
+    height: 73px;
+    width: 100px;
+  }
+  .mapIcons__row2 img:nth-child(5){
+    height: 80px;
+    width: 100px;
+  }
+  .mapIcons__row2 img:nth-child(6){
+    height: 73px;
+    width: 100px;
+  }
+  .mapIcons__row2 img:nth-child(7){
+    height: 73px;
+    width: 100px;
+  }
+  .mapIcons__row2 img:nth-child(8){
+    height: 73px;
+    width: 100px;
+  }
+  .mapIcons__row3{
+    column-gap: 36px;
+  }
+  .mapIcons__left{
+    width: 34%;
+    justify-content: end;
+  }
+  .mapIcons__right{
+    width: 31%;
+  }
+  .mapIcons__row4{
+    column-gap: 93px;
+    margin-top: 57px;
+  }
+  .mapIcons__left2{
+    width: 34%;
+  }
+  .mapIcons__right2{
+    width: 32%;
+  }
 }
 @media (max-width: 1239px) {
   .container {
     max-width: 1000px;
   }
+  .mapIcons__road{
+    top: 100px;
+  }
+  .mapIcons__row{
+    column-gap: 5px;
+    margin-bottom: 34px;
+  }
+  .mapIcons__row img:nth-child(1) {
+    width: 130px;
+    height: 80px;
+  }
+  .mapIcons__row img:nth-child(2) {
+    width: 125px;
+    height: 83px;
+  }
+  .mapIcons__row img:nth-child(3) {
+    width: 130px;
+    height: 80px;
+  }
+  .mapIcons__row img:nth-child(4) {
+    width: 130px;
+    height: 92px;
+  }
+  .mapIcons__row img:nth-child(5) {
+    width: 115px;
+    height: 85px;
+  }
+  .mapIcons__row img:nth-child(6) {
+    width: 110px;
+    height: 79px;
+  }
+  .mapIcons__row2 {
+    margin-bottom: 27px;
+    column-gap: 0;
+  }
+  .mapIcons__row2 img:nth-child(1){
+    height: 73px;
+    width: 90px;
+  }
+  .mapIcons__row2 img:nth-child(2){
+    height: 70px;
+    width: 95px;
+  }
+  .mapIcons__row2 img:nth-child(3){
+    height: 70px;
+    width: 90px;
+  }
+  .mapIcons__row2 img:nth-child(4){
+    height: 70px;
+    width: 90px;
+  }
+  .mapIcons__row2 img:nth-child(5){
+    height: 70px;
+    width: 90px;
+  }
+  .mapIcons__row2 img:nth-child(6){
+    height: 60px;
+    width: 80px;
+  }
+  .mapIcons__row2 img:nth-child(7){
+    height: 70px;
+    width: 90px;
+  }
+  .mapIcons__row2 img:nth-child(8){
+    height: 70px;
+    width: 80px;
+  }
+  .mapIcons__row3{
+    column-gap: 90px;
+  }
+  .mapIcons__left{
+    width: 27%;
+  }
+  .mapIcons__right{
+    width: 26%;
+  }
+  .mapIcons__left img:nth-child(1){
+    width: 100px;
+    height: 70px;
+  }
+  .mapIcons__left img:nth-child(2){
+    width: 110px;
+    height: 85px;
+  }
+  .mapIcons__left img:nth-child(3){
+    width: 108px;
+    height: 72px;
+  }
+  .mapIcons__right img:nth-child(1){
+    width: 110px;
+    height: 75px;
+  }
+  .mapIcons__right img:nth-child(2){
+    width: 110px;
+    height: 75px;
+  }
+  .mapIcons__row4{
+    column-gap: 93px;
+    margin-top: 57px;
+  }
+  .mapIcons__left2{
+    width: 34%;
+  }
+  .mapIcons__right2{
+    width: 32%;
+  }
+  .mapIcons__row4 img:nth-child(1){
+    width: 110px;
+    height: 75px;
+  }
+  .mapIcons__row4 img:nth-child(2){
+    width: 110px;
+    height: 75px;
+  }
+  .mapIcons__row4 img:nth-child(3){
+    width: 110px;
+    height: 75px;
+  }
+
   .price__card{
     width: 45%;
     flex-direction: column;
@@ -99,6 +331,34 @@ main{
 @media (max-width: 999px) {
   .container{
     max-width: 900px;
+  }
+.mapIcons__image{
+  display: block;
+  width: 90%;
+}
+  .place__title{
+    font-size: 28px;
+  }
+  .mapIcons__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mapIcons__road{
+    display: none;
+  }
+
+  .mapIcons__row{
+    display: none;
+  }
+  .mapIcons__row2{
+    display: none;
+  }
+  .mapIcons__row3{
+    display: none;
+  }
+  .mapIcons__row4{
+    display: none;
   }
   .lastBanner{
     padding: 150px 0 180px;
@@ -189,6 +449,11 @@ main{
   .container{
     max-width: 669px;
   }
+  .place__title{
+    font-size: 26px;
+    line-height: 30px;
+  }
+
   .integration__box{
     flex-direction: column;
   }
@@ -303,6 +568,13 @@ main{
     row-gap: 0;
     column-gap: 7px;
   }
+  .place__title{
+    font-size: 24px;
+  }
+  .place__p{
+    font-size: 16px;
+    line-height: 24px;
+  }
   .parks__card {
     width: 177px;
   }
@@ -342,11 +614,16 @@ main{
     width: 250px;
   }
   .banner__text{
-    font-size: 18px;
+    font-size: 11px;
     margin-bottom: 2px;
   }
   .banner__smagic{
-    font-size: 20px;
+    font-size: 13px;
+    margin-bottom: 3px;
+  }
+  .banner .banner__btn{
+    padding: 10px 15px;
+    margin-top: 5px;
   }
   .footer__lists{
     justify-content: center;
@@ -384,6 +661,7 @@ main{
     max-width: 421px;
 
   }
+
   .reviews__skypark .branch__menu{
     width: 100%;
   }
@@ -682,7 +960,13 @@ font-size: 15px;
     font-size: 12px;
   }
   .place__title{
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 3px;
+  }
+  .place__p{
+    font-size: 12px;
+    line-height: 20px;
   }
   .price__cards{
     flex-direction: row;
@@ -707,8 +991,15 @@ width: 45%;
   .price__card-desc{
     font-size: 13px;
   }
+  .mapIcons{
+    padding-bottom: 30px;
+    margin-top: 10px;
+  }
+  .mapIcons__title{
+    font-size: 28px;
+  }
   .place__txt{
-    height: 128px;
+    height: 165px;
     top: 55px;
     right: 25px;
   }

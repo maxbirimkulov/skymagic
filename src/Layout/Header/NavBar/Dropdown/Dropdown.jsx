@@ -30,7 +30,7 @@ const Dropdown = ({toggleClass}) => {
                         clickFunc('tsum', user.email ? user._id : null)
                     }}>Smagic
                         Цум 2</NavLink>
-                    <NavLink className="nav__link" to="/parks/Smagic Tommi" onClick={()=>{
+                    <NavLink className="nav__link" to="/parks/Smagic Tommy" onClick={()=>{
                         toggleClass()
                         clickFunc('tommi', user.email ? user._id : null)
                     }}>Smagic

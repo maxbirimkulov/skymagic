@@ -1,6 +1,171 @@
 .mapIcons{
+  margin-top: 82px;
+  padding-bottom: 100px;
+  &__image{
+    display: none;
+  }
+&__title{
+  color: #1392cd;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+}
   &__container{
-    background: url("assets/Дорога.png")center/cover no-repeat;
-    height: 500px;
+    position: relative;
+    margin-top: 200px;
+  }
+  &__road{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    top:113px;
+    z-index: -1;
+  }
+ &__left{
+   width: 36%;
+   display: flex;
+   align-items: end;
+  justify-content: start;
+   img:nth-child(1){
+     width: 140px;
+     height: 90px;
+   }
+   img:nth-child(2){
+     width: 140px;
+     height: 125px;
+   }
+   img:nth-child(3){
+     width: 150px;
+     height: 100px;
+   }
+ }
+  &__right{
+    width: 27%;
+    display: flex;
+    align-items: end;
+    img:nth-child(1){
+      width: 140px;
+      height: 90px;
+    }
+    img:nth-child(2){
+      width: 140px;
+      height: 87px;
+    }
+  }
+  &__row{
+    display: flex;
+    justify-content: center;
+    column-gap: 42px;
+    align-items: end;
+    margin-bottom: 28px;
+    img:nth-child(1){
+      width: 150px;
+      height: 87px
+    }
+    img:nth-child(2){
+      height: 100px;
+      width: 158px;
+    }
+    img:nth-child(3){
+      height: 106px;
+      width: 154px;
+    }
+    img:nth-child(4){
+      height: 108px;
+      width: 145px;
+    }
+    img:nth-child(5){
+      height: 108px;
+      width: 144px;
+    }
+    img:nth-child(6){
+      height: 117px;
+      width: 136px;
+    }
+  }
+  &__row2{
+    display: flex;
+    justify-content: center;
+    column-gap: 0;
+    align-items: end;
+    margin-bottom: 20px;
+    img:nth-child(1){
+      height: 90px;
+      width: 120px;
+    }
+    img:nth-child(2){
+      height: 90px;
+      width: 125px;
+    }
+    img:nth-child(3){
+      height: 90px;
+      width: 130px;
+    }
+    img:nth-child(4){
+      height: 90px;
+      width: 140px;
+    }
+    img:nth-child(5){
+      height: 110px;
+      width: 130px;
+    }
+    img:nth-child(6){
+      height: 90px;
+      width: 120px;
+    }
+    img:nth-child(7){
+      height: 90px;
+      width: 120px;
+    }
+    img:nth-child(8){
+      height: 90px;
+      width: 140px;
+    }
+  }
+  &__row3{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    column-gap: 0;
+
+
+  }
+  &__left2{
+    width: 30%;
+  }
+  &__right2{
+    width: 28%;
+  }
+  &__row4{
+    display: flex;
+    justify-content: center;
+    column-gap: 115px;
+    align-items: end;
+    margin-top: 75px;
+    img:nth-child(1){
+      width: 140px;
+      height: 90px;
+    }
+    img:nth-child(1){
+      width: 140px;
+      height: 90px;
+    }
+    img:nth-child(2){
+      width: 140px;
+      height: 90px;
+    }
+    img:nth-child(3){
+      width: 140px;
+      height: 90px;
+    }
+    img:nth-child(4){
+      width: 140px;
+      height: 90px;
+    }
+    img:nth-child(5){
+      width: 140px;
+      height: 90px;
+    }
   }
 }

@@ -1,115 +1,88 @@
-.integration{
+.integration {
   padding-top: 110px;
   padding-bottom: 100px;
-  background: url("./Artboard 2.jpg")center/cover no-repeat;
-  &__title{
+  background: url("./Artboard 2.jpg") center/cover no-repeat;
+
+  &__title {
     font-weight: 700;
-    font-size:42px;
-    color: rgba(19,146,205,1);
+    font-size: 42px;
+    color: rgba(19, 146, 205, 1);
     margin-bottom: 40px;
   }
 
-&__box{
-  display: flex;
-  border-radius: 20px;
-  box-shadow: 0 0 11px 0 rgba(34, 60, 80, 0.2);
-  margin-bottom: 30px;
-  padding: 8px;
-  align-items: center;
-  justify-content: space-between;
-
-  img{
-    width: 50%;
+  &__box {
+    display: flex;
     border-radius: 20px;
-    height: 300px;
+    box-shadow: 0 0 11px 0 rgba(34, 60, 80, 0.2);
+    margin-bottom: 30px;
+    padding: 8px;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      width: 50%;
+      border-radius: 20px;
+      height: 300px;
+    }
+
+    p {
+      font-weight: 600;
+      font-size: 26px;
+      color: #1392cd;
+      width: 46%;
+    }
   }
-  p{
-font-weight: 600;
-    font-size: 26px;
-    color: #1392cd;
-    width: 46%;
-  }
-}
-  &__city{
+
+  &__city {
     font-weight: 700;
-    font-size:42px;
-    color:#1392cd ;
+    font-size: 42px;
+    color: #1392cd;
     margin-bottom: 40px;
     margin-top: 80px;
   }
-  &__info{
+
+  &__info {
     font-size: 18px;
     font-weight: 500;
   }
-  &__partners{
+
+  &__partners {
     text-align: center;
     color: #1392cd;
     font-weight: 700;
     font-size: 24px;
     margin-top: 70px;
     margin-bottom: 40px;
+    background: none;
   }
-  &__partner{
+
+  &__partner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     row-gap: 20px;
-
-
-    img{
-
-      width: 125px;
-      height: 125px;
+    background: none;
+    img {
+      width: 180px;
+      height: 180px;
+      background: none;
     }
   }
-  &__swiper{
+
+  &__swiper {
     margin-top: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    img{
+
+    img {
       width: 32%;
       object-fit: cover;
     }
   }
-  &__popup{
+
+  &__popup {
 
   }
-  &__popup-show{
-    display: flex;
-    justify-content: center;
-    z-index: 100;
-    position: fixed;
-background: #00000080;
-    width: 100%;
-    height: 100vh;
-    top: 100px;
-    left: 50%;
-    transform: translateX(-50%);
-    img{
-      width: 700px;
-      height: 400px;
-    }
-  }
-  &__close{
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 38px;
-    color: white;
-    font-weight: 600;
-
-  }
-  &__close:hover{
-    color: red;
-    cursor: pointer;
-  }
-  &__p{
-    padding: 0 20px;
-  }
-}
-.popup-back{
-  background: white;
-
 }

@@ -1,23 +1,27 @@
 import React from 'react';
 import './Support.scss'
-import {BsTelephone} from 'react-icons/bs'
-import {BsWhatsapp} from 'react-icons/bs'
-import {BsInstagram} from 'react-icons/bs'
-import {FiMail} from 'react-icons/fi'
+import skypark from '../../Layout/Header/Logo_SKYPARK_2.png'
+import smagic from '../../Layout/Header/Asset 4 (2).png'
 
 const Support = () => {
     return (
         <section className='support'>
-            <div className="support container">
-                <h2 className='support__title'>
-                    Если у вас остались какие-либо вопросы вы можете обратиться к нам:
-                </h2>
-                <ul className='support__lists'>
-                    <li className='support__list'><span><BsTelephone/></span>: +996 771 780 708</li>
-                    <li className='support__list'><span><BsWhatsapp/></span>+996 771 780 708</li>
-                    <li className='support__list'><span><BsInstagram/></span>smagic.kg</li>
-                    <li className='support__list'><span><FiMail/></span>smagic.kg@gmail.com</li>
-                </ul>
+            <div className="support__container container">
+                <div className="support__left">
+                    <img src={smagic} alt=""/>
+                    <img src={skypark} alt=""/>
+                </div>
+                <div className="support__right">
+                    <h2>ЕСЛИ У ВАС ОСТАЛИСЬ
+                        КАКИЕ-ЛИБО ВОПРОСЫ
+                        ВЫ МОЖЕТЕ ОБРАТИТЬСЯ
+                        К НАМ:</h2>
+                   <ul>
+                       <li><a href="tel:+996 771 780 708">+996 771 780 708</a></li>
+                       <li><a href="#">smagic.kg</a></li>
+                       <li><a href="">smagic.kg@gmail.com</a></li>
+                   </ul>
+                </div>
             </div>
         </section>
     );

@@ -7,12 +7,22 @@
 
   &__title {
     color: rgba(19,146,205,1);
-    font-size: 62px;
+    font-size: 44px;
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 40px;
-  }
+    position: relative;
+    text-indent: 170px;
+    line-height: 70px;
 
+  }
+&__imageTitle{
+  width: 155px;
+  height: 65px;
+  position: absolute;
+  left: 0;
+  top: 3px;
+}
   &__cards {
     display: flex;
     align-items: center;

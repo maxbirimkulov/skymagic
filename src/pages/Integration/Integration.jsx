@@ -3,32 +3,23 @@ import './Integration.scss'
 import imgbox1 from './Brand_1.png'
 import imgbox2 from './Brand_1_1.png'
 import imgbox3 from './Brand_1_2.png'
-import ocak from './Ожак Кебаб.png'
 import img4 from './DSC_4942_DxO.jpg'
 import img2 from './DSC_4953_DxO.jpg'
 import img3 from './DSC_4988_DxO.jpg'
-import bakai from './Бакай Банк.png'
-import bublik from './Бублик.png'
-import dodo from './Додо пицца.png'
-import dolce from './Дольче Вита.png'
-import {IoMdClose} from 'react-icons/io'
-import {data3} from '../../utils/data3'
-import {motion} from "framer-motion";
+import bakai from './Бакай.jpg'
+import beelain from './Билайн.jpg'
+import bp from './БП.jpg'
+import bublik from './Бублик.jpg'
+import dodo from './Додо.jpg'
+import dolce from './Дольче.jpg'
+import globus from './Глобус.jpg'
+import kut from './Кут.jpg'
+import ojac from './Ожак.jpg'
+import baby from './Малыш.jpg'
+
 
 const Integration = () => {
-    const [popup,setPopup]=useState('')
 
-    const animation = {
-        hidden:{
-            x:-100,
-            opacity:0,
-        },
-        visible: custom=>({
-            x:0,
-            opacity:1,
-            transition:{delay:custom *0.2 }
-        })
-    }
 
 
 
@@ -40,22 +31,22 @@ const Integration = () => {
                 <div className="integration__box">
                     <img src={imgbox1} alt=""/>
 
-                        <p>Уникальная площадка для длительной и непрерывной
+                    <p>Уникальная площадка для длительной и непрерывной
                         коммуникации с аудиторией;</p>
                 </div>
                 <div className="integration__box">
                     <img src={imgbox2} alt=""/>
-                        <p>Идеальная локация для знакомства потребителей с
+                    <p>Идеальная локация для знакомства потребителей с
                         продуктом или услугой с использованием нативной
                         рекламы;</p>
-            </div>
+                </div>
                 <div className="integration__box">
                     <img src={imgbox3} alt=""/>
-                        <p>Среда, где в сознании аудитории формируется
+                    <p>Среда, где в сознании аудитории формируется
                         положительный имидж бренда через участие в социально
                         значимом проекте;</p>
 
-        </div>
+                </div>
                 <h2 className='integration__city'>ЧТО ТАКОЕ «ГОРОД ПРОФЕССИЙ»?</h2>
                 <p className='integration__info'>Город профессий- уникальная система в которой обычная реклама принимает новые
                     формы. Через позитивные эмоции детей бренды получают уникальную возможность
@@ -68,36 +59,24 @@ const Integration = () => {
                 </div>
                 <h2 className='integration__partners'>НАШИ ПАРТНЕРЫ:</h2>
                 <div className='integration__partner'>
-                    <img onClick={(e)=>{setPopup(e.target.id)}} id='ocak' src={ocak} alt=""/>
-                    <img onClick={(e)=>{setPopup(e.target.id)}} id='bakai' src={bakai} alt=""/>
-                    <img onClick={(e)=>{setPopup(e.target.id)}} id='dolce' src={dolce} alt=""/>
-                    <img onClick={(e)=>{setPopup(e.target.id)}} id='bublik' src={bublik} alt=""/>
-                    <img onClick={(e)=>{setPopup(e.target.id)}} id='dodo' src={dodo} alt=""/>
+                    <img src={baby} alt=""/>
+                    <img src={dodo} alt=""/>
+                    <img src={dolce} alt=""/>
+                    <img src={globus} alt=""/>
+                    <img src={bakai} alt=""/>
 
                 </div>
+                <div className='integration__partner'>
+                    <img src={beelain} alt=""/>
+                    <img src={bp} alt=""/>
+                    <img src={bublik} alt=""/>
+                    <img src={ojac} alt=""/>
+                    <img src={kut} alt=""/>
+                </div>
+
             </div>
 
-            <motion.div className='integration__popup' initial='hidden' whileInView='visible'>
-                {
-                    data3.filter((el)=>(
-                            el.name === popup
-                        )
-                    ).map((el,idx)=>(
-                        <div className='integration__popup-show' key={el.name}>
-                            <div className="popup-back">
-                                <div className='integration__img'>
-                                    <img src={el.img} alt={el.name}/>
-                                </div>
-                                <div className="integration__p">
-                                    {el.text}
-                                </div>
-                            </div>
-                            <h2 className='integration__close' onClick={()=>setPopup('')}><IoMdClose/></h2>
-                        </div>
 
-                    ))
-                }
-            </motion.div>
 
         </section>
     );

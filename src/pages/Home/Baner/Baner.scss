@@ -91,10 +91,21 @@
 }
 @media (max-width: 500px) {
   .banner .banner__second-slider{
-    width: 100%;
-  }
+     width: 100%;
+   }
 }
 @media (max-width: 481px) {
+
+  .banner .banner__second-slider{
+    width:57%;
+    height: 270px;
+    right: 20px;
+  }
+  .banner .banner__second-slider{
+    margin: 0 0 0 0;
+    position: relative;
+    left: 150px;
+  }
 
 
 }

@@ -26,7 +26,7 @@ const Price = () => {
                         <p className='priceHome__kids'> ОТ 3Х ЛЕТ
                             ДО 16 ЛЕТ</p>
                         <h3 className='priceHome__after' >690 СОМ</h3>
-                        <Link  to='/ticket'><button onClick={toTop}>Купить</button></Link>
+                        <Link  to='/parks/Sky%20Park'><button onClick={toTop}>Подробнее</button></Link>
 
                     </div>
                     <div className="priceHome__card">
@@ -38,7 +38,7 @@ const Price = () => {
                         <p className='priceHome__kids'> ОТ 3Х ЛЕТ
                             ДО 16 ЛЕТ</p>
                         <h3 className='priceHome__after' >690 СОМ</h3>
-                        <Link  to='/ticket'><button onClick={toTop}>Купить</button></Link>
+                        <Link  to='/parks/Smagic%20Techno'><button onClick={toTop}>Подробнее</button></Link>
 
                     </div>
                     <div className="priceHome__card">
@@ -46,11 +46,11 @@ const Price = () => {
                         <h2 className='priceHome__location'>TOMMI MALL</h2>
                         <p className='priceHome__kids'> ОТ 1 ГОДА
                             ДО 3Х ЛЕТ</p>
-                        <h3 className='priceHome__under'>490 СОМ</h3>
+                        <h3 className='priceHome__under'>350 СОМ</h3>
                         <p className='priceHome__kids'> ОТ 3Х ЛЕТ
                             ДО 16 ЛЕТ</p>
-                        <h3 className='priceHome__after' >690 СОМ</h3>
-                        <Link  to='/ticket'><button onClick={toTop}>Купить</button></Link>
+                        <h3 className='priceHome__after' >450 СОМ</h3>
+                        <Link  to='/parks/Smagic%20Tommy'><button onClick={toTop}>Подробнее</button></Link>
 
                     </div>
                     <div className="priceHome__card">
@@ -62,7 +62,7 @@ const Price = () => {
                         <p className='priceHome__kids'> ОТ 3Х ЛЕТ
                             ДО 16 ЛЕТ</p>
                         <h3 className='priceHome__after' >690 СОМ</h3>
-                        <Link  to='/ticket'><button onClick={toTop}>Купить</button></Link>
+                        <Link  to='/parks/Smagic%20Tsum'><button onClick={toTop}>Подробнее</button></Link>
                     </div>
                 </div>
             </div>

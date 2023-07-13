@@ -1,21 +1,31 @@
 .support{
-margin-top: 81px;
-  background: url("bg1.svg")center/cover no-repeat;
-  &__title{
- padding-top: 50px;
-    font-weight: 600;
-    font-size: 32px;
-    margin-bottom: 50px;
+padding-top: 150px;
+  padding-bottom: 100px;
+&__container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+  &__left{
+    width: 45%;
+    img{
+      width: 80%;
+      margin-bottom: 50px;
+    }
   }
-  &__list{
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
-    font-size: 22px;
-    margin-bottom: 18px;
-    margin-left: 50px;
-    span{
-      font-size: 40px;
+  &__right{
+    width: 45%;
+    h2{
+      font-size: 32px;
+      color: #1392cd;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+    a{
+      font-size: 30px;
+      color: #1392cd;
+      font-weight: 500;
     }
   }
 }
