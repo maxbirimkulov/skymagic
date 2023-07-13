@@ -6,11 +6,14 @@
     padding-left: 70px;
     background: url("images/DSC_4951_DxO.jpg")center/cover no-repeat;
     position: relative;
+
   }
   &__title{
     font-size: 50px;
     color: white;
     font-weight: 800;
+    position: absolute;
+    bottom: 20px;
   }
   &__swipper{
     text-align: center;

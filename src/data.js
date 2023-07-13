@@ -105,7 +105,7 @@ export const data2 = {
         "locationText":"155 просп. Чуй, Бишкек",
         "locationTc":"ТРЦ Цум2"
     },
-    "Smagic Tommi": {
+    "Smagic Tommy": {
         "branch": "tommy",
         "title": "Smagic Tommi mall",
         "description": "\"Sky Park\" - Крупнейший крытый парк в Кыргызстане",

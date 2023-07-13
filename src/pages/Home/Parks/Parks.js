@@ -64,7 +64,7 @@ const Parks = () => {
                     <div className="parks__card">
                         <motion.div whileHover='hover'
                                     variants={shakeVariants}>
-                        <NavLink onClick={()=>toTop()} to='/parks/Smagic%20Tommi'>
+                        <NavLink onClick={()=>toTop()} to='/parks/Smagic%20Tommy'>
                             <motion.img variants={shakeVariants} className='parks__img'  src={tommi} alt=""/>
                         </NavLink>
                         </motion.div>

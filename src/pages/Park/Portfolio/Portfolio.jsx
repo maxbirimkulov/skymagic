@@ -19,6 +19,7 @@ export default function Portfolio() {
 
     const params = useParams()
     console.log(params.name)
+
     useEffect(()=>{
         axios("/gallery")
             .then(({data})=> setMeals(data))
@@ -38,6 +39,21 @@ export default function Portfolio() {
                 initialSlide={2}
                 loop={true}
                 centeredSlides={true}
+                breakpoints={{
+                    0:{
+                        centeredSlides:true,
+                        spaceBetween:0,
+                        slidesPerView:1,
+
+                    },
+                    668:{
+                        slidesPerView:5,
+                        spaceBetween:30,
+                        initialSlide:2,
+                        centeredSlides:true
+                    }
+                }}
+
             >
                 {meals.map((el) => (
 
@@ -62,6 +78,21 @@ export default function Portfolio() {
                 initialSlide={2}
                 loop={true}
                 centeredSlides={true}
+                breakpoints={{
+                    0:{
+                        centeredSlides:true,
+                        spaceBetween:0,
+                        slidesPerView:1,
+
+                    },
+                    668:{
+                        slidesPerView:5,
+                        spaceBetween:30,
+                        initialSlide:2,
+                        centeredSlides:true
+                    }
+                }}
+
             >
                 {meals.map((el) => (
                     params.name.toLowerCase().split(' ').includes(el.branch)? <SwiperSlide key={el._id}>
