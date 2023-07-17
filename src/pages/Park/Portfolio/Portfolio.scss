@@ -21,7 +21,6 @@
     text-align: center;
     font-size: 18px;
     background: #fff;
-    margin-right: 25px!important;
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -57,5 +56,16 @@
   }
   .secondSwiper .swiper-wrapper{
     align-items: flex-start!important;
+  }
+}
+@media (max-width: 481px ) {
+  .container{
+    max-width: 421px;
+  }
+  .portfolio .swiper-slide-active{
+    width: 100% !important;
+  }
+  .portfolio .swiper-slide{
+    margin-right: 0!important;
   }
 }

@@ -17,7 +17,6 @@ export default function Portfolio() {
     const [secondSwiper, setSecondSwiper] = useState(null);
     const [meals,setMeals] =useState([])
 
-    const mobileSwiperSpaceBetween = (window.outerWidth - 300) / 2
 
 
     const params = useParams()
@@ -38,12 +37,12 @@ export default function Portfolio() {
                 slidesPerView={5}
                 spaceBetween={30}
                 initialSlide={2}
-                // loop={true}
+                loop={true}
                 centeredSlides={true}
                 breakpoints={{
                     0:{
                         centeredSlides:true,
-                        spaceBetween:mobileSwiperSpaceBetween,
+                        spaceBetween:0,
                         slidesPerView:1,
 
                     },
@@ -75,12 +74,12 @@ export default function Portfolio() {
                 slidesPerView={5}
                 spaceBetween={30}
                 initialSlide={2}
-                // loop={true}
+                loop={true}
                 centeredSlides={true}
                 breakpoints={{
                     0:{
                         centeredSlides:true,
-                        spaceBetween:mobileSwiperSpaceBetween,
+                        spaceBetween:0,
                         slidesPerView:1,
 
                     },

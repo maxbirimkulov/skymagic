@@ -9,7 +9,7 @@ const Support = () => {
             <div className="support__container container">
                 <div className="support__left">
                     <img src={smagic} alt=""/>
-                    <img src={skypark} alt=""/>
+                    <img className='support__sky' src={skypark} alt=""/>
                 </div>
                 <div className="support__right">
                     <h2>ЕСЛИ У ВАС ОСТАЛИСЬ

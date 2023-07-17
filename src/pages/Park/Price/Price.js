@@ -12,7 +12,7 @@ const Price = ({dataPark}) => {
         <section className="price">
             <div className="container">
                 <h2 className="price__title">
-                    <img className='price__imageTitle' src={params.name === 'Smagic Tsum'? smagic:params.name==='Sky Park'?skypark:params.name==='Smagic Techno'?smagic:params.name ==='Smagic Tommy'?smagic:''} alt=""/>
+                    <img className={params.name === 'Sky Park'?'price__imageTitleSky':'price__imageTitle'} src={params.name === 'Smagic Tsum'? smagic:params.name==='Sky Park'?skypark:params.name==='Smagic Techno'?smagic:params.name ==='Smagic Tommy'?smagic:''} alt=""/>
                     {params.name ==='Smagic Tsum'? dataPark["description"]:params.name==='Sky Park'?dataPark["description"]:params.name==='Smagic Techno'?dataPark["description"]:params.name ==='Smagic Tommy'?dataPark["description"]:''}
 
                 </h2>

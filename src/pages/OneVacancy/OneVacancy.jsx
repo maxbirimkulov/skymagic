@@ -22,7 +22,7 @@ const OneVacancy = () => {
                             <h5 className={"oneVacancy__text"}>{el.description}</h5>
                             <div className="oneVacancy__lists">
                                 <ul className="oneVacancy__ul">
-                                    <h3 className="oneVacancy__name">Обязаности</h3>
+                                    <h3 className="oneVacancy__name">Обязанности</h3>
                                     {el.responsibilities.map((item)=>(
                                         <li key={el.id} className="oneVacancy__li">{item.text}</li>
                                     ))}

@@ -912,8 +912,10 @@ width: 100px;
     width: 150px;
   }
   .price__title{
-    font-size: 20px;
+    font-size: 14px;
     margin-left: 10px;
+    text-indent: 78px;
+    line-height: 29px;
   }
   .nav{
     height: 100%;
@@ -955,6 +957,7 @@ font-size: 15px;
   }
   .vacancies__vacancy{
     font-size: 24px;
+    padding-left: 10px;
   }
   .aboutParkTab{
     font-size: 12px;
@@ -1112,5 +1115,42 @@ width: 150px;
   .banner .banner__second-slider{
 padding-top: 62px;
     padding-bottom: 10px;
+  }
+  .price__imageTitle {
+    width: 70px;
+    height: 26px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+  }
+.price__imageTitleSky {
+  width: 73px;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+  .support__container{
+    flex-direction: column;
+  }
+  .support__left{
+    width: 100%;
+    display: flex;
+    padding-left: 15px;
+
+  }
+  .support__left img{
+    width: 45%;
+  }
+  .support__sky{
+    width: 30%;
+  }
+  .support__right{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .support__right h2{
+    font-size: 20px;
   }
 }
