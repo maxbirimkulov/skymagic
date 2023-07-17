@@ -30,6 +30,8 @@ import ferma from './assets/Ферма.png'
 import eko from './assets/Экостанция.png'
 import doroga from './assets/Дорога.png'
 import mapImage from './assets/map_of_place.jpg'
+import { motion } from 'framer-motion';
+
 
 
 
@@ -44,43 +46,67 @@ const MapIcons = () => {
 
                 <img className='mapIcons__road' src={doroga} alt=""/>
                 <div className='mapIcons__row'>
-                    <img src={shahta} alt=""/>
-                    <img src={pekarnya} alt=""/>
-                    <img src={ferma} alt=""/>
-                    <img src={police} alt=""/>
-                    <img src={pochta} alt=""/>
-                    <img src={clinic} alt=""/>
+                    <motion.img
+                        whileHover={{ scale: 1.2 }}
+                        src={shahta}
+                        alt=""
+                    />
+                    <motion.img
+                        whileHover={{ scale: 1.2 }}
+                        src={pekarnya}
+                        alt=""
+                    />
+                    <motion.img
+                        whileHover={{ scale: 1.2 }}
+                        src={ferma}
+                        alt=""
+                    />
+                    <motion.img
+                        whileHover={{ scale: 1.2 }}
+                        src={police}
+                        alt=""
+                    />
+                    <motion.img
+                        whileHover={{ scale: 1.2 }}
+                        src={pochta}
+                        alt=""
+                    />
+                    <motion.img
+                        whileHover={{ scale: 1.2 }}
+                        src={clinic}
+                        alt=""
+                    />
                 </div>
                 <div className='mapIcons__row2'>
-                    <img src={beelain} alt=""/>
-                    <img src={arheologia} alt=""/>
-                    <img src={fabrica} alt=""/>
-                    <img src={salon} alt=""/>
-                    <img src={dom} alt=""/>
-                    <img src={scena} alt=""/>
-                    <img src={teatr} alt=""/>
-                    <img src={pojarnay} alt=""/>
+                    <motion.img whileHover={{scale:1.2}} src={beelain} alt=""/>
+                    <motion.img whileHover={{scale:1.2}} src={arheologia} alt=""/>
+                    <motion.img whileHover={{scale:1.2}} src={fabrica} alt=""/>
+                    <motion.img whileHover={{scale:1.2}} src={salon} alt=""/>
+                    <motion.img whileHover={{scale:1.2}} src={dom} alt=""/>
+                    <motion.img whileHover={{scale:1.2}} src={scena} alt=""/>
+                    <motion.img whileHover={{scale:1.2}} src={teatr} alt=""/>
+                    <motion.img whileHover={{scale:1.2}} src={pojarnay} alt=""/>
                 </div>
                 <div className='mapIcons__row3'>
                     <div className="mapIcons__left">
-                    <img src={voennay} alt=""/>
-                    <img src={stroika} alt=""/>
-                    <img src={kut} alt=""/>
+                    <motion.img whileHover={{scale:1.2}} src={voennay} alt=""/>
+                    <motion.img whileHover={{scale:1.2}} src={stroika} alt=""/>
+                    <motion.img whileHover={{scale:1.2}} src={kut} alt=""/>
                     </div>
                     <div className="mapIcons__right">
-                        <img src={ice} alt=""/>
-                        <img src={veterinar} alt=""/>
+                        <motion.img whileHover={{scale:1.2}} src={ice} alt=""/>
+                        <motion.img whileHover={{scale:1.2}} src={veterinar} alt=""/>
                     </div>
                 </div>
                 <div className='mapIcons__row4'>
                     <div className="mapIcons__left2">
-                        <img src={bank} alt=""/>
-                        <img src={globus} alt=""/>
-                        <img src={eko} alt=""/>
+                        <motion.img whileHover={{scale:1.2}} src={bank} alt=""/>
+                        <motion.img whileHover={{scale:1.2}} src={globus} alt=""/>
+                        <motion.img whileHover={{scale:1.2}} src={eko} alt=""/>
                     </div>
                   <div className="mapIcons__right2">
-                      <img src={sto} alt=""/>
-                      <img src={petroleum} alt=""/>
+                      <motion.img whileHover={{scale:1.2}} src={sto} alt=""/>
+                      <motion.img whileHover={{scale:1.2}} src={petroleum} alt=""/>
                   </div>
                 </div>
                 <img className='mapIcons__image' src={mapImage} alt=""/>

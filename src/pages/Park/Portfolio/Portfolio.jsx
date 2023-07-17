@@ -3,6 +3,7 @@ import SwiperCore, { Controller } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.min.css';
 import 'swiper/swiper-bundle.min.css';
+import { Fancybox } from "@fancyapps/ui";
 import "./Portfolio.scss"
 import axios from "../../../utils/axios";
 import {useParams} from "react-router-dom";
@@ -16,17 +17,17 @@ export default function Portfolio() {
     const [secondSwiper, setSecondSwiper] = useState(null);
     const [meals,setMeals] =useState([])
 
+    const mobileSwiperSpaceBetween = (window.outerWidth - 300) / 2
+
 
     const params = useParams()
-    console.log(params.name)
 
     useEffect(()=>{
+
         axios("/gallery")
             .then(({data})=> setMeals(data))
             .catch((err)=>err)
     },[])
-    console.log(params.name.toLowerCase().split(' ').includes(meals[0]?.branch))
-    console.log(meals)
     return (
         <div className="portfolio">
             <h2 className='portfolio__title'>Галлерея</h2>
@@ -37,12 +38,12 @@ export default function Portfolio() {
                 slidesPerView={5}
                 spaceBetween={30}
                 initialSlide={2}
-                loop={true}
+                // loop={true}
                 centeredSlides={true}
                 breakpoints={{
                     0:{
                         centeredSlides:true,
-                        spaceBetween:0,
+                        spaceBetween:mobileSwiperSpaceBetween,
                         slidesPerView:1,
 
                     },
@@ -56,14 +57,12 @@ export default function Portfolio() {
 
             >
                 {meals.map((el) => (
-
                         params.name.toLowerCase().split(' ').includes(el.branch)? <SwiperSlide key={el._id}>
-                            <picture>
-                                <source srcSet={`${process.env.REACT_APP_URL}${el.imageUrl}`} type="image/webp"/>
-                                <source srcSet={`${process.env.REACT_APP_URL}${el.imageUrl}`} type="image/jpeg"/>
-                                <img src={`${process.env.REACT_APP_URL}${el.imageUrl}`} alt={el.text} />
-                            </picture>
-
+                                <picture>
+                                    <source srcSet={`${process.env.REACT_APP_URL}${el.imageUrl}`} type="image/webp"/>
+                                    <source srcSet={`${process.env.REACT_APP_URL}${el.imageUrl}`} type="image/jpeg"/>
+                                    <img src={`${process.env.REACT_APP_URL}${el.imageUrl}`} alt={el.text} />
+                                </picture>
                         </SwiperSlide>:''
 
 
@@ -76,12 +75,12 @@ export default function Portfolio() {
                 slidesPerView={5}
                 spaceBetween={30}
                 initialSlide={2}
-                loop={true}
+                // loop={true}
                 centeredSlides={true}
                 breakpoints={{
                     0:{
                         centeredSlides:true,
-                        spaceBetween:0,
+                        spaceBetween:mobileSwiperSpaceBetween,
                         slidesPerView:1,
 
                     },

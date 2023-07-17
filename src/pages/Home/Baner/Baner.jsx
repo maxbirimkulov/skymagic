@@ -85,7 +85,7 @@ const Baner = () => {
                                         {el.description}
                                     </h4>
 
-                                    <Link  to='/ticket'><button className='banner__btn'>Купить билет</button></Link>
+                                    <Link  to='/ticket'><button className='banner__btn'>Подробнее</button></Link>
                                 </SwiperSlide>
                             ))}
 
