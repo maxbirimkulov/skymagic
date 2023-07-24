@@ -27,15 +27,15 @@
    display: flex;
    align-items: end;
   justify-content: start;
-   img:nth-child(1){
+ .voennya{
      width: 140px;
      height: 90px;
    }
-   img:nth-child(2){
+   .stroika{
      width: 140px;
      height: 125px;
    }
-   img:nth-child(3){
+   .kut{
      width: 150px;
      height: 100px;
    }
@@ -44,11 +44,11 @@
     width: 27%;
     display: flex;
     align-items: end;
-    img:nth-child(1){
+    .ice{
       width: 140px;
       height: 90px;
     }
-    img:nth-child(2){
+    .veterinar{
       width: 140px;
       height: 87px;
     }
@@ -59,30 +59,31 @@
     column-gap: 42px;
     align-items: end;
     margin-bottom: 28px;
-    img:nth-child(1){
+    .shahta{
       width: 150px;
       height: 87px
     }
-    img:nth-child(2){
+    .pekarnya{
       height: 100px;
       width: 158px;
     }
-    img:nth-child(3){
+    .ferma{
       height: 106px;
       width: 154px;
     }
-    img:nth-child(4){
+    .police{
       height: 108px;
       width: 145px;
     }
-    img:nth-child(5){
+    .pochta{
       height: 108px;
       width: 144px;
     }
-    img:nth-child(6){
+    .clinic{
       height: 117px;
       width: 136px;
     }
+
   }
   &__row2{
     display: flex;
@@ -90,35 +91,35 @@
     column-gap: 0;
     align-items: end;
     margin-bottom: 20px;
-    img:nth-child(1){
+    .beelain{
       height: 90px;
       width: 120px;
     }
-    img:nth-child(2){
+    .arheologia{
       height: 90px;
       width: 125px;
     }
-    img:nth-child(3){
+    .fabrica{
       height: 90px;
       width: 130px;
     }
-    img:nth-child(4){
+    .salon{
       height: 90px;
       width: 140px;
     }
-    img:nth-child(5){
+    .dom{
       height: 110px;
       width: 130px;
     }
-    img:nth-child(6){
+    .scena{
       height: 90px;
       width: 120px;
     }
-    img:nth-child(7){
+    .teatr{
       height: 90px;
       width: 120px;
     }
-    img:nth-child(8){
+    .pojarnya{
       height: 90px;
       width: 140px;
     }
@@ -128,14 +129,14 @@
     justify-content: center;
     align-items: end;
     column-gap: 0;
-
-
   }
   &__left2{
     width: 30%;
+    display: flex;
   }
   &__right2{
     width: 28%;
+    display: flex;
   }
   &__row4{
     display: flex;
@@ -143,29 +144,26 @@
     column-gap: 115px;
     align-items: end;
     margin-top: 75px;
-    img:nth-child(1){
+    .bank{
       width: 140px;
       height: 90px;
     }
-    img:nth-child(1){
+    .globus{
+      width: 160px;
+      height: 90px;
+    }
+    .eko{
       width: 140px;
       height: 90px;
     }
-    img:nth-child(2){
+    .sto{
       width: 140px;
       height: 90px;
     }
-    img:nth-child(3){
-      width: 140px;
+    .petroleum{
+      width: 150px;
       height: 90px;
     }
-    img:nth-child(4){
-      width: 140px;
-      height: 90px;
-    }
-    img:nth-child(5){
-      width: 140px;
-      height: 90px;
-    }
+
   }
 }

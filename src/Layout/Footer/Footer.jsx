@@ -113,7 +113,7 @@ const Footer = () => {
                     <div className="footer__social">
                         <ul>
                      <li>
-                         <a href="https://wa.me/996550036883" onClick={
+                         <a href="https://wa.me/996771780780" onClick={
                              ()=>{
                                  clickFunc('whatsapp', user.email ? user._id : null)
                              }

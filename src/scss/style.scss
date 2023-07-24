@@ -73,12 +73,18 @@ main{
     height: 73px;
     width: 100px;
   }
-  .mapIcons__row3{
-    column-gap: 36px;
+  .mapIcons__left {
+    width: 42%;
+  }
+  .mapIcons__right {
+  width: 31%;
+  }
+    .mapIcons__row3{
+    column-gap: 0;
   }
   .mapIcons__row4{
     column-gap: 93px;
-    margin-top: 57px;
+    margin-top: 42px;
   }
   .mapIcons__left2{
     width: 34%;
