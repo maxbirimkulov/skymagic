@@ -1,112 +1,150 @@
 .banner{
   position: relative;
   height: 100vh;
-  background: url("../images/Artboard 1 (2).jpg")center/cover no-repeat;
-  &__btns{
-    text-align: center;
-    width: 100%;
-  }
-  &__second-slider{
-    display: none;
-  }
-  &__maintitle{
-    font-size: 36px;
-    font-weight: 600;
-    margin-bottom: 30px;
-    text-align: center;
-    width: 100%;
-  }
-  &__btn{
-    background: none;
-    color: white;
-    border-radius: 15px;
-    border: 3px solid white;
-    padding: 15px 30px;
-    font-size: 46px;
-    margin-top: 20px;
-  }
-  &__slider{
+  h2{
+    font-weight: 700;
+    text-shadow:3px 5px 5px black;
     position: absolute;
-    top: 12%;
-    left: 48%;
-    z-index: 1;
-    .swiper {
-      margin: 100px auto;
-      width: 41vw;
-    }
-  }
-  .swiper-slide {
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    font-size: 22px;
-    font-weight: bold;
-    color: #fff;
+    top: 20%;
 
+    z-index: 101;
+    color: whitesmoke;
+    font-size: 55px;
   }
-  &__title{
-    padding: 15px 5px 15px 20px;
-    opacity: 1;
-    display: flex;
-    flex-direction: column;
+  p{
+    position: absolute;
+    font-weight: 700;
+    text-shadow:3px 5px 5px black;
+    top: 50%;
+
+
+    z-index: 101;
     color: white;
-    background: linear-gradient(135deg, rgba(19,146,205,1) 0%, rgba(229,206,3,1) 100%);
-    border-radius: 30px;
-    position: relative;
-  }
-
-  &__smagic{
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 30px;
-  }
-  &__text{
-    font-size: 24px;
-    margin-bottom: 20px;
-    opacity: 1;
-  }
-  &__info{
-    font-size: 23px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
-  }
-  .banner__btn{
-    font-size: 2.194vw;
-  }
-  .banner__second-slider{
-    padding-top: 200px;
-    width: 60%;
-    margin: 0 0 0 auto;
-  }
-}
-@media (max-width: 1000px) {
- .banner__slider{
-   display: none;
- }
-  .banner__second-slider{
-    display: flex;
-  }
-
-}
-@media (max-width: 500px) {
-  .banner .banner__second-slider{
-     width: 100%;
-   }
-}
-@media (max-width: 481px) {
-
-  .banner .banner__second-slider{
-    width:57%;
-    height: 270px;
-    right: 20px;
-    top: 20px;
-  }
-  .banner .banner__second-slider{
-    margin: 0 0 0 0;
-    position: relative;
-    left: 150px;
+    font-size: 28px;
   }
 
 
+  &__container{
+    height: 100vh;
+
+
+    color: white;
+
+  }
+  &__greyback{
+    height: 100vh;
+    position: absolute;
+    background: #80808050;
+    z-index: 100;
+    width: 100%;
+top: 0;
+
+  }
+
+//
+//  &__btns{
+//    text-align: center;
+//    width: 100%;
+//  }
+//  &__second-slider{
+//    display: none;
+//  }
+//  &__maintitle{
+//    font-size: 36px;
+//    font-weight: 600;
+//    margin-bottom: 30px;
+//    text-align: center;
+//    width: 100%;
+//  }
+//  &__btn{
+//    background: none;
+//    color: white;
+//    border-radius: 15px;
+//    border: 3px solid white;
+//    padding: 15px 30px;
+//    font-size: 46px;
+//    margin-top: 20px;
+//  }
+//  &__slider{
+//    position: absolute;
+//    top: 12%;
+//    left: 48%;
+//    z-index: 1;
+//    .swiper {
+//      margin: 100px auto;
+//      width: 41vw;
+//    }
+//  }
+//  .swiper-slide {
+//    display: flex;
+//    align-items: start;
+//    justify-content: center;
+//    font-size: 22px;
+//    font-weight: bold;
+//    color: #fff;
+//
+//  }
+//  &__title{
+//    padding: 15px 5px 15px 20px;
+//    opacity: 1;
+//    display: flex;
+//    flex-direction: column;
+//    color: white;
+//    background: linear-gradient(135deg, rgba(19,146,205,1) 0%, rgba(229,206,3,1) 100%);
+//    border-radius: 30px;
+//    position: relative;
+//  }
+//
+//  &__smagic{
+//    font-size: 30px;
+//    font-weight: 500;
+//    margin-bottom: 30px;
+//  }
+//  &__text{
+//    font-size: 24px;
+//    margin-bottom: 20px;
+//    opacity: 1;
+//  }
+//  &__info{
+//    font-size: 23px;
+//    margin-top: 20px;
+//    margin-bottom: 20px;
+//
+//  }
+//  .banner__btn{
+//    font-size: 2.194vw;
+//  }
+//  .banner__second-slider{
+//    padding-top: 200px;
+//    width: 60%;
+//    margin: 0 0 0 auto;
+//  }
+//}
+//@media (max-width: 1000px) {
+// .banner__slider{
+//   display: none;
+// }
+//  .banner__second-slider{
+//    display: flex;
+//  }
+//
+//}
+//@media (max-width: 500px) {
+//  .banner .banner__second-slider{
+//     width: 100%;
+//   }
+//}
+//@media (max-width: 481px) {
+//
+//  .banner .banner__second-slider{
+//    width:57%;
+//    height: 270px;
+//    right: 20px;
+//    top: 20px;
+//  }
+//  .banner .banner__second-slider{
+//    margin: 0 0 0 0;
+//    position: relative;
+//    left: 150px;
+//  }
 }

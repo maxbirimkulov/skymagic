@@ -11,6 +11,38 @@
     height: 260px;
 
   }
+  &logoinfos{
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    column-gap: 70px;
+    align-items: center;
+  }
+  &logoinfo{
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 165px;
+    div{
+      height: 67px;
+    }
+    span{
+      color: #1392cd;
+      font-size: 70px;
+      text-align: center;
+    }
+    h3{
+      font-weight: 600;
+      font-size: 24px;
+      color: #1392cd;
+    }
+    p{
+      font-weight: 500;
+      font-size: 16px;
+    }
+  }
 
 
 

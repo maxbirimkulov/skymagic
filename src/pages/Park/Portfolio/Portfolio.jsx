@@ -8,6 +8,7 @@ import "./Portfolio.scss"
 import axios from "../../../utils/axios";
 import {useParams} from "react-router-dom";
 
+
 SwiperCore.use([Controller]);
 
 
@@ -57,15 +58,15 @@ export default function Portfolio() {
             >
                 {meals.map((el) => (
                         params.name.toLowerCase().split(' ').includes(el.branch)? <SwiperSlide key={el._id}>
-                                <picture>
+                            <picture>
                                     <source srcSet={`${process.env.REACT_APP_URL}${el.imageUrl}`} type="image/webp"/>
                                     <source srcSet={`${process.env.REACT_APP_URL}${el.imageUrl}`} type="image/jpeg"/>
-                                    <img src={`${process.env.REACT_APP_URL}${el.imageUrl}`} alt={el.text} />
+                                <img src={`${process.env.REACT_APP_URL}${el.imageUrl}`} alt={el.text} />
                                 </picture>
                         </SwiperSlide>:''
 
-
                 ))}
+
             </Swiper>
 
             <Swiper

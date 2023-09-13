@@ -42,6 +42,31 @@ const Price = ({dataPark}) => {
                         </div>
                     </div>
                 </div>
+
+                    {
+                        params.name === 'Smagic Tommy' ? <div className="price__more">
+                            <div className="price__left">
+                                <h2>Именинник 175 Сом</h2>
+                                <h2>Гости 245 Сом</h2>
+                            </div>
+                            <div className="price__right">
+                                <h2>Именинник  225 Сом</h2>
+                                <h2>Гости 315 Сом</h2>
+                            </div>
+                        </div>
+                            :  <div className="price__more">
+                            <div className="price__left">
+                        <h2>Именинник 245 Сом</h2>
+                        <h2>Гости 343 Сом</h2>
+                        </div>
+                        <div className="price__right">
+                        <h2>Именинник  345 Сом</h2>
+                        <h2>Гости 483 Сом</h2>
+                        </div>
+                        </div>
+                    }
+
+
             </div>
 
         </section>
