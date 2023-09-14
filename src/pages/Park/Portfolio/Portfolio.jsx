@@ -3,7 +3,7 @@ import SwiperCore, { Controller } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.min.css';
 import 'swiper/swiper-bundle.min.css';
-import { Fancybox } from "@fancyapps/ui";
+import fancy from "../fancy";
 import "./Portfolio.scss"
 import axios from "../../../utils/axios";
 import {useParams} from "react-router-dom";
@@ -58,11 +58,24 @@ export default function Portfolio() {
             >
                 {meals.map((el) => (
                         params.name.toLowerCase().split(' ').includes(el.branch)? <SwiperSlide key={el._id}>
+                            <fancy
+                                options={{
+                                    Carousel: {
+                                        infinite: false,
+                                    },
+                                }}
+                            >
+
+                                <a data-fancybox="gallery" href={`${process.env.REACT_APP_URL}${el.imageUrl}`}>
+
+
                             <picture>
                                     <source srcSet={`${process.env.REACT_APP_URL}${el.imageUrl}`} type="image/webp"/>
                                     <source srcSet={`${process.env.REACT_APP_URL}${el.imageUrl}`} type="image/jpeg"/>
                                 <img src={`${process.env.REACT_APP_URL}${el.imageUrl}`} alt={el.text} />
                                 </picture>
+                                </a>
+                            </fancy>
                         </SwiperSlide>:''
 
                 ))}
