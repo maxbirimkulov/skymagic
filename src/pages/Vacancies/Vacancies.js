@@ -1,6 +1,10 @@
 import React, {useEffect} from 'react';
 import './Vacancies.scss'
 import img2 from './images/DSC_4921_DxO.jpg'
+import img3 from './images/DSC_4942_DxO-min.jpg'
+import img4 from './images/DSC_4994_DxO-min-2.jpg'
+import img5 from './images/DSC_5057_DxO-min.jpg'
+import img6 from './images/DSC_5069_DxO-min.jpg'
 import {BsFillTelephoneFill} from 'react-icons/bs'
 import  {FiMail} from 'react-icons/fi'
 import {useDispatch, useSelector} from "react-redux";
@@ -8,6 +12,10 @@ import {getVacancies} from "../../redux/reducers/vacancies";
 import {Link} from "react-router-dom";
 import star from './STAR (1).png'
 import {animateScroll} from "react-scroll";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css/navigation';
+import {Navigation} from "swiper";
+
 
 const Vacancies = () => {
     const toTop = () => {
@@ -22,16 +30,30 @@ const Vacancies = () => {
     useEffect(()=>{
         dispatch(getVacancies())
     },[])
-    console.log(data)
     return (
         <section className='vacancies'>
             <div className="vacancies__img">
-                <h2 className='vacancies__title'>ПРИСОЕДИНЯЙСЯ
-                    К НАШЕЙ КОМАНДЕ</h2>
+
             </div>
             <div className="container">
                 <div className="vacancies__swipper">
-                    <img src={img2} alt=""/>
+                    <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+                        <SwiperSlide>
+                            <img src={img2} alt=""/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={img3} alt=""/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={img4} alt=""/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={img5} alt=""/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={img6} alt=""/>
+                        </SwiperSlide>
+                    </Swiper>
                 </div>
                 <h2 className='vacancies__our'>НАШИ ПРЕИМУЩЕСТВА</h2>
                 <div className="vacancies__icon">

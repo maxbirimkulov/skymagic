@@ -574,6 +574,9 @@ main{
     row-gap: 0;
     column-gap: 7px;
   }
+  .banner h2{
+    font-size: 46px;
+  }
   .place__title{
     font-size: 24px;
   }
@@ -660,12 +663,32 @@ main{
       right: 60px;
     }
   }
+  .parks__logoinfos{
+    flex-wrap: wrap;
+    row-gap: 40px;
+  }
 }
 
 @media (max-width: 481px ) {
   .container{
     max-width: 421px;
 
+  }
+  .footer__sky {
+    width: 150px;
+  }
+    .parks {
+    padding: 5px 0 30px;
+  }
+  .footer__smagic {
+    width: 100px;
+    height: 55px;
+  }
+    .banner h2{
+    font-size: 30px;
+  }
+  .banner p{
+    font-size: 22px;
   }
 
   .reviews__skypark .branch__menu{

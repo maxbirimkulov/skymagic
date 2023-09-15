@@ -17,6 +17,9 @@ export default function Portfolio() {
     const [firstSwiper, setFirstSwiper] = useState(null);
     const [secondSwiper, setSecondSwiper] = useState(null);
     const [meals,setMeals] =useState([])
+    const openFancyBox = (imageUrl) => {
+        fancy.open({ src: imageUrl });
+    };
 
 
 
@@ -40,6 +43,7 @@ export default function Portfolio() {
                 initialSlide={2}
                 loop={true}
                 centeredSlides={true}
+                lazy={true}
                 breakpoints={{
                     0:{
                         centeredSlides:true,
@@ -65,23 +69,17 @@ export default function Portfolio() {
                                     },
                                 }}
                             >
-
-                                <a data-fancybox="gallery" href={`${process.env.REACT_APP_URL}${el.imageUrl}`}>
-
-
                             <picture>
                                     <source srcSet={`${process.env.REACT_APP_URL}${el.imageUrl}`} type="image/webp"/>
                                     <source srcSet={`${process.env.REACT_APP_URL}${el.imageUrl}`} type="image/jpeg"/>
-                                <img src={`${process.env.REACT_APP_URL}${el.imageUrl}`} alt={el.text} />
-                                </picture>
+                                <a data-fancybox="gallery" href={`${process.env.REACT_APP_URL}${el.imageUrl}`}>
+                                <img className="swiper-lazy" src={`${process.env.REACT_APP_URL}${el.imageUrl}`} alt={el.text} />
                                 </a>
+                                </picture>
                             </fancy>
                         </SwiperSlide>:''
-
                 ))}
-
             </Swiper>
-
             <Swiper
                 onSwiper={setSecondSwiper}
                 controller={{ control: firstSwiper, inverse: true }}
@@ -113,7 +111,6 @@ export default function Portfolio() {
                             <source srcSet={`${process.env.REACT_APP_URL}${el.imageUrl}`} type="image/jpeg"/>
                             <img src={`${process.env.REACT_APP_URL}${el.imageUrl}`} alt={el.text} />
                         </picture>
-
                     </SwiperSlide>:''
                 ))}
             </Swiper>

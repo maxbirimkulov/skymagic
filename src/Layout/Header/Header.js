@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {NavLink} from "react-router-dom";
+import {NavLink, useLocation} from "react-router-dom";
 import "./Header.scss"
 import HamburgerToggle from "./HamburgerToggle/HamburgerToggle";
 import NavBar from "./NavBar/NavBar";
@@ -9,6 +9,8 @@ import logo2 from './SKY PARK - logo.png'
 
 
 const Header = () => {
+    const location = useLocation()
+
     const toTop = () => {
         animateScroll.scrollToTop({
             delay: 0,
@@ -18,6 +20,9 @@ const Header = () => {
     };
     const [isActiveHamburger, setActiveHamburger] = useState(false);
     const [isActiveHamburgerMenu, setActiveHamburgerMenu] = useState(false);
+
+
+
 
     const toggleClass = () => {
         setActiveHamburger(!isActiveHamburger);
@@ -39,7 +44,7 @@ const Header = () => {
     }, []);
     return (
 
-        <header className={`header ${
+        <header className={`${location.pathname==='/'?'header':'header header__other'} ${
             small ? "scrolled" : ""
         }`}>
             <div className="header__container container ">
