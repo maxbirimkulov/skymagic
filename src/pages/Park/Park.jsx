@@ -4,7 +4,6 @@ import Price from "./Price/Price";
 import {useParams} from "react-router-dom";
 import Portfolio from "./Portfolio/Portfolio";
 import Map from "./Map/Map";
-
 import {data2} from "../../data.js"
 import AboutPark from "./AboutPark/AboutPark";
 import MapIcons from "./MapIcons/mapIcons";

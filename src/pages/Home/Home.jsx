@@ -12,9 +12,7 @@ import HomeBannerLast from "./HomeBannerLast/HomeBannerLast";
 const Home = () => {
     return (
         <>
-
             <Baner/>
-
             <Parks/>
             <Stock/>
             <Price/>

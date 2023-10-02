@@ -19,7 +19,6 @@ const Services = () => {
 
     let date = new Date()
 
-    console.log(date.getTime())
     const toTop = () => {
         animateScroll.scrollToTop({
             delay: 0,
@@ -30,15 +29,15 @@ const Services = () => {
         <section className='services'>
             <div className="container">
                 <div className="services__box">
-                    <img src={dr} alt=""/>
                     <div className="services__right">
-                        <h2>КОМПАНИЯ SMAGIC И SKY
+                        <h2>Предоставляемые услуги</h2>
+                        <p>КОМПАНИЯ SMAGIC И SKY
                             PARK ОРГАНИЗОВЫВАЕТ
                             НЕЗАБЫВАЕМЫЕ
                             ШОУ-ПРОГРАММЫ НЕ ТОЛЬКО
                             В НАШИХ ПАРКАХ, НО ТАК-ЖЕ
                             МЫ МОЖЕМ ПРИЕХАТЬ
-                            ИМЕННО К ВАМ!</h2>
+                            ИМЕННО К ВАМ!</p>
                     </div>
                 </div>
                 <h2 className='services__event'>С НАМИ ВЫ ПОЛУЧИТЕ:</h2>

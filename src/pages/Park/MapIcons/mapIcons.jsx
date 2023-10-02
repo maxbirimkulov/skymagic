@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React from 'react';
 import './mapIcons.scss'
 import doroga from './assets/Дорога.png'
 import mapImage from './assets/map_of_place.jpg'
@@ -38,12 +38,9 @@ const MapIcons = () => {
         <section className='mapIcons'>
             <h2 className='mapIcons__title'>Город профессий</h2>
             <div className="mapIcons__container container">
-
-
                 <img className='mapIcons__road' src={doroga} alt=""/>
                 <div className='mapIcons__row'>
-
-                        <MouseOverPopoverShahta text={'Шахта'}/>
+                        <MouseOverPopoverShahta text={'Золотая шахта'}/>
                     <MouseOverPopover  text={'Пекарня'}/>
 
                     <MouseOverPopoverFerma text={'Ферма'}/>
